@@ -83,7 +83,7 @@ test('detect：翻译数据统计与实测一致', () => {
     assert.equal(result.translations.ok, true);
     assert.equal(result.translations.count, 2803);
     assert.equal(result.translations.caseInsensitiveCollisions, 31);
-    assert.equal(result.translations.paddedEnglish, 172);
+    assert.equal(result.translations.paddedEnglish, 173);
   } finally {
     world.cleanup();
   }

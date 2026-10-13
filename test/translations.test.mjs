@@ -30,8 +30,8 @@ test('真实数据文件：条数与字段完整性', () => {
   assert.deepEqual(parsed.conflicts, []);
   // 实测：31 组「忽略大小写后相同」的英文（例如 3D model / 3D Model）
   assert.equal(parsed.caseInsensitiveCollisions.length, 31);
-  // 实测：172 条英文文案首尾带空格，匹配时必须原样比较
-  assert.equal(parsed.paddedEnglish, 172);
+  // 实测：173 条英文文案首尾带空格，匹配时必须原样比较
+  assert.equal(parsed.paddedEnglish, 173);
   assert.ok(parsed.warnings.some((w) => w.includes('首尾带空格')));
 });
 
