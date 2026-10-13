@@ -18,7 +18,7 @@
   "scripts": {
     "test": "node --test",
     "check-coverage": "node tools/check-coverage.mjs",
-    "check-mixed-language": "node tools/check-mixed-language.mjs",
+    "check-mixed-language": "node tools/check-mixed-language.mjs data/translations.tsv --allow tools/allowlist.json --baseline tools/mixed-language-baseline.txt",
     "detect": "node bin/artcraft-hanhua.mjs detect",
     "doctor": "node bin/artcraft-hanhua.mjs doctor",
     "hanhua:dry": "node bin/artcraft-hanhua.mjs hanhua --dry-run"

@@ -185,10 +185,10 @@ node bin/artcraft-hanhua.mjs detect --json
 
 - **本项目不发布任何 exe。** 仓库里只有 Node.js 工具源码与译表；你的 `artcraft.exe` 来自官方安装包，
   `artcraft-zh-full.exe` 是**在你自己机器上**生成的（所以没有一份"官方产物哈希"可以预先公布）。
-- **为什么会被拦**：打过补丁的 exe 是**新生成的、与官方字节不同的、且没有数字签名的文件**。
+- **为什么会被拦**：打过补丁的 exe 是**新生成的、与官方字节不同的、且没有数字签名的文件**
+  （是否签名请自己用 `Get-AuthenticodeSignature` 核对，见 FAQ 第 3 节）。
   SmartScreen 看的是"**有没有信誉**"而不是"有没有病毒"，没有信誉的文件一律提示；
-  Defender 的云启发式也可能对"被修改过的 PE"给出误报。**签名失效是预期行为**（如有签名）；
-  实测官方 exe 本身未签名。
+  Defender 的云启发式也可能对"被修改过的 PE"给出误报。**签名失效是预期行为**。
 - **怎么自查**：读源码、跑 CI 里同一套检查（`node --test`）、用 `--dry-run` 预览、`revert` 回滚，
   以及核对 `hanhua` 报告里的 `selfCheck.cspOk` / `audit.changedOutside`。CI 只做检查，**不产出任何二进制**。
 - **被误报怎么办**：确认可信后，右键文件 → 属性 → 勾选**解除锁定（Unblock）**清除"来自 Internet"标记；
@@ -428,7 +428,7 @@ The tool only rewrites language configuration and the main application's fronten
 Most likely a **false positive or a reputation warning** — but verify it yourself rather than taking our word for it:
 
 - **This project ships no executable.** The repository holds Node.js tool source and a translation table only. Your `artcraft.exe` comes from the vendor installer, and `artcraft-zh-full.exe` is generated **on your own machine** — so there is no fixed "official artifact hash" to publish in advance.
-- **Why it gets flagged**: a patched executable is a **newly created file whose bytes differ from the vendor build and that carries no digital signature**. SmartScreen asks "does this have **reputation**?", not "does it contain malware?", and anything without reputation gets a prompt. Defender's cloud heuristics may also false-positive on a **modified PE**. **A broken signature is expected** if the file was ever signed; the vendor executable was measured as unsigned.
+- **Why it gets flagged**: a patched executable is a **newly created file whose bytes differ from the vendor build and that carries no digital signature** (check your own file with `Get-AuthenticodeSignature`, see FAQ section 3). SmartScreen asks "does this have **reputation**?", not "does it contain malware?", and anything without reputation gets a prompt. Defender's cloud heuristics may also false-positive on a **modified PE**. **A broken signature is expected**.
 - **How to verify**: read the source, run the same checks CI runs (`node --test`), preview with `--dry-run`, roll back with `revert`, and read the patcher report's `selfCheck.cspOk` / `audit.changedOutside`. CI only checks — it **produces no binary**.
 - **If you are false-positived**: once you trust the file, right-click → Properties → **Unblock** to clear the mark of the web, and submit the false positive to Microsoft (WDSI). We do **not** recommend blanket exclusions or disabling real-time protection to run this tool — Microsoft's own words are "**Every exclusion lowers your level of protection.**".
 - **Chinese reverts to English after an update**: the vendor package **overwrote** your changes; it is not broken. Run `hanhua` again, or `revert` then `hanhua` if anything looks odd. Note the main-app patch is measured for **v0.41.0 only**, so a new upstream release needs re-adaptation.

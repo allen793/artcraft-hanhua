@@ -204,7 +204,8 @@ id	english	chinese
 - 数据行 **2803** 条；每行**恰好 3 列**
 - **无 BOM**，换行是 **LF**（不是 CRLF），字段没有引号包裹，字段内没有制表符
 - id 是 4 位十进制数字，`0001`–`2803`，无重复
-- 英文**精确去重后是 2772 个不同字符串**，忽略大小写去重后也是 **2772**：
+- 英文**精确去重（区分大小写）后就是 2803 个不同字符串**，也就是**没有任何两行英文完全相同**；
+  但**忽略大小写去重后是 2772 个**：
   恰好有 **31 组**英文"只差大小写"，每组 **2 行**（共 62 行），例如
   `Cost Calculator` / `Cost calculator`、`Save Scene` / `Save scene`、`3D model` / `3D Model`、
   `Pick from library` / `Pick from Library`、`Edit easing` / `Edit Easing`。

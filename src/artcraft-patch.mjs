@@ -133,9 +133,9 @@ export const REFERENCE_FACTS = {
   /** 新段 payload 字节数 = compressedBytes 之和 */
   payloadBytes: 1565598,
   /**
-   * 翻译表条数 / 每条生成的搜索键数 / 落地替换次数（v3 译表）。
-   * **只作为参考报告值，不做硬断言** —— 译表会变（2773 → 2803），
-   * 断言一律读实际数据，见 test/artcraft-patch-algorithm.test.mjs。
+   * 翻译表条数 / 每条生成的搜索键数 / 落地替换次数（这里记的是 v3 译表的快照值）。
+   * **只是参考报告值，不做硬断言**：表条数会随时间变化，断言一律读实际数据，
+   * 见 test/artcraft-patch-algorithm.test.mjs。
    */
   translations: { total: 2803, literalsPerEntry: 2, applications: 3863 },
   /** 替换后 JS 里的 CJK 字符数 */
