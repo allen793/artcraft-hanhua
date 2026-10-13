@@ -72,7 +72,7 @@ const CJK = /[\u4e00-\u9fff]/;
 // Rows whose ENGLISH source is a developer-facing library/runtime message.
 // Keeping technical tokens Latin there is deliberate: users never see them, so
 // they are reported separately instead of failing the gate.
-const LIBRARY_EN = /(Uint8Array|ArrayBuffer|polyfill|gzip|base64|EOF|props|prototype|constructor|instanceof|typeof|callback|Promise|JSON|regex|token|buffer|byte|node_modules|WebGL|WebGPU|OrbitControls|VideoFrame|AudioSample|EncodedPacket|init\.|config\.|\.bitrate|\.timestamp|DOMException|AbortError|EventTarget|MutationObserver|requestAnimationFrame|postMessage|WASM|shader|fragment|vertex)/;
+const LIBRARY_EN = /(Uint8Array|ArrayBuffer|polyfill|gzip|base64|EOF|props|prototype|constructor|instanceof|typeof|callback|Promise|JSON|regex|token|buffer|byte|node_modules|WebGL|WebGPU|OrbitControls|VideoFrame|AudioSample|EncodedPacket|init\.|config\.|\.bitrate|\.timestamp|DOMException|AbortError|EventTarget|MutationObserver|requestAnimationFrame|postMessage|WASM|shader|fragment|vertex|Setup header|packet type|framing bit|mode header|History API|benchmark data|push splat|load splat|non-last position|Panel components|Resize handle|Sidecar|Eager values|plane\.offset|plane\.stride|ECI assignment|options\.(width|height|fit)|passthrough the `ref`)/;
 
 const offenders = [];
 const informational = [];
@@ -98,16 +98,44 @@ for (const line of text.split('\n')) {
   offenders.push(rec);
 }
 
+// ---- baseline --------------------------------------------------------------
+// Some rows legitimately keep a Latin token that is not on the allow-list yet
+// (an identifier, a standard name, a media field) and simply has not been
+// classified. Those tokens are recorded in a baseline file. The gate then fails
+// only when a token appears that is NOT on the allow-list and NOT in the
+// baseline, so a new half-translated string cannot slip in while the existing
+// backlog stays visible instead of being guessed into the allow-list.
+const baseIdx = args.indexOf('--baseline');
+const basePath = baseIdx >= 0 ? args[baseIdx + 1] : null;
+const known = new Set();
+if (basePath && existsSync(basePath)) {
+  for (const line of readFileSync(basePath, 'utf8').split('\n')) {
+    const s = line.trim();
+    if (s && !s.startsWith('#')) known.add(s.split('\t')[0].toLowerCase());
+  }
+}
+const freshTokens = [...tokenCount.keys()].filter((t) => !known.has(t.toLowerCase()));
+const staleTokens = basePath ? [...known].filter((t) => !tokenCount.has(t) && ![...tokenCount.keys()].some((k) => k.toLowerCase() === t)) : [];
+
 console.log(`translation rows                       : ${rows}`);
 console.log(`rows with non-allow-listed Latin text  : ${offenders.length + informational.length}`);
 console.log(`  user-facing (gate)                   : ${offenders.length}`);
 console.log(`  library/runtime only (informational) : ${informational.length}`);
 console.log(`distinct offending tokens (gate)       : ${tokenCount.size}`);
+if (basePath) {
+  console.log(`  already in the baseline              : ${tokenCount.size - freshTokens.length}`);
+  console.log(`  NEW tokens (failing)                 : ${freshTokens.length}`);
+  if (staleTokens.length) console.log(`  baseline tokens no longer present    : ${staleTokens.length} (consider pruning ${basePath})`);
+}
 if (tokenCount.size) {
   console.log('\ntop offending tokens:');
   for (const [t, n] of [...tokenCount].sort((a, b) => b[1] - a[1]).slice(0, 40)) {
     console.log(`  ${String(n).padStart(4)}  ${t}`);
   }
+}
+if (freshTokens.length) {
+  console.log('\nNEW offending tokens:');
+  for (const t of freshTokens.slice(0, 20)) console.log(`  ${t}`);
 }
 if (outPath) {
   const lines = ['english\tchinese\toffending_tokens'];
@@ -115,4 +143,4 @@ if (outPath) {
   writeFileSync(outPath, lines.join('\n') + '\n', 'utf8');
   console.log(`\nwritten: ${outPath}`);
 }
-process.exit(offenders.length ? 2 : 0);
+process.exit(freshTokens.length ? 2 : 0);

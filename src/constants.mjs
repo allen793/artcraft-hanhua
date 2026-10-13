@@ -53,7 +53,7 @@ export const STATIC_TARGET_IDS = ['artcraft', 'artcraft-launcher', ...SUITE_APP_
 export const TRANSLATIONS_RELATIVE_PATH = 'data/translations.tsv';
 
 /** 实测的翻译条数（不含表头）；加载时用于校验数据完整性 */
-export const EXPECTED_TRANSLATION_COUNT = 2773;
+export const EXPECTED_TRANSLATION_COUNT = 2803;
 
 /** 状态目录名（位于 %LOCALAPPDATA% 下），存放 state.json 日志 */
 export const STATE_DIR_NAME = 'artcraft-hanhua';

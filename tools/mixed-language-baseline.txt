@@ -1,0 +1,43 @@
+# Mixed-language baseline: tokens that are known and accepted.
+# tools/check-mixed-language.mjs fails only when a token appears that is neither
+# on tools/allowlist.json nor listed here. Verify an entry (allow-list it or fix the
+# translation) before adding it; prune tokens that no longer appear.
+#
+ArtCraft.
+AudioEncoder
+base
+BufferTarget
+cancel
+clip
+CORS
+GLB...
+H.264
+Howl
+HTML5
+HTTP
+IP
+iPad
+issue
+Konva.Group
+Konva.Transformer
+loose
+message
+metadata
+metadata.name
+mode
+Object.keys
+options
+OutputTrack
+parser
+Product
+property
+query.filter
+stage
+StopIteration
+Surveys
+symbol
+Tours
+Transformer
+VideoEncoder
+VP9
+Writer

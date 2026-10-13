@@ -51,7 +51,7 @@ artcraft-hanhua/
 │  ├─ render.mjs                # 人类可读输出（中文为主，宽字符对齐的表格）
 │  └─ commands/
 │     ├─ detect.mjs  hanhua.mjs  revert.mjs  verify.mjs  doctor.mjs
-├─ data/translations.tsv        # 翻译数据（2773 条，英文 → 中文）
+├─ data/translations.tsv        # 翻译数据（2803 条，英文 → 中文）
 ├─ test/                        # node:test 单测 + helpers.mjs（临时「世界」构造器）
 └─ docs/DEVELOPMENT.md
 ```
@@ -178,23 +178,23 @@ id	english	chinese
 0001	Delete	删除
 0002	Cancel	取消
 ...
-2773	...
+2803	...
 ```
 
 实测结论：
 
 - 第一行是表头 `id / english / chinese`（制表符分隔）；解析器也接受列顺序不同，并在**没有**表头时按位置约定解析
-- 数据行 **2773** 条；每行**恰好 3 列**
+- 数据行 **2803** 条；每行**恰好 3 列**
 - **无 BOM**，换行是 **LF**（不是 CRLF），字段没有引号包裹，字段内没有制表符
-- id 是 4 位十进制数字，`0001`–`2773`，无重复
-- 英文**精确去重后仍是 2773 条**（没有完全相同的英文）
+- id 是 4 位十进制数字，`0001`–`2803`，无重复
+- 英文**精确去重后仍是 2803 条**（没有完全相同的英文）
 - 但有 **31 组「忽略大小写后相同」**的英文（如 `3D model` / `3D Model`、`Cost Calculator` / `Cost calculator`）。
   用大小写不敏感的匹配器会在这些键上产生歧义 —— 所以匹配必须**大小写敏感**
 - 有 **172 条**英文文案首尾带空格（如 `2293\t layers. Recommended...`），这些空格是**内容的一部分**，
   匹配时不能 `trim()`，否则对不上 exe 里的原始字符串
 - 没有「同英文不同中文」的冲突
 
-加载校验（`src/translations.mjs`）：条数必须等于 `EXPECTED_TRANSLATION_COUNT`（`src/constants.mjs`，2773）、
+加载校验（`src/translations.mjs`）：条数必须等于 `EXPECTED_TRANSLATION_COUNT`（`src/constants.mjs`，2803）、
 每行必须 3 列、每个字段不能为空、id 必须是 4 位数字；任何一条不满足就**报错而不是静默**。
 数据文件确实更新时，改常量或调用 `parseTranslations(text, { allowCountMismatch: true })`。
 

@@ -22,7 +22,7 @@ test('真实数据文件：条数与字段完整性', () => {
   const parsed = loadTranslations({});
   assert.equal(parsed.ok, true, parsed.errors.join('；'));
   assert.equal(parsed.count, EXPECTED_TRANSLATION_COUNT);
-  assert.equal(parsed.count, 2773);
+  assert.equal(parsed.count, 2803);
   assert.deepEqual(parsed.columns, TRANSLATION_COLUMNS);
   assert.equal(parsed.hadBom, false, '翻译数据不应带 BOM');
   // 实测：英文精确去重后与总条数相同（没有完全相同的英文）
@@ -39,7 +39,7 @@ test('真实数据：首条与末条内容', () => {
   const parsed = loadTranslations({});
   assert.deepEqual(parsed.entries[0], { id: '0001', english: 'Delete', chinese: '删除', line: 2 });
   const last = parsed.entries[parsed.entries.length - 1];
-  assert.equal(last.id, '2773');
+  assert.equal(last.id, '2803');
   assert.ok(last.english.length > 0);
   assert.ok(last.chinese.length > 0);
 });
@@ -95,11 +95,11 @@ test('列数不对 / 字段为空 / id 格式不对：报错而不是静默', ()
 
 test('条数不符会报错，并说明如何放宽', () => {
   const text = `${HEADER}0001\tDelete\t删除\n`;
-  const strict = parseTranslations(text, { expectedCount: 2773 });
+  const strict = parseTranslations(text, { expectedCount: 2803 });
   assert.equal(strict.ok, false);
   assert.match(strict.errors.join('；'), /翻译条数不符/);
 
-  const relaxed = parseTranslations(text, { expectedCount: 2773, allowCountMismatch: true });
+  const relaxed = parseTranslations(text, { expectedCount: 2803, allowCountMismatch: true });
   assert.equal(relaxed.ok, true);
 });
 
@@ -135,7 +135,7 @@ test('文件不存在 / 无法读取时给出可读错误', () => {
     const file = path.join(dir, 'data.tsv');
     writeFileDeep(file, `${HEADER}0001\tDelete\t删除\n`);
     const ok = loadTranslations({ file });
-    assert.equal(ok.ok, false); // 条数不符（期望 2773）
+    assert.equal(ok.ok, false); // 条数不符（期望 2803）
     assert.match(ok.errors.join('；'), /翻译条数不符/);
   } finally {
     fs.rmSync(dir, { recursive: true, force: true });

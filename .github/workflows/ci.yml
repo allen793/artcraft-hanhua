@@ -107,15 +107,29 @@ jobs:
           [ "$header" = "$(printf 'id\tenglish\tchinese')" ] || {
             echo "::error::unexpected header: $header"; exit 1; }
 
+          # Single source of truth: the expected count comes from src/constants.mjs,
+          # never a second hardcoded number (they drifted once already).
+          expected=$(node -e "import('./src/constants.mjs').then(m => console.log(m.EXPECTED_TRANSLATION_COUNT))")
           rows=$(( $(wc -l < "$f") - 1 ))
-          if [ "$rows" -ne 2773 ]; then
-            echo "::error::expected 2773 translation rows, found $rows"; exit 1
+          if [ "$rows" -ne "$expected" ]; then
+            echo "::error::expected $expected translation rows, found $rows"; exit 1
           fi
 
           # Every data row must have exactly two tab separators and a non-empty translation.
           awk -F'\t' 'NR>1 { if (NF != 3) { print "::error::row " NR " has " NF " fields"; bad=1 } if ($3 == "") { print "::error::row " NR " has an empty translation"; bad=1 } } END { exit bad }' "$f"
 
-          echo "OK: 2773 translation rows, 3 columns, no BOM."
+          echo "OK: $rows translation rows, 3 columns, no BOM."
+
+      - name: Mixed-language gate (half-translated strings)
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Fails when a Chinese row carries English that is neither a brand, format,
+          # unit or verified identifier (tools/allowlist.json) nor a known, already
+          # classified token (tools/mixed-language-baseline.txt).
+          node tools/check-mixed-language.mjs data/translations.tsv \
+            --allow tools/allowlist.json \
+            --baseline tools/mixed-language-baseline.txt
 
   repo-guard:
     name: repo guard (no binaries, no large files)
