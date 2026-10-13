@@ -17,6 +17,7 @@
   ],
   "scripts": {
     "test": "node --test",
+    "check-coverage": "node tools/check-coverage.mjs",
     "detect": "node bin/artcraft-hanhua.mjs detect",
     "doctor": "node bin/artcraft-hanhua.mjs doctor",
     "hanhua:dry": "node bin/artcraft-hanhua.mjs hanhua --dry-run"
