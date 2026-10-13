@@ -3,9 +3,10 @@
  *
  * 处置逻辑按目标类型分派：
  * - json-lang / ron-lang：写语言配置（先备份 → 最小改动写入 → 记日志）
- * - binary-patch（主程序）：调用 src/artcraft-patch.mjs；本轮它只会抛「未实现」，
- *   这里**优雅降级**：打印说明、把主程序标成 pending、其余项目照常处理、退出码仍为 0
- *   （除非用户加了 --require-main）
+ * - binary-patch（主程序）：调用 src/artcraft-patch.mjs 读取内嵌前端资源、替换译表文案、
+ *   重算 CSP，并输出汉化版 exe（**不覆盖原件**）。
+ *   版本不受支持时**不强行套用**，标为 skipped；补丁本身失败时把真实原因报出来，
+ *   其余项目照常处理、退出码仍为 0（除非用户加了 --require-main）
  * - unsupported：明确报「上游无中文」，不动文件
  * - system-locale：报「已随系统显示中文，无需改动」，不凭空创建配置文件
  *
@@ -138,7 +139,8 @@ function planToDryRunResult(plan) {
       kind: plan.kind,
       status: supported ? TARGET_STATUS.PENDING : TARGET_STATUS.SKIPPED,
       message: supported
-        ? `主程序需要二进制补丁（版本 ${plan.patch.version}）；补丁算法尚未接入，本次不处理`
+        ? `主程序需要二进制补丁（版本 ${plan.patch.version}）：读取内嵌前端资源、替换译表文案、`
+          + `重算 CSP，输出汉化版 exe（不覆盖原件）`
         : `主程序暂不处理：${plan.patch?.reason ?? '原因未知'}`,
       files: [],
       notes: [],
@@ -369,7 +371,7 @@ function applyMainPatch(target, { log }) {
       status: TARGET_STATUS.SKIPPED,
       message: `主程序暂不处理：${patch.reason}`,
       files: [],
-      notes: ['可先用 --root 指定安装目录，或等补丁算法接入后再试'],
+      notes: ['可先用 --root 指定安装目录；补丁只对实测支持的版本套用，不会盲改其它版本'],
     };
   }
   try {
@@ -397,7 +399,7 @@ function applyMainPatch(target, { log }) {
       message: err.message,
       files: [],
       notes: [
-        '主程序汉化需要替换 exe 内嵌前端资源，补丁算法尚未接入，本轮不处理；其它项目已正常处理。',
+        '这是真实的补丁失败（原因见上一行）：原件未被改动，其余项目已正常处理。',
         '退出码仍为 0；需要「主程序必须成功」时请加 --require-main。',
       ],
     };
@@ -526,10 +528,10 @@ export async function runHanhua(ctx, { confirm = null, systemLocale = null } = {
   if (requireMain && pendingRequired) exitCode = EXIT.FAILURE;
 
   if (requireMain && pendingRequired) {
-    notes.push('--require-main 已指定，但主程序补丁尚未接入 → 退出码 1');
+    notes.push('--require-main 已指定，但主程序未能成功打补丁 → 退出码 1');
   }
   if (pendingRequired && !requireMain) {
-    notes.push('主程序待接入，但其余项目已处理；按约定退出码仍为 0');
+    notes.push('主程序未打补丁（版本不支持或补丁失败），其余项目已处理；按约定退出码仍为 0');
   }
 
   return {

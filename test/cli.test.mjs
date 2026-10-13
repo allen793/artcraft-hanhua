@@ -74,7 +74,7 @@ test('cli：hanhua --yes 真正执行并打印中文报告', async () => {
     assert.equal(code, EXIT.OK, stderr.text);
     assert.match(stdout.text, /一键汉化/);
     assert.match(stdout.text, /完成 4/);
-    assert.match(stdout.text, /待接入/);
+    assert.match(stdout.text, /待处理/);
     assert.equal(readText(path.join(world.roaming, 'DesignCraft', 'ui.json')).includes('"language": "zh"'), true);
   } finally {
     world.cleanup();
