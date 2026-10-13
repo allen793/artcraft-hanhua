@@ -1,0 +1,40 @@
+# https://editorconfig.org
+#
+# 全仓库统一为 UTF-8 无 BOM。这一点对本项目尤其重要：
+# 带 BOM 的语言配置文件会让部分 ArtCraft 组件解析失败或回退英文界面。
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.md]
+# Markdown 中的行尾空格可能是有意的（换行），不做裁剪。
+trim_trailing_whitespace = false
+
+[*.{yml,yaml}]
+indent_size = 2
+
+[*.json]
+indent_size = 2
+
+[*.mjs]
+indent_size = 2
+
+[*.{ps1,psm1}]
+end_of_line = crlf
+indent_size = 4
+
+[*.{bat,cmd}]
+end_of_line = crlf
+indent_size = 4
+
+[Makefile]
+indent_style = tab
+
+[LICENSE]
+insert_final_newline = true

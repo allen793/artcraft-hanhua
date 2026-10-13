@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 讨论 / Discussions
+    url: https://github.com/allen793/artcraft-hanhua/discussions
+    about: 使用问题、使用经验分享与开放式想法，请走 Discussions，不要开 Issue。
+  - name: 📖 支持矩阵与实测状态 / Supported apps
+    url: https://github.com/allen793/artcraft-hanhua/blob/main/docs/SUPPORTED-APPS.md
+    about: 提交"某个程序没有中文"之前，先在这里确认它的实测状态与原因。
+  - name: 📘 贡献指南 / Contributing guide
+    url: https://github.com/allen793/artcraft-hanhua/blob/main/CONTRIBUTING.md
+    about: 新增一个程序的语言支持前，请先按指南完成实测并准备证据。
+  - name: 🔐 安全漏洞 / Security
+    url: https://github.com/allen793/artcraft-hanhua/security/advisories/new
+    about: 安全问题请走私密报告，不要公开提交 Issue。详见 SECURITY.md。

@@ -1,0 +1,2774 @@
+id	english	chinese
+0001	Delete	删除
+0002	Cancel	取消
+0003	2 min.	2 分钟
+0004	Color	颜色
+0005	Home	首页
+0006	Upload	上传
+0007	Resolution	分辨率
+0008	Edit	编辑
+0009	Audio	音频
+0010	Timeline	时间线
+0011	Video	视频
+0012	Text	文本
+0013	Reference	参考
+0014	Pick from library	从素材库选择
+0015	Auto	自动
+0016	Square	方形
+0017	Retry	重试
+0018	Model	模型
+0019	Image	图片
+0020	Transform	变换
+0021	History	历史
+0022	Rating	评分
+0023	Next	下一步
+0024	Aspect Ratio	宽高比
+0025	Duration	时长
+0026	Rotation	旋转
+0027	Animation	动画
+0028	High quality model	高质量模型
+0029	Landscape	横向
+0030	Portrait	纵向
+0031	Fast video model	快速视频模型
+0032	Scene	场景
+0033	Download	下载
+0034	Generation failed	生成失败
+0035	Save	保存
+0036	Scale	缩放
+0037	Record	录制
+0038	Pick from Library	从素材库选择
+0039	None	无
+0040	10 sec.	10 秒
+0041	Mesh	网格
+0042	All uploads failed.	所有上传均失败。
+0043	Remove	移除
+0044	Tags	标签
+0045	Copy	复制
+0046	Images	图片
+0047	Upload Image	上传图片
+0048	From library	从素材库
+0049	Undo	撤销
+0050	Failed	失败
+0051	Default text	默认文本
+0052	Width	宽度
+0053	Note	备注
+0054	Unknown	未知
+0055	Close	关闭
+0056	20 sec.	20 秒
+0057	Preview	预览
+0058	15 sec.	15 秒
+0059	Fast and high-quality model	快速且高质量的模型
+0060	Image Generation	图片生成
+0061	Prompt	提示词
+0062	Size	尺寸
+0063	Folders	文件夹
+0064	New folder	新建文件夹
+0065	Clear all	全部清除
+0066	Name	名称
+0067	Redo	重做
+0068	Saved	已保存
+0069	No active project	无活动项目
+0070	Effects	特效
+0071	Please try again	请重试
+0072	Select	选择
+0073	Provider	服务商
+0074	Wide	宽
+0075	Tall	高
+0076	Beeble SwitchX	Beeble SwitchX
+0077	Light	浅色
+0078	Linear	线性
+0079	Content	内容
+0080	Volume	音量
+0081	Edit Image	编辑图片
+0082	Video Generation	视频生成
+0083	Select Image	选择图片
+0084	My Library	我的素材库
+0085	Create	创建
+0086	Character	角色
+0087	3D Stage	3D 舞台
+0088	Image Editor	图片编辑器
+0089	Upload images	上传图片
+0090	Done	完成
+0091	Generate	生成
+0092	Describe what you want to happen in the video...	描述你希望视频中发生的内容……
+0093	Normal	正常
+0094	Speed	速度
+0095	Image to 3D World	图片转 3D 世界
+0096	All	全部
+0097	Create Image	创建图片
+0098	Create Video	创建视频
+0099	Create Audio	创建音频
+0100	Fill	填充
+0101	Unknown error	未知错误
+0102	Clear	清除
+0103	Transition	转场
+0104	Left	左
+0105	Right	右
+0106	Fast instructive editing	快速指令式编辑
+0107	25 sec.	25 秒
+0108	Fast	快速
+0109	High quality video model	高质量视频模型
+0110	Points	点数
+0111	Curve	曲线
+0112	Custom	自定义
+0113	Font	字体
+0114	Preview should be available	预览应当可用
+0115	Retry Failed	重试失败的项
+0116	Recreate	重新创建
+0117	Make Video	制作视频
+0118	Text prompt violates content policy	文本提示词违反内容政策
+0119	Content violates content policy	内容违反内容政策
+0120	Generated content flagged by content policy	生成的内容被内容政策标记
+0121	Rename	重命名
+0122	Select Video	选择视频
+0123	Reopen after adding	添加后重新打开
+0124	No folders yet	还没有文件夹
+0125	Log in	登录
+0126	Select Model	选择模型
+0127	You Own ArtCraft Forever	你永久拥有 ArtCraft
+0128	Aspect ratio	宽高比
+0129	Fit	适应
+0130	First frame	首帧
+0131	Last frame	尾帧
+0132	Quality	质量
+0133	Angles	角度
+0134	Rotate	旋转
+0135	Reset all	全部重置
+0136	Lock	锁定
+0137	Unlock	解锁
+0138	Grid	网格
+0139	Animations	动画
+0140	Upload an Image	上传图片
+0141	Reset	重置
+0142	Settings	设置
+0143	Moodboard	情绪板
+0144	Generated Model	生成的模型
+0145	Clear completed	清除已完成的项
+0146	Clear failed	清除失败的项
+0147	Upload failed	上传失败
+0148	Center	居中
+0149	Add mask	添加蒙版
+0150	New section	新建分区
+0151	Use as reference	用作参考
+0152	Add color	添加颜色
+0153	Present	展示
+0154	Open	打开
+0155	Try again	重试
+0156	Fast af	极速
+0157	45 sec.	45 秒
+0158	35 sec.	35 秒
+0159	Smart video model	智能视频模型
+0160	Slow, high-quality model	较慢的高质量模型
+0161	Relight, change location, swap objects.	重新打光、更换场景、替换物体。
+0162	Unexpected error	意外错误
+0163	Add tag	添加标签
+0164	Delete this media?	删除此媒体？
+0165	This will permanently remove the media from your library. This action cannot be undone.	此操作将从你的素材库中永久移除该媒体，且无法撤销。
+0166	Image not available	图片不可用
+0167	See all	查看全部
+0168	Reference preview	参考预览
+0169	Move	移动
+0170	+ Add	+ 添加
+0171	New Folder	新建文件夹
+0172	Click	点击
+0173	All Assets	全部素材
+0174	Splat	泼溅
+0175	Uploaded	已上传
+0176	Refresh list	刷新列表
+0177	Untitled New Scene	未命名新场景
+0178	generic logo	通用标志
+0179	Tutorials	教程
+0180	News & Updates	新闻与更新
+0181	Back	返回
+0182	Uploading preview	正在上传预览
+0183	Number of generations	生成次数
+0184	Add Image	添加图片
+0185	Describe your image...	描述你的图片……
+0186	Characters	角色
+0187	View full size	查看完整尺寸
+0188	Character name	角色名称
+0189	Choose from Library	从素材库选择
+0190	Replace	替换
+0191	Omni Reference	全能参考
+0192	Input Mode	输入模式
+0193	Bitrate	比特率
+0194	Output format	输出格式
+0195	Medium	中等
+0196	Describe what you want in the image...	描述你想要的图片内容……
+0197	Tuning	微调
+0198	Instrumental	纯音乐
+0199	Describe the music or sound you want...	描述你想要的音乐或声音……
+0200	Credits	积分
+0201	Go to start	跳到开头
+0202	Go to end	跳到结尾
+0203	Preset	预设
+0204	Revert to preset default	恢复为预设默认值
+0205	Keyboard shortcuts	键盘快捷键
+0206	Presets	预设
+0207	Upload animation	上传动画
+0208	Skybox	天空盒
+0209	Add an asset to scene	向场景添加素材
+0210	Upload a 3D Model	上传 3D 模型
+0211	Please enter a name for your scene	请输入场景名称
+0212	Shortcuts	快捷键
+0213	Pop	弹出
+0214	Experimental	实验性
+0215	Author's generation	作者的生成作品
+0216	Custom format	自定义格式
+0217	Auto Download	自动下载
+0218	Ask location before download	下载前询问保存位置
+0219	Username	用户名
+0220	Buy credits	购买积分
+0221	Hue	色相
+0222	Alpha	透明度
+0223	Mask	蒙版
+0224	Eraser	橡皮擦
+0225	Reset Canvas	重置画布
+0226	Duplicate	创建副本
+0227	Reset All	全部重置
+0228	Easy edits. Great for graphic design.	轻松编辑，非常适合平面设计。
+0229	Precision control. Great for AI film.	精准控制，非常适合 AI 影片。
+0230	Image to 3D Object	图片转 3D 物体
+0231	Video Frame Extractor	视频帧提取器
+0232	Video Watermark Remover	视频水印去除
+0233	Image Watermark Remover	图片水印去除
+0234	Remove Background	移除背景
+0235	Background Change	更换背景
+0236	Stroke color	描边颜色
+0237	Clear stale	清除过期项
+0238	Image to 3D	图片转 3D
+0239	Task Queue	任务队列
+0240	In Progress	进行中
+0241	Completed	已完成
+0242	Canvas	画布
+0243	Switch Video	切换视频
+0244	First Frame	首帧
+0245	Last Frame	尾帧
+0246	Video Information	视频信息
+0247	Failed to download file	下载文件失败
+0248	Source	来源
+0249	Position X	X 位置
+0250	Position Y	Y 位置
+0251	Scale X	X 缩放
+0252	Scale Y	Y 缩放
+0253	Opacity	不透明度
+0254	Blur	模糊
+0255	Inside	内部
+0256	Outside	外部
+0257	Corner radius	圆角半径
+0258	Expected percentage value for saturation and lightness in HSL	HSL 中饱和度和亮度需使用百分比值
+0259	Expected percentage value for saturation and lightness in HSLA	HSLA 中饱和度和亮度需使用百分比值
+0260	Feather	羽化
+0261	Height	高度
+0262	Split	分割
+0263	Shapes	形状
+0264	Project is empty	项目为空
+0265	Unknown export error	未知导出错误
+0266	Captions	字幕
+0267	Assets	素材
+0268	Reset to default	重置为默认值
+0269	Failed to save sound	保存声音失败
+0270	Failed to remove sound	移除声音失败
+0271	Failed to clear saved sounds	清除已保存的声音失败
+0272	Masks	蒙版
+0273	Stroke	描边
+0274	The selected keyframe is not editable as a graph segment.	所选的 keyframe 无法作为曲线段编辑。
+0275	Selected properties do not share a graph-editable channel.	所选属性没有共享的可曲线编辑通道。
+0276	Select a keyframe to edit its curve.	选择一个 keyframe 以编辑其曲线。
+0277	Export	导出
+0278	Disk save failed	保存到磁盘失败
+0279	Welcome to the editor	欢迎使用编辑器
+0280	Ungrouped	未分组
+0281	Add an image	添加图片
+0282	Switch board	切换画板
+0283	Save board	保存画板
+0284	Could not obtain session tokens.	无法获取会话令牌。
+0285	Failed to Get Media Token	获取媒体令牌失败
+0286	Stunning style and quality	惊艳的风格与质量
+0287	Higher quality model	更高质量的模型
+0288	Fast, but lower quality	速度快，但质量较低
+0289	Fastest image gen, but lowest quality	最快的图片生成，但质量最低
+0290	Powerful instructive editing	强大的指令式编辑
+0291	Slow, but super smart	速度慢，但非常智能
+0292	Faster, improved	更快、更完善
+0293	Smart with great text support	智能且出色的文字支持
+0294	Precise edits, keeps subjects intact	精准编辑，保持主体完整
+0295	Premium detail, slower	高级细节，速度较慢
+0296	Angle manipulation with optional prompt	角度操控，可选提示词
+0297	Angle manipulation	角度操控
+0298	Fast inpainting	快速修复
+0299	Fast inpainting, low quality	快速修复，质量较低
+0300	Fastest video model	最快的视频模型
+0301	Standard quality video model	标准质量视频模型
+0302	Fast and high quality	快速且高质量
+0303	Fast generation, good for quick drafts	生成快速，适合快速草图
+0304	High quality, best for final renders	高质量，最适合最终渲染
+0305	Highest quality 3D mesh generation	最高质量的 3D 网格生成
+0306	Faster, lower fidelity 3D mesh	更快，3D 网格精度较低
+0307	Incredible style and quality	不可思议的风格与质量
+0308	Slow, ultra instructive model	速度慢、指令理解超强的模型
+0309	Incredibly instructive editing	指令理解超强的编辑
+0310	Extremely powerful	极其强大
+0311	Good quality model	质量良好的模型
+0312	Failed to generate snapshot.	生成快照失败。
+0313	File type/size error, Hovered on types!	文件类型/大小错误，请悬停在类型上查看！
+0314	Upload disabled	上传已禁用
+0315	Uploaded Successfully!	上传成功！
+0316	Upload a file	上传文件
+0317	Change File	更换文件
+0318	Change Files	更换文件
+0319	Sorry, Preview is not available to VMD files yet	抱歉，VMD 文件暂不支持预览
+0320	Unknown file type for loader	加载器无法识别的文件类型
+0321	To use this feature, please connect your OpenAI account. This allows us to leverage your existing subscription.	要使用此功能，请连接你的 OpenAI 账号。这样我们就能利用你现有的订阅。
+0322	Please log in or sign up to ArtCraft to proceed. This will allow you to save your work and access all features.	请登录或注册 ArtCraft 以继续。这样可以保存你的作品并使用全部功能。
+0323	Please complete the required action.	请完成所需的操作。
+0324	Author	作者
+0325	No prompt	无提示词
+0326	Reference Media	参考媒体
+0327	Remove BG	移除背景
+0328	Make 3D	生成 3D
+0329	Make 3D World	生成 3D 世界
+0330	Add to Scene	添加到场景
+0331	Information	信息
+0332	Model creator logo	模型作者标志
+0333	Created	已创建
+0334	Move here	移动到这里
+0335	Add a copy	添加副本
+0336	Custom color	自定义颜色
+0337	Edit image	编辑图片
+0338	Add to Folder	添加到文件夹
+0339	Remove from folder	从文件夹移除
+0340	Drag	拖动
+0341	 to view	以查看
+0342	Grid view	网格视图
+0343	List view	列表视图
+0344	Play video previews	播放视频预览
+0345	Still thumbnails	静态缩略图
+0346	New subfolder	新建子文件夹
+0347	Delete folder	删除文件夹
+0348	Show uploads	显示上传内容
+0349	Toggle image fit	切换图片适应方式
+0350	All tags	全部标签
+0351	No files carry this tag	没有文件带有此标签
+0352	Add tags to media from the item view's Tags section.	请从素材详情视图的“标签”区域为媒体添加标签。
+0353	No tags yet	还没有标签
+0354	Create a folder to organize your media.	创建文件夹来整理你的媒体。
+0355	This folder is empty	此文件夹为空
+0356	Log in to browse and use your library.	登录以浏览和使用你的素材库。
+0357	Failed to load gallery.	加载图库失败。
+0358	Copy error	复制错误
+0359	No items yet	还没有内容
+0360	No more items	没有更多内容
+0361	Rename folder	重命名文件夹
+0362	Add to folder	添加到文件夹
+0363	Create new folder	创建新文件夹
+0364	Deselect All	取消全选
+0365	Use selected	使用所选项
+0366	Upload as Character	上传为角色
+0367	Upload as Animation	上传为动画
+0368	Could not upload image plane!	无法上传图片平面！
+0369	Main View	主视图
+0370	Camera 2	相机 2
+0371	Something went wrong.	出了点问题。
+0372	Audio Support	音频支持
+0373	Select Provider	选择服务商
+0374	Turn Images into 3D Objects	将图片变成 3D 物体
+0375	Image Editor Basics	图片编辑器基础
+0376	3D Stage & Posing	3D 舞台与摆姿
+0377	No news yet.	暂无新闻。
+0378	Discord	Discord
+0379	ArtCraft Studios	ArtCraft Studios
+0380	Help	帮助
+0381	No tutorials yet.	暂无教程。
+0382	Free daily generations	每日免费生成次数
+0383	Limited access to ArtCraft tools	ArtCraft 工具的有限使用权
+0384	~10 GPT-Image-1 images	约 10 张 GPT-Image-1 图片
+0385	~1 minute Kling video	约 1 分钟 Kling 视频
+0386	1,000 credits / month	每月 1,000 积分
+0387	~250 Nano Banana images	约 250 张 Nano Banana 图片
+0388	~67 Nano Banana Pro images	约 67 张 Nano Banana Pro 图片
+0389	~33 Nano Banana Pro 4K images	约 33 张 Nano Banana Pro 4K 图片
+0390	~200 GPT-Image-1.5 images	约 200 张 GPT-Image-1.5 图片
+0391	~63 seconds Seedance 2.0 video	约 63 秒 Seedance 2.0 视频
+0392	~45 seconds Kling 3.0 Pro video	约 45 秒 Kling 3.0 Pro 视频
+0393	3,750 credits / month	每月 3,750 积分
+0394	~938 Nano Banana images	约 938 张 Nano Banana 图片
+0395	~250 Nano Banana Pro images	约 250 张 Nano Banana Pro 图片
+0396	~125 Nano Banana Pro 4K images	约 125 张 Nano Banana Pro 4K 图片
+0397	~750 GPT-Image-1.5 images	约 750 张 GPT-Image-1.5 图片
+0398	~234 seconds Seedance 2.0 video	约 234 秒 Seedance 2.0 视频
+0399	~167 seconds Kling 3.0 Pro video	约 167 秒 Kling 3.0 Pro 视频
+0400	6,600 credits / month	每月 6,600 积分
+0401	~1,650 Nano Banana images	约 1,650 张 Nano Banana 图片
+0402	~440 Nano Banana Pro images	约 440 张 Nano Banana Pro 图片
+0403	~220 Nano Banana Pro 4K images	约 220 张 Nano Banana Pro 4K 图片
+0404	~1,320 GPT-Image-1.5 images	约 1,320 张 GPT-Image-1.5 图片
+0405	~413 seconds Seedance 2.0 video	约 413 秒 Seedance 2.0 视频
+0406	~295 seconds Kling 3.0 Pro video	约 295 秒 Kling 3.0 Pro 视频
+0407	Yearly	按年
+0408	Monthly	按月
+0409	Subscribe to ArtCraft	订阅 ArtCraft
+0410	Support ArtCraft development and get generation credits without having to add 3rd party services. We directly invest your support into building a powerful tool you own forever.	支持 ArtCraft 的开发，无需接入第三方服务即可获得生成积分。我们会把你的支持直接投入到打造一款你永久拥有的强大工具中。
+0411	Update your payment method	更新付款方式
+0412	Manage your subscription	管理订阅
+0413	One-time credit packs. No subscription required.	一次性积分包，无需订阅。
+0414	Secure checkout via Stripe.	通过 Stripe 安全结账。
+0415	How video ends	视频如何结束
+0416	Ending Frame	结束帧
+0417	Clear all?	全部清除？
+0418	This clears the prompt and also removes the attached references.	这会清空提示词，同时移除已附加的参考素材。
+0419	No. of images	图片数量
+0420	Prompt focus mode	提示词专注模式
+0421	Focus mode	专注模式
+0422	Fit canvas to screen	画布适应屏幕
+0423	Swap frames	交换帧
+0424	No. of videos	视频数量
+0425	Delete character?	删除角色？
+0426	Create New	新建
+0427	Edit Character	编辑角色
+0428	New Character	新建角色
+0429	Upload reference image	上传参考图
+0430	Click or drag an image here	点击或拖入图片
+0431	Image reference	图片参考
+0432	Video reference	视频参考
+0433	Audio reference	音频参考
+0434	References	参考素材
+0435	Keyframe	关键帧
+0436	This model can't generate from text alone - add a starting frame to animate your prompt.	该模型无法仅凭文本生成——请添加起始帧来让提示词动起来。
+0437	Add a starting image before generating	生成前请先添加起始图片
+0438	Sample rate	采样率
+0439	Pitch	音高
+0440	C Major	C 大调
+0441	C Minor	C 小调
+0442	D Major	D 大调
+0443	D Minor	D 小调
+0444	F Major	F 大调
+0445	F Minor	F 小调
+0446	G Major	G 大调
+0447	G Minor	G 小调
+0448	A Major	A 大调
+0449	A Minor	A 小调
+0450	B Major	B 大调
+0451	B Minor	B 小调
+0452	Beat & Key	节拍与调性
+0453	Musical key	音乐调性
+0454	Keep lyrics	保留歌词
+0455	Loop	循环
+0456	Audio track required	需要音频轨
+0457	Videos	视频
+0458	Worlds	世界
+0459	Items	物品
+0460	Estimated Price	预估价格
+0461	Credit Costs not yet available for this model	该模型的积分消耗暂不可用
+0462	Cost Calculator	费用计算器
+0463	Costs	费用
+0464	Gamer	Gamer
+0465	Unbound	Unbound
+0466	Reset all customizations	重置所有自定义设置
+0467	open shortcut settings	打开快捷键设置
+0468	Confirm?	确认？
+0469	Preset default	预设默认
+0470	Rebind anyway	仍要重新绑定
+0471	Press Esc or click outside to close	按 Esc 或点击外部关闭
+0472	Location	位置
+0473	You do not have anything here.	这里还没有内容。
+0474	Please upload some assets.	请上传一些素材。
+0475	Error fetching featured animations	获取精选动画失败
+0476	Error fetching your animations	获取你的动画失败
+0477	No uploaded animations yet.	还没有上传的动画。
+0478	Upload a Mixamo GLB or FBX to add your own clips.	上传 Mixamo GLB 或 FBX 文件即可添加你自己的动画片段。
+0479	Search animations	搜索动画
+0480	Upload Animation	上传动画
+0481	Error fetching user characters	获取用户角色失败
+0482	Error fetching user objects	获取用户物体失败
+0483	Error fetching user sets	获取用户场景失败
+0484	Error fetching user creatures	获取用户生物失败
+0485	Error fetching user image planes	获取用户图片平面失败
+0486	Error fetching featured characters	获取精选角色失败
+0487	Error fetching featured objects	获取精选物体失败
+0488	Error fetching featured sets	获取精选场景失败
+0489	Error fetching featured creatures	获取精选生物失败
+0490	Error fetching featured image planes	获取精选图片平面失败
+0491	Objects	物体
+0492	Memes	表情包
+0493	Sets	场景
+0494	Creatures	生物
+0495	ArtCraft Presets	ArtCraft 预设
+0496	Search	搜索
+0497	Upload 3D Asset	上传 3D 素材
+0498	Upload 3D Model	上传 3D 模型
+0499	Upload Splat	上传 Splat
+0500	Create 3D model from image	从图片创建 3D 模型
+0501	Scale is always in local space	缩放始终基于局部空间
+0502	Upload an spz file	上传 spz 文件
+0503	Build	构建
+0504	My Scenes	我的场景
+0505	Loading scenes...	正在加载场景……
+0506	You have no saved scenes yet.	你还没有保存的场景。
+0507	Save Scene	保存场景
+0508	File	文件
+0509	New scene	新建场景
+0510	Create New Scene	创建新场景
+0511	Make sure you've saved your scene. Unsaved changes will be lost. Continue?	请确认已保存场景。未保存的更改将丢失。是否继续？
+0512	Create new scene	创建新场景
+0513	Load my scene	加载我的场景
+0514	Ctrl+O	Ctrl+O
+0515	Load a Saved Scene	加载已保存的场景
+0516	Load	加载
+0517	Save scene as copy	场景另存为副本
+0518	Reset to original	重置为原始版本
+0519	Reset scene to original?	将场景重置为原始版本？
+0520	This will discard every change you've made in this session and restore the scene to the version the author shared. This cannot be undone.	这会丢弃你在本次会话中所做的全部更改，并把场景恢复为作者分享的版本。此操作无法撤销。
+0521	Outliner	大纲
+0522	View from camera	从相机视角查看
+0523	Enter Pose Mode	进入姿态模式
+0524	Add an animation to this character	为该角色添加动画
+0525	Add Animation	添加动画
+0526	Expand timeline	展开时间线
+0527	Edit easing	编辑缓动
+0528	Add keyframe at playhead	在播放头处添加关键帧
+0529	Add one of this object's baked animations	添加该物体的一个烘焙动画
+0530	Trim clip length	裁剪片段长度
+0531	Out	淡出
+0532	Collapse timeline	折叠时间线
+0533	Add objects to the scene to start animating.	向场景中添加物体即可开始制作动画。
+0534	Remove transition	移除转场
+0535	Each diamond stores an object's full position, rotation and scale at that moment. Tap a diamond to jump to it.	每个菱形记录物体在该时刻的完整位置、旋转和缩放。点击菱形可跳转到该时刻。
+0536	Upload failed. Please retry.	上传失败，请重试。
+0537	Captured frame	已捕获帧
+0538	Camera View	相机视角
+0539	Toggle Letterbox	切换黑边
+0540	Media Audio	媒体音频
+0541	Sci-Fi Menu Beep 1	科幻菜单提示音 1
+0542	Sci-Fi Menu Beep 2	科幻菜单提示音 2
+0543	Sci-Fi Menu Select	科幻菜单选择
+0544	Dialog Done	对话完成
+0545	Error Chirp	错误提示音
+0546	Spike Throw	尖刺投掷
+0547	Shell Kick	外壳撞击
+0548	Wrong	错误
+0549	Special Flower	特殊花朵
+0550	Crumble	碎裂
+0551	Ghost	幽灵
+0552	Special Alert	特殊警报
+0553	Sci-Fi Shrill Alert	科幻尖啸警报
+0554	Dialog Next	对话下一句
+0555	Sci-Fi Menu Open	科幻菜单打开
+0556	Sci-Fi Menu Close	科幻菜单关闭
+0557	Correct	正确
+0558	Flower	花朵
+0559	Trash	垃圾桶
+0560	Enter to generate	按回车生成
+0561	Group models by family	按模型系列分组
+0562	Keep shortcut cheatsheet open	保持快捷键速查表打开
+0563	ArtCraft convention	ArtCraft 大会
+0564	Default Download Directory	默认下载目录
+0565	This is where downloads are placed after downloading. The current path is:	下载完成后文件会放到这里。当前路径为：
+0566	Downloads to your system the minute generations complete	生成一完成就下载到你的系统
+0567	When on, a system file picker appears every time you download from the lightbox or anywhere in the app, letting you choose the save location for that file. When off, downloads go straight to the default download directory above.	开启后，每次从灯箱或应用任意位置下载时都会弹出系统文件选择器，让你为该文件选择保存位置。关闭后，文件会直接保存到上方的默认下载目录。
+0568	Preferred download naming scheme	首选的下载命名方式
+0569	Save format	保存格式
+0570	Changes apply after you click Save format.	更改会在你点击“保存格式”后生效。
+0571	Play Notification Sounds for Events?	为事件播放提示音？
+0572	Delete File Sound	删除文件音效
+0573	Enqueue Success Sound	加入队列成功音效
+0574	Enqueue Failure Sound	加入队列失败音效
+0575	Generation Success Sound	生成成功音效
+0576	Generation Failure Sound	生成失败音效
+0577	Unable to open website login. Try again or scan the QR code.	无法打开网站登录。请重试或扫描二维码。
+0578	Scan with your phone or approve in your browser.	用手机扫码，或在浏览器中批准。
+0579	Scan to approve desktop login	扫码批准桌面端登录
+0580	Open website	打开网站
+0581	Login with Website	使用网站登录
+0582	Scan to Login	扫码登录
+0583	Use Google or any account already signed in on the website.	使用 Google 或网站上已登录的任意账号。
+0584	You're ready to create.	你已准备好开始创作。
+0585	Email	邮箱
+0586	Email or Username	邮箱或用户名
+0587	you@example.com or username	you@example.com 或用户名
+0588	Password	密码
+0589	Min. 8 characters	至少 8 个字符
+0590	Confirm Password	确认密码
+0591	Unable to check your account. Please sign in again.	无法检查你的账号，请重新登录。
+0592	An unexpected error occurred. Please try again.	发生了意外错误，请重试。
+0593	Thank you for signing in!	感谢你登录！
+0594	You're all set to start creating amazing content.	一切就绪，开始创作精彩内容吧。
+0595	Get Started	开始使用
+0596	Join Our Community	加入我们的社区
+0597	Connect with other creators, share your work, and get the latest updates in our Discord community.	在我们的 Discord 社区中与其他创作者交流、分享作品并获取最新动态。
+0598	Skip for now	暂时跳过
+0599	Join Discord	加入 Discord
+0600	One of the cheapest	最便宜的方案之一
+0601	Seedance 2.0 Video Generation	Seedance 2.0 视频生成
+0602	Generate jaw-dropping AI videos with Seedance 2.0.	使用 Seedance 2.0 生成令人惊叹的 AI 视频。
+0603	Artcraft Version	Artcraft 版本
+0604	Artcraft Host	Artcraft 主机
+0605	Git Commit ID	Git 提交 ID
+0606	Git Commit Timestamp	Git 提交时间戳
+0607	Build Timestamp	构建时间戳
+0608	Operating System	操作系统
+0609	Artcraft Data Directory	Artcraft 数据目录
+0610	Downloads Directory	下载目录
+0611	Drag and drop to reorder model provider priority. Higher items will be tried first. You can use this to control favorite services and spending.	拖放可调整模型提供商的优先级顺序。排在前面的会优先尝试。你可以用它来控制偏好的服务和支出。
+0612	Storyboard page	分镜页面
+0613	Show the Storyboard page in the apps menu. In-development; expect rough edges.	在应用菜单中显示分镜页面。尚在开发中，可能会有瑕疵。
+0614	Disable Storyboard page?	禁用分镜页面？
+0615	The Storyboard page will be reset and any unsaved changes will be lost.	分镜页面将被重置，未保存的更改将会丢失。
+0616	Disable	禁用
+0617	Support ArtCraft	支持 ArtCraft
+0618	You do not have to purchase anything from us to use ArtCraft, but you can support ArtCraft development by subscribing or buying credits.	使用 ArtCraft 无需向我们购买任何东西，但你可以通过订阅或购买积分来支持 ArtCraft 的开发。
+0619	Current ArtCraft Plan	当前 ArtCraft 方案
+0620	Your ArtCraft credit balance	你的 ArtCraft 积分余额
+0621	Cancel plan	取消方案
+0622	Gray	灰色
+0623	Black	黑色
+0624	Aurora	极光
+0625	Sunset	日落
+0626	Themes	主题
+0627	Choose your preferred look. Applies instantly.	选择你偏好的外观，立即生效。
+0628	General	通用
+0629	Downloads	下载
+0630	Accounts	账号
+0631	Plan & Credits	方案与积分
+0632	Appearance	外观
+0633	Keybinds	快捷键
+0634	Alerts	提醒
+0635	About	关于
+0636	Reset experimental settings?	重置实验性设置？
+0637	This will hide the Experimental section and clear any experimental settings. You can unlock it again from the About page.	这会隐藏“实验性”板块并清除所有实验性设置。你可以随时在“关于”页面重新解锁。
+0638	Brush Size	画笔大小
+0639	Eraser Size	橡皮擦大小
+0640	Select & Move	选择与移动
+0641	Add Shape	添加形状
+0642	Brush	画笔
+0643	Canvas Background	画布背景
+0644	Are you sure you want to reset the canvas? This will clear all your work and cannot be undone.	确定要重置画布吗？这会清空你的全部工作，且无法撤销。
+0645	Remove background	移除背景
+0646	Bring to front	置于顶层
+0647	Bring forward	上移一层
+0648	Send backward	下移一层
+0649	Send to back	置于底层
+0650	Erase	擦除
+0651	Size 	大小 
+0652	Remove pending generation	移除待处理的生成
+0653	Stop showing this generation in the history stack? This action cannot be undone.	不再在历史记录中显示这次生成？此操作无法撤销。
+0654	The image may still finish in the background and will be available in your library when it does.	该图片仍可能在后台完成，完成后会出现在你的素材库中。
+0655	Remove Image	移除图片
+0656	Are you sure you want to remove this image from the history stack? This action cannot be undone.	确定要从历史记录中移除这张图片吗？此操作无法撤销。
+0657	Images removed here can still be found in the library.	在此移除的图片仍可在素材库中找到。
+0658	Are you sure you want to reset all? This will clear all your work and cannot be undone.	确定要全部重置吗？这会清空你的全部工作，且无法撤销。
+0659	Edit 3D	编辑 3D
+0660	Choose Canvas Size	选择画布尺寸
+0661	Create Canvas	创建画布
+0662	Generate AI images	生成 AI 图片
+0663	Create video from images	用图片创建视频
+0664	Generate music and sound effects	生成音乐和音效
+0665	Convert references into textured assets	将参考素材转换为带纹理的资产
+0666	Turn mood boards into explorable worlds	把情绪板变成可探索的世界
+0667	Change with inpainting	通过局部重绘修改
+0668	Extract frames from video	从视频中提取帧
+0669	Remove watermarks from videos	去除视频水印
+0670	Remove watermarks from images	去除图片水印
+0671	Remove backgrounds from images	去除图片背景
+0672	Generate new camera angles from a single photo	从单张照片生成新的相机角度
+0673	Storyboard	分镜
+0674	Plan your shots with a visual storyboard	用可视化分镜规划你的镜头
+0675	Collect references and steer generations from a board	在画板上收集参考素材并引导生成
+0676	Swap the backdrop of a video using a reference image	使用参考图替换视频的背景
+0677	Video Editor	视频编辑器
+0678	Edit and assemble videos on a timeline	在时间线上剪辑和组合视频
+0679	No shots yet	还没有镜头
+0680	Add your first shot to get started	添加第一个镜头开始吧
+0681	Add your first shot	添加你的第一个镜头
+0682	Title	标题
+0683	Shot title	镜头标题
+0684	Dialogue	对白
+0685	Character dialogue...	角色对白……
+0686	Action	动作
+0687	Notes	备注
+0688	Director notes...	导演备注……
+0689	Sketch	草图
+0690	Delete Shot	删除镜头
+0691	Select a shot	选择一个镜头
+0692	Click to upload an image	点击上传图片
+0693	Clear canvas	清空画布
+0694	Done sketching	完成草图
+0695	Add shot	添加镜头
+0696	Drag to resize duration	拖动以调整时长
+0697	Generated World	生成的世界
+0698	Seedance 2.0 is in Early Alpha. Generations may be slow and may experience outages.	Seedance 2.0 处于早期 Alpha 阶段。生成可能较慢，也可能出现服务中断。
+0699	Clear completed tasks?	清除已完成的任务？
+0700	This will remove all completed tasks from the task queue.	这会从任务队列中移除所有已完成的任务。
+0701	Clear stale tasks?	清除滞留任务？
+0702	This will remove all stale/stuck in-progress tasks from the queue.	这会从队列中移除所有滞留/卡住进行中的任务。
+0703	Clear failed tasks?	清除失败任务？
+0704	This will remove all failed/cancelled tasks from the queue.	这会从队列中移除所有失败/已取消的任务。
+0705	Remove all tasks?	移除所有任务？
+0706	Nuke all	全部清除
+0707	Show all	显示全部
+0708	Explore all apps and miniapps	浏览所有应用和小程序
+0709	Your credit balance	你的积分余额
+0710	See details	查看详情
+0711	Support	支持
+0712	Upgrade	升级
+0713	Every tool in your toolbox - pick one and start creating.	你工具箱里的每一件工具——挑一个开始创作吧。
+0714	Click to upload or drag and drop an image here to edit	点击上传或将图片拖到此处进行编辑
+0715	Blank Canvas	空白画布
+0716	Add a prompt, then generate	添加提示词，然后生成
+0717	Choose an image, add a prompt, then generate	选择一张图片，添加提示词，然后生成
+0718	Describe a song, a sound, or a sample	描述一首歌、一个音效或一段采样
+0719	Start Time	开始时间
+0720	Adjust via the yellow marker on the video	通过视频上的黄色标记调整
+0721	Number of Frames	帧数
+0722	Extracting multiple frames helps capture a sharp, non-blurred frame.	提取多帧有助于捕捉到清晰、不模糊的画面。
+0723	Turn into Video	转换为视频
+0724	Extract Video Frames	提取视频帧
+0725	Capture perfect moments from your videos. Select frames at precise timestamps and save them as images.	从视频中捕捉完美瞬间。按精确时间点选择帧并保存为图片。
+0726	Remove Video Watermark	去除视频水印
+0727	Clean up your videos by removing unwanted watermarks. Upload your video and let AI do the magic.	上传视频，让 AI 帮你移除不需要的水印，还视频以干净画面。
+0728	Switch Image	更换图片
+0729	Selected pic	已选图片
+0730	Remove Image Watermark	去除图片水印
+0731	Erase watermarks from your images seamlessly. Upload your image and get a clean, watermark-free result.	轻松擦除图片中的水印。上传图片，获得干净无水印的结果。
+0732	Upload image	上传图片
+0733	Describe any object you want to generate from scratch...	描述你想从零生成的任意物体……
+0734	Add Images	添加图片
+0735	Open in 3D Editor	在 3D 编辑器中打开
+0736	Clear Session	清除会话
+0737	Generate 3D Object	生成 3D 物体
+0738	Transform your image into a 3D object with textures.	将图片转换为带纹理的 3D 物体。
+0739	Generate 3D worlds from an image with World Labs	使用 World Labs 从图片生成 3D 世界
+0740	Instantly remove backgrounds from your images with AI-powered precision.	借助 AI 精准处理，即时移除图片背景。
+0741	Processing	处理中
+0742	Removing Background...	正在移除背景……
+0743	Background Removed	背景已移除
+0744	Original	原图
+0745	Processed	处理后
+0746	Generate new camera angles from a single photo. Upload an image to get started.	从单张照片生成新的相机角度。上传图片即可开始。
+0747	Upload media	上传媒体
+0748	Generated Angle	生成的角度
+0749	Change Image	更换图片
+0750	Tilt	倾斜
+0751	Zoom	缩放
+0752	Background change backend is not yet available.	背景替换后端尚不可用。
+0753	Server returned an unparseable response.	服务器返回了无法解析的响应。
+0754	Change Location	更换地点
+0755	Transport your subject to any location imaginable.	把你的主体传送到任何能想象到的地方。
+0756	A man with curly hair wearing a grey leather jacket sitting in a luxurious private jet cabin, warm afternoon light streaming through the window.	一名卷发男子身穿灰色皮夹克，坐在豪华私人飞机客舱中，温暖的午后阳光从窗外倾洒而入。
+0757	Relight	重新打光
+0758	Match your subject's lighting to any reference.	让主体的光照匹配任意参考。
+0759	Cinematic golden-hour rim light, soft warm fill, shallow depth of field.	电影感黄金时刻轮廓光，柔和的暖色补光，浅景深。
+0760	Time Shift	时间变换
+0761	Move the same shot from day to night, or season to season.	把同一镜头从白天变为夜晚，或从一个季节变为另一个季节。
+0762	Same composition, shifted to twilight blue hour with city lights coming on in the background.	相同构图，转变为蓝调时刻，背景中城市灯光逐渐亮起。
+0763	Object Swap	物体替换
+0764	Swap props and wardrobe while preserving motion.	在保留运动的同时替换道具和服装。
+0765	Replace the coffee cup with a glass of red wine, keep the hand pose and motion identical.	把咖啡杯换成一杯红酒，保持手部姿势和动作完全一致。
+0766	Showcase	展示
+0767	Generating background change...	正在生成背景替换……
+0768	Output	输出
+0769	Describe the new scene, lighting, or change...	描述新场景、光照或变化……
+0770	Source Video	源视频
+0771	Reference Image	参考图片
+0772	No background changes yet	还没有背景替换
+0773	Upload a source video and a reference image, then optionally add a prompt.	上传源视频和参考图片，然后可选添加提示词。
+0774	Default export sink has no media library	默认导出接收端没有媒体库
+0775	Download failed	下载失败
+0776	Text track	文本轨
+0777	Darken	变暗
+0778	Multiply	正片叠底
+0779	Color Burn	颜色加深
+0780	Lighten	变亮
+0781	Screen	滤色
+0782	Plus Lighter	线性减淡
+0783	Color Dodge	颜色减淡
+0784	Overlay	叠加
+0785	Soft Light	柔光
+0786	Hard Light	强光
+0787	Difference	差值
+0788	Exclusion	排除
+0789	Saturation	饱和度
+0790	Luminosity	明度
+0791	Blend Mode	混合模式
+0792	Muted	静音
+0793	Font Family	字体
+0794	Font Size	字号
+0795	Text Align	文本对齐
+0796	Font Weight	字重
+0797	Bold	粗体
+0798	Font Style	字体样式
+0799	Italic	斜体
+0800	Text Decoration	文本装饰
+0801	Underline	下划线
+0802	Line Through	删除线
+0803	Letter Spacing	字间距
+0804	Line Height	行高
+0805	Background Enabled	启用背景
+0806	Background Color	背景颜色
+0807	Background Radius	背景圆角
+0808	Background Padding X	背景水平内边距
+0809	Background Padding Y	背景垂直内边距
+0810	Background Offset X	背景 X 偏移
+0811	Background Offset Y	背景 Y 偏移
+0812	Intensity	强度
+0813	Stroke align	描边对齐
+0814	Sides	边数
+0815	Depth	深度
+0816	Invalid input not EOF	输入无效，未到 EOF
+0817	Missing comma before color stops	颜色断点前缺少逗号
+0818	Missing positioning value	缺少定位值
+0819	One extra comma	多了一个逗号
+0820	Expected color definition	应为颜色定义
+0821	Expected CSS variable name	应为 CSS 变量名
+0822	Expected number	应为数字
+0823	Stroke width	描边宽度
+0824	Stroke Align	描边对齐
+0825	Recently used	最近使用
+0826	Heavy	特粗
+0827	Clipboard image copy is not supported in this browser	此浏览器不支持复制剪贴板图片
+0828	No project or scene to capture	没有可截取的项目或场景
+0829	Failed to create image	创建图像失败
+0830	Export failed to produce buffer	导出未能生成数据缓冲
+0831	Stop playback	停止播放
+0832	Seek forward 1 second	快进 1 秒
+0833	Seek backward 1 second	后退 1 秒
+0834	Frame step forward	前进一帧
+0835	Frame step backward	后退一帧
+0836	Jump forward 5 seconds	前跳 5 秒
+0837	Jump backward 5 seconds	后跳 5 秒
+0838	Go to timeline start	跳到时间线开头
+0839	Go to timeline end	跳到时间线末尾
+0840	Split elements at playhead	在播放头处分割元素
+0841	Split and remove left	分割并删除左侧
+0842	Split and remove right	分割并删除右侧
+0843	Delete current selection	删除当前选择
+0844	Copy selected elements	复制所选元素
+0845	Paste elements at playhead	在播放头处粘贴元素
+0846	Toggle snapping	切换吸附
+0847	Toggle ripple editing	切换波纹编辑
+0848	Extract or recover source audio	提取或恢复源音频
+0849	Select all elements	全选元素
+0850	Cancel current interaction	取消当前操作
+0851	Deselect all elements	取消选择所有元素
+0852	Duplicate selected element	为所选元素创建副本
+0853	Mute/unmute selected elements	静音/取消静音所选元素
+0854	Show/hide selected elements	显示/隐藏所选元素
+0855	Toggle bookmark at playhead	在播放头处切换书签
+0856	Remove media asset	移除媒体素材
+0857	Remove media assets	移除媒体素材
+0858	Select a mode	选择模式
+0859	Add a note...	添加备注...
+0860	Show bookmark notes	显示书签备注
+0861	Could not process video	无法处理视频
+0862	Export already in progress	导出已在进行中
+0863	Media	媒体
+0864	Sounds	音效
+0865	Stickers	贴纸
+0866	Add to timeline or drag to position	添加到时间线或拖动定位
+0867	Type	类型
+0868	File size	文件大小
+0869	Colors	颜色
+0870	Pattern craft	图案工艺
+0871	Syntax UI	Syntax UI
+0872	Text width	文本宽度
+0873	Text height	文本高度
+0874	Mirror	镜像
+0875	Square Plus	方形加号
+0876	Ripple	波纹
+0877	Project info	项目信息
+0878	Background	背景
+0879	Frame rate	帧率
+0880	Select a frame rate	选择帧率
+0881	Failed to load saved sounds	加载已保存音效失败
+0882	Failed to add sound to timeline	添加音效到时间线失败
+0883	Load more failed	加载更多失败
+0884	Search failed	搜索失败
+0885	Sound effects	音效
+0886	Failed to load sounds	加载音效失败
+0887	Search sound effects	搜索音效
+0888	Show only commercially licensed	仅显示可商用授权
+0889	Loading sounds...	正在加载音效...
+0890	Loading more sounds...	正在加载更多音效...
+0891	Loading saved sounds...	正在加载已保存音效...
+0892	No saved sounds	没有已保存的音效
+0893	Click the heart icon on any sound to save it here	点击任意音效上的心形图标即可保存到此处
+0894	Clear all saved sounds?	清空所有已保存的音效？
+0895	Clear all sounds	清空所有音效
+0896	Add to timeline	添加到时间线
+0897	No stickers found	未找到贴纸
+0898	Effect	效果
+0899	No effects	没有效果
+0900	Add effects to this layer from the Assets panel.	从素材面板为此图层添加效果。
+0901	Open effects	打开效果
+0902	All fonts	所有字体
+0903	My fonts	我的字体
+0904	Favorites	收藏
+0905	Loading fonts...	正在加载字体...
+0906	Failed to load font previews.	加载字体预览失败。
+0907	No fonts found.	未找到字体。
+0908	Only one mask is supported right now. If you need more, duplicate the clip and apply a different mask to each copy.	目前仅支持一个蒙版。如需更多，请复制片段并为每个副本应用不同的蒙版。
+0909	Position	位置
+0910	Letter spacing	字间距
+0911	Line height	行高
+0912	Spacing	间距
+0913	No masks	没有蒙版
+0914	Add a mask to hide or reveal parts of this layer.	添加蒙版以隐藏或显示此图层的部分区域。
+0915	Change pitch	变调
+0916	Blending	混合模式
+0917	Graphic	图形
+0918	It's empty here	这里还是空的
+0919	Click an element on the timeline to edit its properties	点击时间线上的元素以编辑其属性
+0920	Drag to adjust clip volume	拖动以调整片段音量
+0921	Reveal media	在素材库中显示
+0922	Replace media	替换媒体
+0923	No scenes available	没有可用的场景
+0924	Delete Scenes	删除场景
+0925	Smooth	平滑
+0926	Ease out	缓出
+0927	Ease in	缓入
+0928	In out	缓入缓出
+0929	Bezier curve editor	贝塞尔曲线编辑器
+0930	Curve preset preview	曲线预设预览
+0931	Select at most two adjacent keyframes per property.	每个属性最多选择两个相邻关键帧。
+0932	The selected keyframe has no editable graph.	所选关键帧没有可编辑的曲线。
+0933	The selected keyframe has no editable graph channel.	所选关键帧没有可编辑的曲线通道。
+0934	Select a keyframe that has an outgoing segment.	请选择具有后接片段的关键帧。
+0935	Selected keyframes must be adjacent on each property.	所选关键帧在每个属性上必须相邻。
+0936	Hold segments have a fixed value - easing has no effect here.	保持片段的值是固定的——缓动在此无效。
+0937	Cannot edit a segment where both keyframes are at the same time.	无法编辑两个关键帧时间相同的片段。
+0938	The selected keyframe could not be resolved.	无法解析所选关键帧。
+0939	Selected keyframes must be on the same element.	所选关键帧必须位于同一元素上。
+0940	Split element	分割元素
+0941	Split left	分割左侧
+0942	Split right	分割右侧
+0943	Duplicate element	创建元素副本
+0944	Delete element	删除元素
+0945	Auto snapping	自动吸附
+0946	Ripple editing	波纹编辑
+0947	Paste elements	粘贴元素
+0948	Delete track	删除轨道
+0949	Fit to screen	适应屏幕
+0950	Full screen	全屏
+0951	Save snapshot	保存快照
+0952	Copy snapshot	复制快照
+0953	Format	格式
+0954	Low - Smallest file size	低 - 文件最小
+0955	Medium - Balanced	中 - 均衡
+0956	High - Recommended	高 - 推荐
+0957	Very high - Largest file size	极高 - 文件最大
+0958	Include audio in export	导出时包含音频
+0959	Destination	导出位置
+0960	Save to disk	保存到磁盘
+0961	Save to my media library	保存到我的素材库
+0962	Pick at least one destination.	请至少选择一个导出位置。
+0963	Export failed	导出失败
+0964	Rename project	重命名项目
+0965	New name	新名称
+0966	Enter a new name	输入新名称
+0967	Warning	警告
+0968	Delete project	删除项目
+0969	Exit project	退出项目
+0970	The editor ran into a problem	编辑器遇到问题
+0971	The full error has been logged to the developer console.	完整错误已记录到开发者控制台。
+0972	Reload editor	重新加载编辑器
+0973	Drop media onto the timeline, scrub the playhead to preview, and use the panels on the right to tune properties, animations, and effects.	将媒体拖放到时间线，拖动播放头预览，并使用右侧面板调整属性、动画和效果。
+0974	This editor is in active development.	此编辑器仍在积极开发中。
+0975	Finish	完成
+0976	Go back	返回
+0977	Take a look anyway	仍然查看
+0978	TikTok Layout	TikTok 布局
+0979	Reels	Reels
+0980	Shorts	Shorts
+0981	Spotlight	Spotlight
+0982	For the best experience, open this editor in Chrome.	为获得最佳体验，请在 Chrome 中打开此编辑器。
+0983	Already saving this export	此导出正在保存中
+0984	Already uploading this export	此导出正在上传中
+0985	Save dialog cancelled	保存对话框已取消
+0986	Search this board	搜索此看板
+0987	Add a color	添加颜色
+0988	Add note	添加备注
+0989	Rename board	重命名看板
+0990	Start collecting ideas	开始收集灵感
+0991	Drag images in, paste from anywhere, or pull from your library. Everything you gather here can later steer a generation.	拖入图片、从任意位置粘贴，或从素材库中选取。你在这里收集的一切稍后都能用于引导生成。
+0992	Item details	项目详情
+0993	Palette	调色板
+0994	No items match your search.	没有与搜索匹配的项目。
+0995	This board is empty.	此看板是空的。
+0996	Fit to grid	适应网格
+0997	Pack collage	紧凑拼贴
+0998	Auto-group by proximity	按邻近度自动分组
+0999	Drop to Upload	拖放以上传
+1000	GLB, PNG, JPG, JPEG, SPZ	GLB、PNG、JPG、JPEG、SPZ
+1001	Upload a Splat	上传 Splat
+1002	Product tours not loaded	产品导览未加载
+1003	' + e + '	' + e + '
+1004	Nano Banana	Nano Banana
+1005	center center	center center
+1006	60 sec.	60 秒
+1007	Not implemented	未实现
+1008	init was not called	未调用 init
+1009	Flux Pro 1.1 Ultra	Flux Pro 1.1 Ultra
+1010	Flux Pro 1.1	Flux Pro 1.1
+1011	Kling 1.6 Pro	Kling 1.6 Pro
+1012	Kling 2.1 Pro	Kling 2.1 Pro
+1013	Kling 2.1 Master	Kling 2.1 Master
+1014	Seedance 1.0 Lite	Seedance 1.0 Lite
+1015	World Labs	World Labs
+1016	No renderer	没有渲染器
+1017	AudioSample is closed.	AudioSample 已关闭。
+1018	No image selected	未选择图像
+1019	Failed to load image	加载图像失败
+1020	Failed to process image	处理图像失败
+1021	failed to load script	加载脚本失败
+1022	Flux 1 Dev	Flux 1 Dev
+1023	Flux 1 Schnell	Flux 1 Schnell
+1024	Nano Banana Pro	Nano Banana Pro
+1025	30 sec.	30 秒
+1026	Flux Pro Kontext Max	Flux Pro Kontext Max
+1027	Google Veo 2	Google Veo 2
+1028	Hunyuan 3D 2.0	Hunyuan 3D 2.0
+1029	byte normalized	字节归一化
+1030	short normalized	短整型归一化
+1031	Your model preview will appear here	你的模型预览将显示在此处
+1032	Copy prompt	复制提示词
+1033	Draggable item 	可拖动项 
+1034	Not implemented on base class.	基类上未实现。
+1035	init.rotation, when provided, must be 0, 90, 180, or 270.	init.rotation 若提供，必须为 0、90、180 或 270。
+1036	init.timestamp must be a number.	init.timestamp 必须是数字。
+1037	init.duration, when provided, must be a non-negative number.	init.duration 若提供，必须是非负数。
+1038	Side channel does not contain 	侧通道不包含 
+1039	`O` is not an object	`O` 不是对象
+1040	`slot` must be a string	`slot` 必须是字符串
+1041	Library Image	素材库图像
+1042	Survey not found	未找到问卷
+1043	Cycle detected	检测到循环
+1044	Nano Banana 2	Nano Banana 2
+1045	GPT Image 1.5	GPT Image 1.5
+1046	GPT Image 2	GPT Image 2
+1047	GPT Image 2.5 Flare	GPT Image 2.5 Flare
+1048	GPT Image 2.5 Sunburst	GPT Image 2.5 Sunburst
+1049	Seedream 4	Seedream 4
+1050	Seedream 4.5	Seedream 4.5
+1051	Seedream 5 Lite	Seedream 5 Lite
+1052	Qwen Edit 2511 Angles	Qwen Edit 2511 Angles
+1053	Flux 2 LoRA Angles	Flux 2 LoRA Angles
+1054	Grok Video	Grok Video
+1055	Grok Imagine 1.5	Grok Imagine 1.5
+1056	Kling 2.5 Turbo Pro	Kling 2.5 Turbo Pro
+1057	Kling 2.6 Pro	Kling 2.6 Pro
+1058	Kling 3.0 Standard	Kling 3.0 Standard
+1059	Kling 3.0 Pro	Kling 3.0 Pro
+1060	Happy Horse 1.0	Happy Horse 1.0
+1061	Seedance 1.5 Pro	Seedance 1.5 Pro
+1062	Seedance 2.0	Seedance 2.0
+1063	Seedance 2.0 Fast	Seedance 2.0 Fast
+1064	Sora 2	Sora 2
+1065	Sora 2 Pro	Sora 2 Pro
+1066	Google Veo 3	Google Veo 3
+1067	Google Veo 3 Fast	Google Veo 3 Fast
+1068	Google Veo 3.1	Google Veo 3.1
+1069	Google Veo 3.1 Fast	Google Veo 3.1 Fast
+1070	unexpected EOF	意外的 EOF
+1071	invalid block type	无效的块类型
+1072	invalid distance	无效的距离
+1073	stream finished	流已结束
+1074	no stream handler	没有流处理器
+1075	no callback	没有回调
+1076	invalid UTF-8 data	无效的 UTF-8 数据
+1077	extra field too long	扩展字段过长
+1078	date not in range 1980-2099	日期不在 1980-2099 范围内
+1079	filename too long	文件名过长
+1080	stream finishing	流正在结束
+1081	invalid zip data	无效的 zip 数据
+1082	unsigned byte	无符号字节
+1083	unsigned short	无符号短整型
+1084	unknown compression type 	未知的压缩类型 
+1085	Invalid type	类型无效
+1086	Hide skeleton	隐藏骨骼
+1087	Show skeleton	显示骨骼
+1088	Please select a file to upload.	请选择要上传的文件。
+1089	Uploading 	正在上传 
+1090	3D World	3D 世界
+1091	Image violates content policy	图像违反内容政策
+1092	Images with faces are not allowed	不允许包含人脸的图像
+1093	Generated video flagged by content policy	生成的视频被内容政策标记
+1094	Generated audio flagged by content policy	生成的音频被内容政策标记
+1095	An unknown error occurred	发生未知错误
+1096	Clear selection	清除选择
+1097	3D Object	3D 对象
+1098	data must be a Uint8Array.	data 必须是 Uint8Array。
+1099	Bad unsigned int size 	无符号整数大小错误 
+1100	init must be an object.	init 必须是对象。
+1101	Decoding error	解码错误
+1102	Encoding error	编码错误
+1103	Invalid argument	参数无效
+1104	' + k.value + '	' + k.value + '
+1105	Failed to restore image:	恢复图像失败：
+1106	Extract audio	提取音频
+1107	Untitled board	未命名看板
+1108	Flag overrides set	已设置标志覆盖
+1109	Cannot 	无法 
+1110	read from private field	从私有字段读取
+1111	Cannot add the same private member more than once	无法多次添加同一私有成员
+1112	write to private field	写入私有字段
+1113	Minified React error #	压缩版 React 错误 #
+1114	; visit 	；请访问 
+1115	 at new 	 位于 new 
+1116	Missing Focus.First, Focus.Previous, Focus.Next or Focus.Last	缺少 Focus.First、Focus.Previous、Focus.Next 或 Focus.Last
+1117	transform, opacity	transform, opacity
+1118	No model specified in request: 	请求中未指定模型： 
+1119	Flux Dev Juggernaut	Flux Dev Juggernaut
+1120	~5 min.	约 5 分钟
+1121	Marble Mini	Marble Mini
+1122	Marble Plus	Marble Plus
+1123	Hunyuan 3D 3.0	Hunyuan 3D 3.0
+1124	Happy Horse	Happy Horse
+1125	GPT Image	GPT Image
+1126	Hunyuan 3D	Hunyuan 3D
+1127	Grok Imagine	Grok Imagine
+1128	Hunyuan 3D 2.1	Hunyuan 3D 2.1
+1129	Invalid component type.	组件类型无效。
+1130	 will be ignored.	 将被忽略。
+1131	WARNING: Multiple instances of Three.js being imported.	警告：导入了多个 Three.js 实例。
+1132	not supported, using	不支持，使用
+1133	invalid gzip data	无效的 gzip 数据
+1134	TextDecoder not available	TextDecoder 不可用
+1135	Failed to decompress partial gzip	解压部分 gzip 数据失败
+1136	No target	没有目标
+1137	Failed to read header	读取文件头失败
+1138	Invalid PLY header	无效的 PLY 文件头
+1139	No data to parse	没有可解析的数据
+1140	No vertex element found	未找到顶点元素
+1141	Missing sh1	缺少 sh1
+1142	Missing PLY chunk properties	缺少 PLY 块属性
+1143	Missing PLY chunk	缺少 PLY 块
+1144	Missing PLY properties: x, y, z	缺少 PLY 属性：x、y、z
+1145	No parsed data	没有解析出的数据
+1146	Invalid RGBA array length	无效的 RGBA 数组长度
+1147	use strict	use strict
+1148	Must initialize SparkViewpoint with target	必须使用 target 初始化 SparkViewpoint
+1149	No index	没有索引
+1150	WARNING: OrbitControls.js encountered an unknown camera type - dolly/zoom disabled.	警告：OrbitControls.js 遇到未知的相机类型——推拉/缩放已禁用。
+1151	Preview Error	预览错误
+1152	No animation clips found in this file.	此文件中未找到动画片段。
+1153	Prompt copied	提示词已复制
+1154	Share link copied	分享链接已复制
+1155	Unable to copy link	无法复制链接
+1156	Almost done...	即将完成...
+1157	Exit selection	退出选择
+1158	Audio Generation	音频生成
+1159	Unknown model	未知模型
+1160	Last viewed	最近查看
+1161	' has already been set.	' 已被设置。
+1162	' has not been set yet.	' 尚未设置。
+1163	Scene doesn't exist needs to be assigned	场景不存在，需要先指定
+1164	Sora / ChatGPT	Sora / ChatGPT
+1165	 was dropped.	 已被拖放。
+1166	Failed to upload video. Please upload an MP4 file.	上传视频失败。请上传 MP4 文件。
+1167	s max	s max
+1168	Failed to delete character	删除角色失败
+1169	Failed to update character	更新角色失败
+1170	Failed to create character	创建角色失败
+1171	Turn off blocking of prompt box...	关闭对提示词框的屏蔽...
+1172	Use @Image1, @Video1, @Audio1... to reference uploads in prompt...	使用 @Image1、@Video1、@Audio1... 在提示词中引用上传的内容...
+1173	Delete selected	删除所选
+1174	Select tool	选择工具
+1175	3D Editor	3D 编辑器
+1176	Clear search	清除搜索
+1177	Move Keyframe	移动关键帧
+1178	Add Animation Clip	添加动画片段
+1179	Move Animation Clip	移动动画片段
+1180	Unknown Error in Fetching Media Items	获取媒体项时出现未知错误
+1181	Unknown Error in Loading User Scenes	加载用户场景时出现未知错误
+1182	Codecs Parameter String	编解码器参数字符串
+1183	timestamp must be a number.	timestamp 必须是数字。
+1184	duration must be a non-negative number.	duration 必须是非负数。
+1185	Metadata-only packets cannot be converted to a video chunk.	仅含元数据的包无法转换为视频块。
+1186	Invalid ciphertext.	密文无效。
+1187	Invalid TS packet sync byte. Likely an internal bug, please report this file.	无效的 TS 包同步字节。可能是内部缺陷，请反馈此文件。
+1188	offset must be a non-negative integer.	offset 必须是非负整数。
+1189	Symbol.dispose is not defined.	Symbol.dispose 未定义。
+1190	An error was suppressed during disposal.	释放过程中有一个错误被抑制。
+1191	plane.offset must be a non-negative integer.	plane.offset 必须是非负整数。
+1192	plane.stride must be a non-negative integer.	plane.stride 必须是非负整数。
+1193	When both options.width and options.height are provided, options.fit must also be provided.	当同时提供 options.width 和 options.height 时，也必须提供 options.fit。
+1194	Invalid format.	格式无效。
+1195	Encoding config must be an object.	编码配置必须是对象。
+1196	config.transform, when provided, must be an object.	config.transform 若提供，必须是对象。
+1197	Encoding options must be an object.	编码选项必须是对象。
+1198	Internal error: Iterator returned nothing.	内部错误：迭代器没有返回任何内容。
+1199	Output has been canceled.	输出已取消。
+1200	Output has already been finalized.	输出已完成终结。
+1201	Edit Easing	编辑缓动
+1202	Image Plane	图像平面
+1203	Playback was unable to start. This is most commonly an issue on mobile devices and Chrome where playback was not within a user interaction.	无法开始播放。这通常是移动设备和 Chrome 上的问题，因为播放不在用户交互范围内。
+1204	Generation complete!	生成完成！
+1205	Mask value out of range	遮罩值超出范围
+1206	Assertion error	断言错误
+1207	ECI assignment value out of range	ECI 赋值超出范围
+1208	Login request expired. Start a new request.	登录请求已过期。请重新发起请求。
+1209	Sign up	注册
+1210	Not logged in	未登录
+1211	Failed to convert file to base64.	无法将文件转换为 base64。
+1212	Error reading file.	读取文件出错。
+1213	Failed to create composite canvas	无法创建合成画布
+1214	Failed to upload scene snapshot	无法上传场景快照
+1215	 No tasks yet	暂无任务
+1216	No video selected	未选择视频
+1217	Failed to save frame	保存帧失败
+1218	Processing watermark removal...	正在处理水印移除...
+1219	Watermark removal completed!	水印移除完成！
+1220	Failed to remove watermark	水印移除失败
+1221	Error removing watermark:	移除水印出错：
+1222	Remove Watermark	移除水印
+1223	Failed to upload image	图片上传失败
+1224	Saved to Library	已保存到素材库
+1225	Error processing image:	处理图片出错：
+1226	Error processing gallery image:	处理素材库图片出错：
+1227	No image to download	没有可下载的图片
+1228	Image saved to Downloads folder	图片已保存到下载文件夹
+1229	Failed to download image	图片下载失败
+1230	Main scene	主场景
+1231	Timeline ruler	时间线标尺
+1232	Scene not found:	未找到场景：
+1233	Scene not found	未找到场景
+1234	Collapse section	折叠分区
+1235	Expand section	展开分区
+1236	Failed to play sound preview:	播放声音预览失败：
+1237	left center	左中对齐
+1238	Select keyframe	选择关键帧
+1239	Failed to rename project	重命名项目失败
+1240	Filter by rating	按评分筛选
+1241	survey dismissed	调查已关闭
+1242	survey sent	调查已发送
+1243	survey shown	调查已显示
+1244	UC Browser	UC 浏览器
+1245	Mac OS X	Mac OS X
+1246	Kindle Fire	Kindle Fire
+1247	 captured as exception with keys: 	 捕获为异常，键为： 
+1248	Expected non-empty string	应为非空字符串
+1249	Rendering survey 	正在渲染调查 
+1250	 with delay of 	，延迟为 
+1251	A history only accepts one active listener	一个 history 只能接受一个活动监听器
+1252	Cannot include a '	不能在手动指定的 
+1253	' character in a manually specified 	中
+1254	` field. Alternatively you may provide the full path as 	包含 ' 字符。你也可以将完整路径作为 
+1255	geforce 320m	geforce 320m
+1256	geforce 8600	geforce 8600
+1257	geforce 8600m gt	geforce 8600m gt
+1258	geforce 8800 gs	geforce 8800 gs
+1259	geforce 8800 gt	geforce 8800 gt
+1260	geforce 9400	geforce 9400
+1261	geforce 9400m g	geforce 9400m g
+1262	geforce 9400m	geforce 9400m
+1263	geforce 9600m gt	geforce 9600m gt
+1264	geforce 9600m	geforce 9600m
+1265	geforce fx go5200	geforce fx go5200
+1266	geforce gt 120	geforce gt 120
+1267	geforce gt 130	geforce gt 130
+1268	geforce gt 330m	geforce gt 330m
+1269	geforce gtx 285	geforce gtx 285
+1270	intel g41	intel g41
+1271	intel g45	intel g45
+1272	intel gma 4500mhd	intel gma 4500mhd
+1273	intel gma x3100	intel gma x3100
+1274	intel hd 3000	intel hd 3000
+1275	intel q45	intel q45
+1276	quadro fx 1500	quadro fx 1500
+1277	quadro fx 4	quadro fx 4
+1278	quadro fx 5	quadro fx 5
+1279	radeon hd 2400	radeon hd 2400
+1280	radeon hd 2600	radeon hd 2600
+1281	radeon hd 4670	radeon hd 4670
+1282	radeon hd 4850	radeon hd 4850
+1283	radeon hd 4870	radeon hd 4870
+1284	radeon hd 5670	radeon hd 5670
+1285	radeon hd 5750	radeon hd 5750
+1286	radeon hd 6290	radeon hd 6290
+1287	radeon hd 6300	radeon hd 6300
+1288	radeon hd 6310	radeon hd 6310
+1289	radeon hd 6320	radeon hd 6320
+1290	radeon hd 6490m	radeon hd 6490m
+1291	radeon hd 6630m	radeon hd 6630m
+1292	radeon hd 6750m	radeon hd 6750m
+1293	radeon hd 6770m	radeon hd 6770m
+1294	radeon hd 6970m	radeon hd 6970m
+1295	Detect GPU benchmark data is out of date. Please update to version 4x	Detect GPU 基准数据已过期。请更新到 4x 版本
+1296	apple gpu	apple gpu
+1297	However we need to passthrough the following props:	不过我们需要透传以下 props：
+1298	You can apply a few solutions:	你可以采用以下几种解决方案：
+1299	Render a single element as the child so that we can forward the props onto that element.	只渲染单个元素作为子元素，这样我们就能把 props 转发到该元素上。
+1300	Please install a proper polyfill e.g. `jsdom-testing-mocks`, to silence these warnings.	请安装合适的 polyfill，例如 `jsdom-testing-mocks`，以消除这些警告。
+1301	Did you forget to passthrough the `ref` to the actual DOM node?	你是否忘记把 `ref` 透传到实际的 DOM 节点？
+1302	Sidecar medium not found	未找到 Sidecar 媒介
+1303	in not contained inside	不在内部
+1304	aria-hidden: cannot operate on 	aria-hidden：无法操作 
+1305	Unknown getter	未知的 getter
+1306	Restore modal size	恢复弹窗大小
+1307	Expand modal	展开弹窗
+1308	, o, 	, o, 
+1309	, O && 	, O && 
+1310	Error in Uploading 	上传出错 
+1311	Unknown Error	未知错误
+1312	Cannot read private member from an object whose class did not declare it	无法从没有声明该私有成员的类的对象读取私有成员
+1313	Cannot write private member to an object whose class did not declare it	无法向没有声明该私有成员的类的对象写入私有成员
+1314	Request cancelled	请求已取消
+1315	Session Token	会话令牌
+1316	Could not upload image!	无法上传图片！
+1317	Could not upload video!	无法上传视频！
+1318	Could not upload audio!	无法上传音频！
+1319	Flux Pro Inpaint	Flux Pro Inpaint
+1320	Flux Dev Juggernaut Inpaint	Flux Dev Juggernaut Inpaint
+1321	All image models must have unique IDs	所有图片模型的 ID 必须唯一
+1322	~15 min.	约 15 分钟
+1323	5 min.	5 分钟
+1324	All video models must have unique IDs	所有视频模型的 ID 必须唯一
+1325	Marble 0.1 Mini	Marble 0.1 Mini
+1326	~30 sec.	约 30 秒
+1327	Marble 0.1 Plus	Marble 0.1 Plus
+1328	All splat models must have unique IDs	所有 splat 模型的 ID 必须唯一
+1329	Hunyuan 3.0	Hunyuan 3.0
+1330	~2 min.	约 2 分钟
+1331	Hunyuan 2.0	Hunyuan 2.0
+1332	~45 sec.	约 45 秒
+1333	All 3D object models must have unique IDs	所有 3D 物体模型的 ID 必须唯一
+1334	Seed Audio	Seed Audio
+1335	Black Forest Labs	Black Forest Labs
+1336	Grok Image	Grok Image
+1337	Grok Imagine Quality	Grok Imagine Quality
+1338	Flux 3	Flux 3
+1339	Flux 3 Draft	Flux 3 Draft
+1340	GPT Image 1	GPT Image 1
+1341	Seedance 1.0 Pro	Seedance 1.0 Pro
+1342	Seedance 2.0 Mini	Seedance 2.0 Mini
+1343	Seedance 2.0 Plus	Seedance 2.0 Plus
+1344	Seedance 2.0 Plus Fast	Seedance 2.0 Plus Fast
+1345	Seedance 2.0 Plus Mini	Seedance 2.0 Plus Mini
+1346	Seedance 2.0 Plus Ultra	Seedance 2.0 Plus Ultra
+1347	Seedance 2.0 Plus Ultra Fast	Seedance 2.0 Plus Ultra Fast
+1348	Seedance 2.0 Plus Ultra Mini	Seedance 2.0 Plus Ultra Mini
+1349	Seedance 2.5	Seedance 2.5
+1350	Seedance 2.5 Ultra	Seedance 2.5 Ultra
+1351	Seedance 2.5 Preview	Seedance 2.5 Preview
+1352	Wan 3.0	Wan 3.0
+1353	Wan 3.0 Prime	Wan 3.0 Prime
+1354	Preview Model	Preview Model
+1355	Preview Model Fast	Preview Model Fast
+1356	MiniMax H3	MiniMax H3
+1357	Seedream 5.0 Pro	Seedream 5.0 Pro
+1358	Seedream 5.0 Pro Ultra	Seedream 5.0 Pro Ultra
+1359	SeedEdit 3	SeedEdit 3
+1360	Suno Music	Suno Music
+1361	Suno Remix	Suno Remix
+1362	Suno Sounds	Suno Sounds
+1363	Suno Sample	Suno Sample
+1364	Seed Audio 1.0	Seed Audio 1.0
+1365	Google Veo 3.1 Lite	Google Veo 3.1 Lite
+1366	Recraft 3	Recraft 3
+1367	Vidu Q3	Vidu Q3
+1368	Vidu Q3 Turbo	Vidu Q3 Turbo
+1369	Hunyuan 3D 3 Sketch	Hunyuan 3D 3 Sketch
+1370	Hunyuan 3D 3.1 Pro	Hunyuan 3D 3.1 Pro
+1371	Hunyuan 3D 3.1 Rapid	Hunyuan 3D 3.1 Rapid
+1372	Hunyuan 3D 3.1 Part	Hunyuan 3D 3.1 Part
+1373	Hunyuan 3D 3.1 Smart Topology	Hunyuan 3D 3.1 Smart Topology
+1374	Tripo3D H3.1	Tripo3D H3.1
+1375	Meshy 6	Meshy 6
+1376	Rodin 2.5 Fast	Rodin 2.5 Fast
+1377	World Labs Marble	World Labs Marble
+1378	Marble 1.0	Marble 1.0
+1379	Marble 1.0 Draft	Marble 1.0 Draft
+1380	Marble 1.1	Marble 1.1
+1381	Marble 1.1 Plus	Marble 1.1 Plus
+1382	Midjourney V6	Midjourney V6
+1383	Midjourney V6.1	Midjourney V6.1
+1384	Midjourney V7	Midjourney V7
+1385	Midjourney v7	Midjourney v7
+1386	Midjourney v8	Midjourney v8
+1387	Open-weight model with rich detail	开放权重模型，细节丰富
+1388	Fastest FLUX for quick drafts	最快的 FLUX，适合快速草稿
+1389	Pro-grade quality and prompt accuracy	专业级画质与提示词精准度
+1390	Ultra high-resolution FLUX output	超高分辨率 FLUX 输出
+1391	OpenAI's original image model	OpenAI 的初代图像模型
+1392	OpenAI imagery with reliable text	OpenAI 影像，文字更可靠
+1393	4K images with crisp text rendering	4K 图像，文字渲染清晰锐利
+1394	Fast, precise edits that keep subjects intact	快速精准的编辑，保持主体完整
+1395	Premium detail and fidelity, slower	高级细节与还原度，速度较慢
+1396	Signature artistic, stylized imagery	标志性的艺术化风格影像
+1397	Anime and illustration styles	动漫与插画风格
+1398	Midjourney's latest flagship model	Midjourney 最新旗舰模型
+1399	Fast, versatile editing and generation	快速、多用途的编辑与生成
+1400	Pro quality at Flash speed	Flash 速度，专业品质
+1401	Google's flagship image model	Google 的旗舰图像模型
+1402	High-fidelity photorealistic generation	高保真写实生成
+1403	ByteDance's next-gen 4K model	字节跳动的新一代 4K 模型
+1404	Lightweight, fast visual reasoning	轻量、快速的视觉推理
+1405	Seedream's flagship image quality	Seedream 的旗舰画质
+1406	Highest-fidelity Seedream tier	Seedream 最高保真档位
+1407	Video generation by Black Forest Labs	由 Black Forest Labs 提供的视频生成
+1408	Smooth, coherent motion	流畅连贯的运动
+1409	Sharper realism and detail	更锐利的真实感与细节
+1410	Top-fidelity cinematic motion	顶级保真的电影级运动
+1411	Fast, high-quality generation	快速、高质量的生成
+1412	Refined motion and prompt control	精细的运动与提示词控制
+1413	Next-gen temporal consistency	新一代时间一致性
+1414	Kling's flagship cinematic video	Kling 的旗舰电影级视频
+1415	2K video with multi-media refs	支持多媒体参考的 2K 视频
+1416	Fast, lightweight video clips	快速、轻量的视频片段
+1417	Keyframes with synced audio	带同步音频的关键帧
+1418	Expressive motion from a frame	从单帧生成富有表现力的运动
+1419	Realistic video with synced audio	带同步音频的逼真视频
+1420	Sora's highest-fidelity tier	Sora 最高保真档位
+1421	Coherent, high-quality motion	连贯、高质量的运动
+1422	Realistic video with native audio	带原生音频的逼真视频
+1423	Faster Veo 3 with audio	带音频的更快 Veo 3
+1424	Latest Veo with finer control	控制更精细的最新 Veo
+1425	Speed-tuned Veo 3.1	速度调优的 Veo 3.1
+1426	Light, low-cost Veo 3.1	轻量、低成本的 Veo 3.1
+1427	Reference-driven video generation	参考驱动的视频生成
+1428	Speed-optimized Vidu Q3	速度优化的 Vidu Q3
+1429	Swap or relight backgrounds	替换或重新打光背景
+1430	Reliable image-to-3D meshes	可靠的图生 3D 网格
+1431	Improved detail and topology	改进的细节与拓扑
+1432	High-detail 3D generation	高细节 3D 生成
+1433	3D meshes from sketches	从草图生成 3D 网格
+1434	Hunyuan's flagship 3D quality	Hunyuan 的旗舰 3D 画质
+1435	Fast, clean 3D meshes	快速、干净的 3D 网格
+1436	Production-ready 3D assets	可用于生产的 3D 资产
+1437	Explorable 3D worlds	可探索的 3D 世界
+1438	Quick draft world generation	快速草稿世界生成
+1439	Sharper, more coherent worlds	更锐利、更连贯的世界
+1440	Marble's highest-quality worlds	Marble 最高质量的世界
+1441	Full songs from a text prompt	用文本提示生成完整歌曲
+1442	Remix an existing track	重新混音现有曲目
+1443	Sound effects with beat control	带节拍控制的音效
+1444	Build a song from a sample	用采样构建歌曲
+1445	Sound generation with fine tuning	支持精细调校的声音生成
+1446	All models must have unique IDs	所有模型的 ID 必须唯一
+1447	GOT THE URL	已获取 URL
+1448	Error downloading file:	下载文件出错：
+1449	Job Polling Response:	任务轮询响应：
+1450	response FROM JOBS	来自 JOBS 的响应
+1451	Failed to parse response as JSON:	无法将响应解析为 JSON：
+1452	Panel components must be rendered within a PanelGroup container	Panel 组件必须渲染在 PanelGroup 容器内
+1453	Cannot compare node with itself	无法将节点与自身比较
+1454	Stacking order can only be calculated for elements with a common ancestor	只有具有共同祖先的元素才能计算堆叠顺序
+1455	Missing node	缺少节点
+1456	Invalid first pivot index	无效的第一个枢轴索引
+1457	Invalid second pivot index	无效的第二个枢轴索引
+1458	No pivot index found	未找到枢轴索引
+1459	Eager values not found	未找到 eager 值
+1460	Resize handle element has no handle id attribute	调整大小手柄元素没有 handle id 属性
+1461	Resize handle element has no group id attribute	调整大小手柄元素没有 group id 属性
+1462	, null, null, 	, null, null, 
+1463	 : Di + 	 : Di + 
+1464	 + Di + 	 + Di + 
+1465	 Upload another?	 再上传一个？
+1466	 or drop a file right here	 或将文件拖放到这里
+1467	File type is not supported	不支持该文件类型
+1468	File size is too big	文件太大
+1469	File size is too small	文件太小
+1470	Drop Here	拖放到此处
+1471	 or drop it here	 或将文件拖放到这里
+1472	 files selected	 个文件已选择
+1473	call to abstract method	调用抽象方法
+1474	unsupported interpolation for 	不支持插值： 
+1475	 keyframe track named 	 关键帧轨道名为 
+1476	THREE:ObjectLoader: Can't parse 	THREE:ObjectLoader：无法解析 
+1477	 but it wasn't found.	但未找到。
+1478	blur direction must be either latitudinal or longitudinal!	模糊方向必须是横向或纵向！
+1479	 extension not supported.	 扩展不受支持。
+1480	has no shadow.	没有阴影。
+1481	OpenGL ES	OpenGL ES
+1482	DepthTexture: 16 bit depth attachment is not supported with stencil. Using 24-bit attachment.	DepthTexture：模板不支持 16 位深度附件。改用 24 位附件。
+1483	 texture units while this GPU supports only 	 个纹理单元，而此 GPU 仅支持 
+1484	Depth Texture with cube render targets is not supported	不支持使用立方体渲染目标的深度纹理
+1485	invalid zlib data	无效的 zlib 数据
+1486	, defaulting to a PointLight.	，默认改用 PointLight。
+1487	unsigned byte normalized	无符号字节归一化
+1488	unsigned short normalized	无符号短整型归一化
+1489	GLTF export did not produce binary output.	GLTF 导出未生成二进制输出。
+1490	' + u + '	' + u + '
+1491	 buffer type is not supported.	 缓冲区类型不受支持。
+1492	' + n.uri + '	' + n.uri + '
+1493	No array	无数组
+1494	No readback	无回读
+1495	Cannot get bounding box before SplatMesh is initialized	SplatMesh 初始化前无法获取边界框
+1496	no rotation	无旋转
+1497	Invalid .splat file size	无效的 .splat 文件大小
+1498	Cannot unpush splat from non-last position	无法从非末尾位置弹出 splat
+1499	Unsupported quaternion encoding	不支持的四元数编码
+1500	Invalid PC SOGS zip file	无效的 PC SOGS zip 文件
+1501	SPZ file header already parsed	SPZ 文件头已解析
+1502	Invalid SPZ file	无效的 SPZ 文件
+1503	SPZ file header must be parsed first	必须先解析 SPZ 文件头
+1504	SPZ file already parsed	SPZ 文件已解析
+1505	bytes to	字节到
+1506	Invalid PC SOGS file	无效的 PC SOGS 文件
+1507	Invalid index	无效的索引
+1508	No packed splats	没有打包的 splat
+1509	Must provide camera	必须提供相机
+1510	No accumulator to sort	没有可排序的累加器
+1511	Only one sort at a time	一次只能排序一个
+1512	gsplat not defined	未定义 gsplat
+1513	Generator not found	未找到生成器
+1514	Invalid input	无效输入
+1515	EXIT VR	退出 VR
+1516	ENTER VR	进入 VR
+1517	requesting session	正在请求会话
+1518	ending session	正在结束会话
+1519	VR NOT SUPPORTED	不支持 VR
+1520	VR NOT ALLOWED	不允许 VR
+1521	1px solid #fff	1px solid #fff
+1522	normal 13px sans-serif	normal 13px sans-serif
+1523	WARNING: OrbitControls.js encountered an unknown camera type - zoom to cursor disabled.	警告：OrbitControls.js 遇到未知的相机类型 - 已禁用缩放至光标。
+1524	WARNING: OrbitControls.js encountered an unknown camera type - pan disabled.	警告：OrbitControls.js 遇到未知的相机类型 - 已禁用平移。
+1525	Splat loaded	Splat 已加载
+1526	SPLAT Loader Error	SPLAT 加载器错误
+1527	GLB Loader Error	GLB 加载器错误
+1528	PMD Loader Error	PMD 加载器错误
+1529	Image Plane Loader Error	图像平面加载器错误
+1530	Converting FBX to GLB...	正在将 FBX 转换为 GLB...
+1531	FBX conversion failed.	FBX 转换失败。
+1532	Invalid Date	无效日期
+1533	duration must be greater than 0	时长必须大于 0
+1534	Progress tracking error:	进度跟踪出错：
+1535	Container not found	未找到容器
+1536	No waveform data	无波形数据
+1537	Could not export image	无法导出图片
+1538	Media error	媒体错误
+1539	No audio loaded	未加载音频
+1540	The audio has not been decoded yet	音频尚未解码
+1541	 + a + 	 + a + 
+1542	Link Your OpenAI Sora Account	关联你的 OpenAI Sora 账户
+1543	Login to ArtCraft	登录 ArtCraft
+1544	Action Required	需要操作
+1545	Link Your OpenAI Account	关联你的 OpenAI 账户
+1546	Login with OpenAI	使用 OpenAI 登录
+1547	Login / Sign Up	登录 / 注册
+1548	Failed to save tags.	保存标签失败。
+1549	Error fetching prompt:	获取提示词出错：
+1550	Your browser does not support the video tag.	你的浏览器不支持 video 标签。
+1551	Generated image	生成的图片
+1552	Previous item	上一项
+1553	Next item	下一项
+1554	Preview image	预览图片
+1555	View as media	以媒体方式查看
+1556	Link Copied!	链接已复制！
+1557	MMM D, YYYY h:mm:ss A	MMM D, YYYY h:mm:ss A
+1558	 from the current folder. Add a copy keeps 	从当前文件夹中。添加副本会保留 
+1559	 in both.	在两者中。
+1560	Clear color	清除颜色
+1561	More info	更多信息
+1562	, t.disabled ? 	, t.disabled ? 
+1563	View video	查看视频
+1564	View 3D	查看 3D
+1565	View image	查看图片
+1566	Failed to delete media.	删除媒体失败。
+1567	 to add to scene	 以添加到场景
+1568	 to add	 以添加
+1569	Folder options	文件夹选项
+1570	audio clips	音频片段
+1571	3D models	3D 模型
+1572	3D worlds	3D 世界
+1573	just now	刚刚
+1574	Gallery layout	素材库布局
+1575	Video preview playback	视频预览播放
+1576	Select items	选择项目
+1577	3D Mesh	3D 网格
+1578	Generating 	正在生成 
+1579	auto 200px	auto 200px
+1580	3D Object Generation	3D 物体生成
+1581	3D World Generation	3D 世界生成
+1582	Failed to fetch library items:	获取素材库项目失败：
+1583	This will permanently remove 	这将从你的素材库中永久移除 
+1584	 from your library. This action cannot be undone.	。此操作无法撤销。
+1585	Failed to load folders:	加载文件夹失败：
+1586	Failed to load folder media:	加载文件夹媒体失败：
+1587	Failed to load tags:	加载标签失败：
+1588	Failed to load tag media:	加载标签媒体失败：
+1589	Failed to create folder.	创建文件夹失败。
+1590	Failed to rename folder.	重命名文件夹失败。
+1591	Failed to update folder.	更新文件夹失败。
+1592	Failed to update folder color.	更新文件夹颜色失败。
+1593	This folder will be deleted and its subfolders moved to the top level. 	此文件夹将被删除，其子文件夹会移至顶层。
+1594	This folder will be deleted. 	此文件夹将被删除。
+1595	Items inside stay in your library.	其中的项目会保留在你的素材库中。
+1596	Failed to delete folder.	删除文件夹失败。
+1597	Failed to add to folder.	添加到文件夹失败。
+1598	Failed to move items.	移动项目失败。
+1599	Failed to remove from folder.	从文件夹移除失败。
+1600	Failed to navigate to reference media:	无法跳转到参考媒体：
+1601	Close tag view	关闭标签视图
+1602	Close tags	关闭标签
+1603	Select Videos	选择视频
+1604	Select Audio	选择音频
+1605	Select 3D Object	选择 3D 对象
+1606	Select 3D Objects	选择 3D 对象
+1607	Select 3D World	选择 3D 世界
+1608	Select 3D Worlds	选择 3D 世界
+1609	Select Upload	选择上传
+1610	Select Uploads	选择上传
+1611	Select Media	选择媒体
+1612	Select Images	选择图片
+1613	Drag images here, generate new ones, or create a subfolder.	将图片拖到这里、生成新图片，或创建子文件夹。
+1614	There's nothing in this folder yet.	此文件夹还是空的。
+1615	3D model	3D 模型
+1616	Please select an image to upload.	请选择要上传的图片。
+1617	unknown char code 	未知字符编码 
+1618	unknown number type 	未知数字类型 
+1619	PMD file magic is not Pmd, but 	PMD 文件标识不是 Pmd，而是 
+1620	PMX file magic is not PMX , but 	PMX 文件标识不是 PMX，而是 
+1621	PMX version 	PMX 版本 
+1622	 is not supported.	 不受支持。
+1623	unsupport bone type 	不支持的骨骼类型 
+1624	unknown toon flag 	未知 toon 标志 
+1625	Vocaloid Motion Data 0002	Vocaloid Motion Data 0002
+1626	VMD file magic is not Vocaloid Motion Data 0002, but 	VMD 文件标识不是 Vocaloid Motion Data 0002，而是 
+1627	the file seems not vpd file.	该文件似乎不是 vpd 文件。
+1628	Vocaloid Pose Data file	Vocaloid 姿势数据文件
+1629	 seems like a not right default texture path. Using toon00.bmp instead.	 似乎不是正确的默认贴图路径。改用 toon00.bmp。
+1630	 is not the child of bone 	 不是骨骼的子级 
+1631	unknown shape type 	未知形状类型 
+1632	' has already been added.	' 已添加过。
+1633	' has not been added yet.	' 尚未添加。
+1634	Failed to load splat.	无法加载 splat。
+1635	Splat bbox skipped: initialized promise rejected	已跳过 Splat 包围盒：初始化 promise 被拒绝
+1636	Failed to load 3D asset.	无法加载 3D 素材。
+1637	Loading older model consider resaving to upgrade to newer version of save file. Save Version:	正在加载旧版模型，建议重新保存以升级到新版存档格式。存档版本：
+1638	GLB Did not contain an object or children.	GLB 中不包含对象或子级。
+1639	load GLB from Tauri error:	从 Tauri 加载 GLB 出错：
+1640	GLTF loader error:	GLTF 加载器错误：
+1641	load Splat from Tauri error:	从 Tauri 加载 Splat 出错：
+1642	Load MMD	加载 MMD
+1643	/resources/pose/Lumine Idle cycle.vmd	/resources/pose/Lumine Idle cycle.vmd
+1644	Background creation..	正在创建背景……
+1645	TransformControls: The attached 3D object must be a part of the scene graph.	TransformControls：所附加的 3D 对象必须是场景图的一部分。
+1646	No intersections	没有交点
+1647	Showing bone	正在显示骨骼
+1648	FK mode off	FK 模式已关闭
+1649	FK mode on	FK 模式已开启
+1650	Mouse locked manually	鼠标已手动锁定
+1651	Mouse unlocked manually	鼠标已手动解锁
+1652	No hip bone found in the model.	模型中未找到髋部骨骼。
+1653	Saving with version:	正在使用版本保存：
+1654	Saving older.	正在保存旧版。
+1655	Scene saved.	场景已保存。
+1656	Scene load: object failed to load	场景加载：对象加载失败
+1657	Save Scene Result: 	保存场景结果：
+1658	surface value	surface 值
+1659	Save Timeline	保存时间线
+1660	Cancel Timeline Edits	取消时间线编辑
+1661	Animation clip has no animations track:	动画片段没有动画轨道：
+1662	If you see this message twice! then it rendered twice, if you see it once it's all good.	如果你看到这条消息两次！说明它渲染了两次；只看到一次就是正常的。
+1663	3D editor is already initialized	3D 编辑器已初始化
+1664	Setting Scene is loaded	场景设置已加载
+1665	Error: Renderer or camera not available.	错误：渲染器或相机不可用。
+1666	 ? e : 	 ? e : 
+1667	Stopping 3D render loop	正在停止 3D 渲染循环
+1668	Render flag is already true	渲染标志已为 true
+1669	3D mount: Wait for initialization	3D 挂载：等待初始化
+1670	3D already mounted, skipping	3D 已挂载，跳过
+1671	3D mount: Wait for DOM mount	3D 挂载：等待 DOM 挂载
+1672	3D Editor Engine remounted	3D 编辑器引擎已重新挂载
+1673	3D Editor Engine unmounted	3D 编辑器引擎已卸载
+1674	Unknown Provider	未知服务商
+1675	AI Film Trailer	AI 电影预告片
+1676	clip shows	片段展示
+1677	good story	好故事
+1678	film trailer	电影预告片
+1679	Show, Don't Tell	要展示，别讲述
+1680	film language	电影语言
+1681	3D set	3D 布景
+1682	kit bash	套件拼装
+1683	matte paintings	遮罩绘景
+1684	Red vs. Blue	红队对蓝队
+1685	The Strangerhood	The Strangerhood
+1686	Skibidi Toilet	Skibidi Toilet
+1687	Failed to fetch news feed, using bundled content.	无法获取新闻源，改用内置内容。
+1688	 Back to News	 返回新闻
+1689	Cannot change tab. Generation in progress.	无法切换标签页。正在生成中。
+1690	Error fetching subscription	获取订阅信息出错
+1691	Fetched subscription from server: 	已从服务器获取订阅信息：
+1692	Current Plan	当前方案
+1693	Cancel Plan	取消方案
+1694	Switch Plan	切换方案
+1695	Upgrade Plan	升级方案
+1696	Free forever	永久免费
+1697	Billed yearly	按年计费
+1698	Billed monthly	按月计费
+1699	Most Popular	最受欢迎
+1700	Best Value	最超值
+1701	Buy 	购买 
+1702	Picked up draggable item 	已拾取可拖拽项目 
+1703	 is no longer over a droppable area.	 已不再位于可放置区域内。
+1704	Dragging was cancelled. Draggable item 	拖拽已取消。可拖拽项目 
+1705	Image Ref	图像参考
+1706	Start Frame	起始帧
+1707	Image Prompts	图像提示词
+1708	Animate an image	让图片动起来
+1709	Use the elements of an image	使用图像中的元素
+1710	End Frame	结束帧
+1711	Video Ref	视频参考
+1712	Audio Ref	音频参考
+1713	Clear prompt and attached references	清空提示词和已附加的参考
+1714	Expand prompt to focus mode	展开提示词进入专注模式
+1715	That file type isn't supported	不支持该文件类型
+1716	Drop to set your frames	拖放以设置你的帧
+1717	Drop to add references	拖放以添加参考
+1718	This will permanently delete 	这将永久删除 
+1719	Name cannot be empty	名称不能为空
+1720	Character updated	角色已更新
+1721	Please upload image files	请上传图片文件
+1722	Please enter a character name	请输入角色名称
+1723	Please upload a reference image	请上传参考图片
+1724	No other characters	没有其他角色
+1725	No other images	没有其他图片
+1726	No other videos	没有其他视频
+1727	No other audio	没有其他音频
+1728	Currently 	当前 
+1729	MentionTextarea sync: DOM changed during caret restore	MentionTextarea 同步：恢复光标位置期间 DOM 发生变化
+1730	chip caret eject: DOM changed during move	chip 光标弹出：移动期间 DOM 发生变化
+1731	First and last frames are already set	首帧和末帧已设置
+1732	The first frame is already set	首帧已设置
+1733	Cannot generate video: prompt is empty	无法生成视频：提示词为空
+1734	Please enter a prompt to generate video	请输入提示词以生成视频
+1735	Cannot generate video: no model selected	无法生成视频：未选择模型
+1736	Please select a model to generate video	请选择模型以生成视频
+1737	Cannot generate video: no reference image provided	无法生成视频：未提供参考图片
+1738	Please add a starting frame image to generate video	请添加起始帧图片以生成视频
+1739	Failed to start video generation. Please try again.	启动视频生成失败。请重试。
+1740	Starting frame required	需要起始帧
+1741	Unknown resolution in icon mapping:	图标映射中存在未知分辨率：
+1742	Extra high	极高
+1743	Selected model and provider:	已选模型和服务商：
+1744	Cannot generate image: prompt is empty	无法生成图片：提示词为空
+1745	Cannot generate image: no model selected	无法生成图片：未选择模型
+1746	Image Generation Request	图片生成请求
+1747	Failed to start image generation. Please try again.	启动图片生成失败。请重试。
+1748	Couldn't start generation - the service is temporarily unavailable. Try again shortly.	无法启动生成 —— 服务暂时不可用。请稍后重试。
+1749	No audio models returned from API	API 未返回任何音频模型
+1750	Failed to fetch audio models	获取音频模型失败
+1751	Request failed	请求失败
+1752	Audio upload failed. Please try again.	音频上传失败。请重试。
+1753	Image upload failed. Please try again.	图片上传失败。请重试。
+1754	Audio Track	音频轨道
+1755	Add audio	添加音频
+1756	Remove image	移除图片
+1757	Add image	添加图片
+1758	Audio 	音频 
+1759	Remove audio	移除音频
+1760	Auto BPM	自动 BPM
+1761	Style: e.g. dreamy synth-pop, female vocals	风格：例如 dreamy synth-pop、女声
+1762	Clear style	清空风格
+1763	This model	此模型
+1764	Not enough credits for this generation	本次生成的积分不足
+1765	Failed to start audio generation	启动音频生成失败
+1766	Failed to start audio generation. Please try again.	启动音频生成失败。请重试。
+1767	Keep lyrics: ON	保留歌词：开
+1768	Keep lyrics: OFF	保留歌词：关
+1769	Failed to fetch currency rates, using fallback:	获取汇率失败，使用备用值：
+1770	Text to Image	文本生图
+1771	Generate Video	生成视频
+1772	Canvas 2D	2D 画布
+1773	Stage 3D	3D 舞台
+1774	Cost Breakdown	费用明细
+1775	Toggle sidebar	切换侧边栏
+1776	Camera forward	相机前移
+1777	Camera back	相机后移
+1778	Camera left	相机左移
+1779	Camera right	相机右移
+1780	Camera up	相机上移
+1781	Camera down	相机下移
+1782	Look up	视角上抬
+1783	Look down	视角下俯
+1784	Look left	视角左转
+1785	Look right	视角右转
+1786	Toggle local / world	切换局部 / 世界
+1787	Focus selection	聚焦选中对象
+1788	Open asset menu	打开素材菜单
+1789	Toggle camera view	切换相机视角
+1790	Toggle perf stats	切换性能统计
+1791	Clear selection / exit pose	清除选择 / 退出姿势
+1792	Deselect all	取消全选
+1793	Duplicate selected	复制选中项
+1794	Toggle grid snapping	切换网格吸附
+1795	Play / pause	播放 / 暂停
+1796	Step one frame back	后退一帧
+1797	Step one frame forward	前进一帧
+1798	Nudge selection back	将选中项后移
+1799	Nudge selection forward	将选中项前移
+1800	Delete keyframe / clip	删除关键帧 / 片段
+1801	Expand / collapse timeline	展开 / 折叠时间线
+1802	Toggle build / record mode	切换构建 / 录制模式
+1803	Capture still	截图静帧
+1804	Record timeline to video	将时间线录制为视频
+1805	Cancel render	取消渲染
+1806	Brush tool	画笔工具
+1807	Mask tool	蒙版工具
+1808	Eraser tool	橡皮擦工具
+1809	Increase brush size	增大画笔尺寸
+1810	Decrease brush size	减小画笔尺寸
+1811	Lasso tool	套索工具
+1812	Text tool	文字工具
+1813	Select all	全选
+1814	Delete selection	删除所选内容
+1815	Group selection	将所选内容编组
+1816	Ungroup selection	取消所选内容编组
+1817	Zoom to fit	缩放至合适大小
+1818	Reset zoom & pan	重置缩放与平移
+1819	Clear selection / close viewer	清除选择 / 关闭查看器
+1820	Delete selected items	删除选中项
+1821	Rate 1	1 星
+1822	Rate 2	2 星
+1823	Rate 3	3 星
+1824	Rate 4	4 星
+1825	Rate 5	5 星
+1826	Change keybinding	更改快捷键
+1827	space spacebar	space 空格键
+1828	esc escape	esc 退出
+1829	del delete	del 删除
+1830	backspace delete	backspace 删除
+1831	enter return	enter 回车
+1832	up arrow	上箭头
+1833	down arrow	下箭头
+1834	left arrow	左箭头
+1835	right arrow	右箭头
+1836	backtick grave tilde	backtick 重音符 波浪号
+1837	minus dash	minus 减号
+1838	equal plus	equal 加号
+1839	2D Editor	2D 编辑器
+1840	Moodboard canvas	情绪板画布
+1841	Viewport camera, transforms & selection	视口相机、变换与选择
+1842	Vector canvas editing	矢量画布编辑
+1843	Figma-style board tools	Figma 风格画板工具
+1844	Board library, item viewer & presentation	画板素材库、项目查看器与演示
+1845	Default bindings	默认绑定
+1846	Collapse all	全部折叠
+1847	Expand all	全部展开
+1848	Removes 	移除 
+1849	your 1 custom binding	你的 1 个自定义绑定
+1850	Video editor shortcuts are managed in the video editor itself	视频编辑器快捷键在视频编辑器内管理
+1851	Every shortcut starts from the	每个快捷键都源自
+1852	preset. Any key you change is saved as your own	预设。你更改的按键会保存为你自己的
+1853	Clear key filter	清除按键筛选
+1854	 is already used by	 已被以下功能使用
+1855	Nothing is bound to	没有绑定到
+1856	Sign up to save	注册以保存
+1857	Set Timeline Duration	设置时间线时长
+1858	Add Keyframe	添加关键帧
+1859	Delete Keyframe	删除关键帧
+1860	Toggle Clip Loop	切换片段循环
+1861	Enable Transition	启用转场
+1862	Remove Animation Clip	移除动画片段
+1863	This animation doesn't match the character's skeleton.	此动画与角色的骨骼不匹配。
+1864	No room left on the character's timeline for this clip.	角色时间线上没有空间容纳此片段。
+1865	Select a character or rigged object in the scene, then click an animation to add it.	在场景中选择一个角色或绑定对象，然后点击动画以添加。
+1866	Add to Character	添加到角色
+1867	Drag to Scene	拖入场景
+1868	Can only polyfill class components	只能对 class 组件进行 polyfill
+1869	 but also contains the following legacy lifecycles:	 但还包含以下旧版生命周期：
+1870	Cannot destructure 	无法解构 
+1871	Invalid metadata returned for cell 	单元格返回了无效的元数据 
+1872	Unexpected child type registered; only Grid/MultiGrid children are supported.	注册了意外的子类型；仅支持 Grid/MultiGrid 子级。
+1873	Requested index 	请求的索引 
+1874	 is outside of range 0..	 超出范围 0..
+1875	Invalid size returned for cell 	单元格返回了无效的尺寸 
+1876	 of value 	，值为 
+1877	Invalid offset 	无效偏移 
+1878	Jump Forward	向前跳转
+1879	Tonic Seizure	强直发作
+1880	Ginga Variation 3	Ginga 变体 3
+1881	Texting While Standing	站立发短信
+1882	Getting Bit	被咬
+1883	Twist Dance	扭动舞
+1884	Peek Around Corner	转角窥视
+1885	Sword And Shield Casting	剑盾施法
+1886	Breakdance Ready	霹雳舞准备
+1887	Sitting Yell	坐着喊叫
+1888	Breakdance Uprock Var 1	霹雳舞 Uprock 变体 1
+1889	Standard Walk	标准行走
+1890	Sword And Shield Jump	剑盾跳跃
+1891	Baseball Bunt	棒球触击
+1892	Sneaking Forward	潜行前进
+1893	Right Strafe Walking	向右横移行走
+1894	Laying Breathless	躺着喘息
+1895	Orc Walk	兽人行走
+1896	Run Look Back	边跑边回头
+1897	Lengthy Head Nod	长长地点头
+1898	Right Hook	右勾拳
+1899	Great Sword Impact	巨剑冲击
+1900	Zombie Biting	僵尸啃咬
+1901	Corkscrew Evade	螺旋闪避
+1902	Catwalk Walk Forward Crossed	猫步前行交叉
+1903	Look Around	环顾四周
+1904	Point Light	点光源
+1905	Story Girl	Story Girl
+1906	Empty Skybox	空天空盒
+1907	Day Skybox	白天天空盒
+1908	Night Skybox	夜晚天空盒
+1909	Gray Skybox	灰色天空盒
+1910	Black Skybox	黑色天空盒
+1911	JD Vance	JD Vance
+1912	Lil JD	Lil JD
+1913	View all	查看全部
+1914	story girl	story girl
+1915	news anchor	新闻主播
+1916	ai trump	ai trump
+1917	Click + to add your first 3D asset!	点击 + 添加你的第一个 3D 素材！
+1918	, p.disabled ? 	, p.disabled ? 
+1919	Failed to Save Scene Try again Later!	保存场景失败，请稍后重试！
+1920	Save a copy to your account	将副本保存到你的账户
+1921	Save Scene as Copy	将场景另存为副本
+1922	Save copy	保存副本
+1923	Save scene	保存场景
+1924	Assertion failed.	断言失败。
+1925	Invalid exponential-Golomb code.	无效的指数哥伦布码。
+1926	Google Inc	Google Inc
+1927	name, when provided, must be a string.	name 提供时必须是字符串。
+1928	description, when provided, must be a string.	description 提供时必须是字符串。
+1929	tags must be an object.	tags 必须是对象。
+1930	tags.title, when provided, must be a string.	tags.title 提供时必须是字符串。
+1931	tags.description, when provided, must be a string.	tags.description 提供时必须是字符串。
+1932	tags.artist, when provided, must be a string.	tags.artist 提供时必须是字符串。
+1933	tags.album, when provided, must be a string.	tags.album 提供时必须是字符串。
+1934	tags.genre, when provided, must be a string.	tags.genre 提供时必须是字符串。
+1935	tags.date, when provided, must be a valid Date.	tags.date 提供时必须是有效的 Date。
+1936	tags.lyrics, when provided, must be a string.	tags.lyrics 提供时必须是字符串。
+1937	tags.images, when provided, must be an array.	tags.images 提供时必须是数组。
+1938	Each image in tags.images must be an object.	tags.images 中的每个 image 必须是对象。
+1939	Each image.data must be a Uint8Array.	每个 image.data 必须是 Uint8Array。
+1940	tags.comment, when provided, must be a string.	tags.comment 提供时必须是字符串。
+1941	tags.raw, when provided, must be an object.	tags.raw 提供时必须是对象。
+1942	disposition must be an object.	disposition 必须是对象。
+1943	disposition.default must be a boolean.	disposition.default 必须是布尔值。
+1944	disposition.primary must be a boolean.	disposition.primary 必须是布尔值。
+1945	disposition.forced must be a boolean.	disposition.forced 必须是布尔值。
+1946	disposition.original must be a boolean.	disposition.original 必须是布尔值。
+1947	disposition.commentary must be a boolean.	disposition.commentary 必须是布尔值。
+1948	Bitstream is not byte-aligned.	比特流未按字节对齐。
+1949	Video chunk metadata must be provided.	必须提供视频块元数据。
+1950	Video chunk metadata must be an object.	视频块元数据必须是对象。
+1951	Video chunk metadata must include a decoder configuration.	视频块元数据必须包含解码器配置。
+1952	Video chunk metadata decoder configuration must be an object.	视频块元数据中的解码器配置必须是对象。
+1953	Audio chunk metadata must be provided.	必须提供音频块元数据。
+1954	Audio chunk metadata must be an object.	音频块元数据必须是对象。
+1955	Audio chunk metadata must include a decoder configuration.	音频块元数据必须包含解码器配置。
+1956	Audio chunk metadata decoder configuration must be an object.	音频块元数据中的解码器配置必须是对象。
+1957	Subtitle metadata must be provided.	必须提供字幕元数据。
+1958	Subtitle metadata must be an object.	字幕元数据必须是对象。
+1959	Subtitle metadata must include a config object.	字幕元数据必须包含 config 对象。
+1960	Subtitle metadata config must be an object.	字幕元数据中的 config 必须是对象。
+1961	Subtitle metadata config description must be a string.	字幕元数据中的 config description 必须是字符串。
+1962	Setup header is too short.	Setup header 过短。
+1963	Wrong packet type in Setup header.	Setup header 中的包类型错误。
+1964	Invalid packet signature in Setup header.	Setup header 中的包签名无效。
+1965	Invalid Setup header: framing bit not found.	Setup header 无效：未找到组帧位。
+1966	Invalid Setup header: mode header not found.	Setup header 无效：未找到模式头。
+1967	This packet does not contain alpha side data.	此包不包含 alpha 边数据。
+1968	Metadata-only packets cannot be converted to an audio chunk.	仅含元数据的包无法转换为音频块。
+1969	Invalid PKCS#7 padding. Incorrect key or corrupted data.	PKCS#7 填充无效。密钥错误或数据已损坏。
+1970	Init input must match the input's format.	Init 输入必须与输入的格式匹配。
+1971	Unsupported edit list: multiple edits are not currently supported. Only using first edit.	不支持的编辑列表：目前不支持多个编辑项。仅使用第一个编辑项。
+1972	Unsupported edit list entry: media rate must be 1.	不支持的编辑列表条目：媒体速率必须为 1。
+1973	Unknown encrypted video codec due to missing frma box.	由于缺少 frma box，无法识别加密视频编解码器。
+1974	Unsupported PCM format.	不支持的 PCM 格式。
+1975	Unknown encrypted audio codec due to missing frma box.	由于缺少 frma box，无法识别加密音频编解码器。
+1976	Invalid dec3 box contents, ignoring.	dec3 box 内容无效，已忽略。
+1977	Multiple saio entries are not supported; using the first offset only.	不支持多个 saio 条目；仅使用第一个偏移量。
+1978	Incomplete saiz/saio info; cannot resolve encryption data.	saiz/saio 信息不完整；无法解析加密数据。
+1979	Failed to read auxiliary encryption info.	读取辅助加密信息失败。
+1980	cbcs with subsamples requires pattern encryption.	带子样本的 cbcs 需要模式加密。
+1981	EBML varint size not supported 	不支持该 EBML 变长整数大小 
+1982	Bad EBML varint size 	错误的 EBML 变长整数大小 
+1983	Bad float size 	错误的浮点大小 
+1984	Undefined element size is used in a place where it is not supported.	在此处使用了不受支持的未定义元素大小。
+1985	No valid MP3 frame found.	未找到有效的 MP3 帧。
+1986	Invalid mode number.	无效的模式编号。
+1987	Invalid page with granule position: no packets end on this page.	含 granule 位置的无效页面：此页面上没有包结束。
+1988	Invalid WAVE file - wrong format	WAVE 文件无效 —— 格式错误
+1989	Missing STREAMINFO metadata block! Corrupted FLAC file.	缺少 STREAMINFO 元数据块！FLAC 文件已损坏。
+1990	Invalid blocking bit	无效的阻塞位
+1991	Only files with a single program are supported.	仅支持包含单个节目的文件。
+1992	Program Association Table must link to a Program Map Table.	节目关联表必须链接到节目映射表。
+1993	Invalid MP3 audio stream; could not read frame header from first packet.	MP3 音频流无效；无法从第一个包读取帧头。
+1994	Invalid AC-3 audio stream; could not read sync frame from first packet.	AC-3 音频流无效；无法从第一个包读取同步帧。
+1995	Invalid AC-3 audio stream; reserved sample rate code found in first packet.	AC-3 音频流无效；在第一个包中发现保留的采样率编码。
+1996	Invalid E-AC-3 audio stream; could not read sync frame from first packet.	E-AC-3 音频流无效；无法从第一个包读取同步帧。
+1997	Invalid E-AC-3 audio stream; reserved sample rate code found in first packet.	E-AC-3 音频流无效；在第一个包中发现保留的采样率编码。
+1998	No Program Map Table found in the file.	文件中未找到节目映射表。
+1999	No Program Association Table found in the file.	文件中未找到节目关联表。
+2000	Missing first segment, can't retrieve track.	缺少第一个分段，无法获取轨道。
+2001	No matching track found in underlying media data.	在底层媒体数据中未找到匹配的轨道。
+2002	Cannot determine the size of an unsized source.	无法确定未指定大小的源的尺寸。
+2003	length, when provided, must be a non-negative integer.	length 提供时，必须是非负整数。
+2004	Cannot ref a disposed source.	无法引用已释放的源。
+2005	Can't get source; ref has already been freed.	无法获取源；引用已被释放。
+2006	Illegal operation: double free on SourceRef.	非法操作：对 SourceRef 重复释放。
+2007	blob must be a Blob.	blob 必须是 Blob。
+2008	Blob reader stopped unexpectedly before all requested data was read.	Blob 读取器在读取完所有请求的数据之前意外停止。
+2009	stream must be a ReadableStream.	stream 必须是 ReadableStream。
+2010	Cannot create a slice of a disposed source.	无法为已释放的源创建切片。
+2011	Invalid AES-128 key; expected at least 16 bytes of data.	AES-128 密钥无效；应至少为 16 字节的数据。
+2012	Could not find matching track in underlying media data.	在底层媒体数据中找不到匹配的轨道。
+2013	QuickTime File Format	QuickTime 文件格式
+2014	MPEG Transport Stream	MPEG 传输流
+2015	HLS inputs require `InputOptions.source` to be a PathedSource or a ref to one.	HLS 输入要求 `InputOptions.source` 为 PathedSource 或其引用。
+2016	init.format must be one of: 	init.format 必须是以下之一： 
+2017	init.layout, when provided, must be an array.	init.layout 提供时，必须是数组。
+2018	Each entry in init.layout must be an object.	init.layout 中的每一项都必须是对象。
+2019	init.timestamp, when provided, must be a number.	init.timestamp 提供时，必须是数字。
+2020	Could not determine dimensions.	无法确定尺寸。
+2021	Cannot get allocation size when format is null.	format 为 null 时无法获取分配大小。
+2022	Cannot copy video sample data when format is null.	format 为 null 时无法复制视频样本数据。
+2023	For this sample, converting from a non-RGB to an RGB format requires VideoFrame to be defined.	对于此样本，从非 RGB 格式转换为 RGB 格式需要定义 VideoFrame。
+2024	Source buffer OOB read.	源缓冲区越界读取。
+2025	Destination buffer OOB write.	目标缓冲区越界写入。
+2026	sx must be a number.	sx 必须是数字。
+2027	sy must be a number.	sy 必须是数字。
+2028	dx must be a number.	dx 必须是数字。
+2029	dy must be a number.	dy 必须是数字。
+2030	crop, when provided, must be an object.	crop 提供时，必须是对象。
+2031	crop.left must be a non-negative integer.	crop.left 必须是非负整数。
+2032	crop.top must be a non-negative integer.	crop.top 必须是非负整数。
+2033	crop.width must be a non-negative integer.	crop.width 必须是非负整数。
+2034	crop.height must be a non-negative integer.	crop.height 必须是非负整数。
+2035	Each entry in options.layout must be an object.	options.layout 中的每一项都必须是对象。
+2036	Allocation size exceeds limit.	分配大小超出限制。
+2037	Planes overlap.	平面重叠。
+2038	AudioData with null format is not supported.	不支持 format 为 null 的 AudioData。
+2039	Destination format not determined	未确定目标格式
+2040	Destination buffer is too small	目标缓冲区太小
+2041	config.bitrate must be a positive integer or a quality.	config.bitrate 必须是正整数或质量值。
+2042	config.bitrate must be provided for compressed audio codecs.	对于压缩音频编解码器，必须提供 config.bitrate。
+2043	config.bitrate, when provided, must be a positive integer or a quality.	config.bitrate 提供时，必须是正整数或质量值。
+2044	Falling back to CPU for color/alpha merging.	颜色/alpha 合并回退到 CPU。
+2045	Color/alpha merge worker error.	颜色/alpha 合并工作线程错误。
+2046	Color/alpha merger closed.	颜色/alpha 合并器已关闭。
+2047	CPU color/alpha merging requires a known VideoFrame format.	CPU 颜色/alpha 合并需要已知的 VideoFrame 格式。
+2048	other must be an InputTrack.	other 必须是 InputTrack。
+2049	predicate must return or resolve to a boolean value.	predicate 必须返回或解析为布尔值。
+2050	query must be an object.	query 必须是对象。
+2051	query.filter must return or resolve to a boolean.	query.filter 必须返回或解析为布尔值。
+2052	Input has been disposed.	输入已释放。
+2053	Reading file size too early; read required first.	过早读取文件大小；需要先读取数据。
+2054	Slicing outside of original slice.	在原始切片之外进行切片。
+2055	Classic rock	经典摇滚
+2056	New age	新世纪
+2057	Rhythm and blues	节奏布鲁斯
+2058	Death metal	死亡金属
+2059	Jazz & funk	爵士放克
+2060	Sound clip	音频片段
+2061	Alternative rock	另类摇滚
+2062	Instrumental pop	器乐流行
+2063	Instrumental rock	器乐摇滚
+2064	Southern rock	南方摇滚
+2065	Top 40	Top 40
+2066	Christian rap	基督教说唱
+2067	Jungle music	丛林音乐
+2068	Native US	美国原住民音乐
+2069	New wave	新浪潮
+2070	Acid punk	酸性朋克
+2071	Acid jazz	酸性爵士
+2072	Rock 'n' roll	摇滚乐
+2073	Hard rock	硬摇滚
+2074	Folk rock	民谣摇滚
+2075	National folk	民族民谣
+2076	Fast fusion	快速融合爵士
+2077	Gothic rock	哥特摇滚
+2078	Progressive rock	前卫摇滚
+2079	Psychedelic rock	迷幻摇滚
+2080	Symphonic rock	交响摇滚
+2081	Slow rock	慢摇
+2082	Big band	大乐队
+2083	Easy listening	轻音乐
+2084	Chamber music	室内乐
+2085	Booty bass	电臀贝斯
+2086	Porn groove	情色律动
+2087	Slow jam	慢板情歌
+2088	Power ballad	力量情歌
+2089	Rhythmic Soul	节奏灵魂乐
+2090	Punk rock	朋克摇滚
+2091	Drum solo	鼓独奏
+2092	A cappella	无伴奏合唱
+2093	Dance hall	舞厅音乐
+2094	Goa music	果阿音乐
+2095	Drum & bass	鼓打贝斯
+2096	Hardcore techno	硬核电子
+2097	Polsk punk	波兰朋克
+2098	Christian gangsta rap	基督教匪帮说唱
+2099	Heavy metal	重金属
+2100	Black metal	黑金属
+2101	Contemporary Christian	当代基督教音乐
+2102	Christian rock	基督教摇滚
+2103	Thrash metal	鞭击金属
+2104	Art rock	艺术摇滚
+2105	Big beat	大节拍
+2106	Jam Band	即兴乐队
+2107	Math rock	数学摇滚
+2108	New romantic	新浪漫
+2109	Space rock	太空摇滚
+2110	Trop rock	热带摇滚
+2111	World music	世界音乐
+2112	Audio theatre	音频剧场
+2113	Neue Deutsche Welle	新德意志浪潮
+2114	Indie rock	独立摇滚
+2115	Garage rock	车库摇滚
+2116	First packet must be a key packet.	第一个数据包必须是关键帧数据包。
+2117	Expected match.	应为匹配项。
+2118	Can't have multiple Writers for the same Target.	同一个 Target 不能有多个 Writer。
+2119	Internal error: Can't get tracked writes since nothing was tracked.	内部错误：未跟踪任何内容，无法获取已跟踪的写入。
+2120	BufferTarget options, when provided, must be an object.	BufferTarget 的 options 提供时，必须是对象。
+2121	Output has been finalized.	输出已完成。
+2122	Cannot call close without connecting the source to an output track.	未将源连接到输出轨道时无法调用 close。
+2123	Cannot call close before output has been started.	输出尚未启动时无法调用 close。
+2124	VideoEncoder is not supported by this browser.	此浏览器不支持 VideoEncoder。
+2125	Falling back to CPU for color/alpha splitting.	颜色/alpha 拆分回退到 CPU。
+2126	Color/alpha splitter worker error.	颜色/alpha 拆分工作线程错误。
+2127	Color/alpha splitter closed.	颜色/alpha 拆分器已关闭。
+2128	CPU color/alpha splitting requires a known VideoFrame format.	CPU 颜色/alpha 拆分需要已知的 VideoFrame 格式。
+2129	timestamp must be a non-negative number.	timestamp 必须是非负数。
+2130	AudioEncoder is not supported by this browser.	此浏览器不支持 AudioEncoder。
+2131	 Switching to MOV will grant support for this codec.	 切换到 MOV 即可支持此编解码器。
+2132	 Switching to MP4 will grant support for this codec.	 切换到 MP4 即可支持此编解码器。
+2133	 Switching to MKV will grant support for this codec.	 切换到 MKV 即可支持此编解码器。
+2134	other must be an OutputTrack.	other 必须是 OutputTrack。
+2135	Cannot pair a group with itself.	无法将组与自身配对。
+2136	metadata must be an object.	metadata 必须是对象。
+2137	metadata.name, when provided, must be a string.	metadata.name 提供时，必须是字符串。
+2138	Cannot set metadata tags after output has been started or canceled.	输出已启动或已取消后无法设置元数据标签。
+2139	Cannot add track after output has been started or canceled.	输出已启动或已取消后无法添加轨道。
+2140	Output has already been started.	输出已启动。
+2141	Output has already been canceled.	输出已取消。
+2142	Cannot finalize before starting.	启动前无法完成。
+2143	Cannot finalize after canceling.	取消后无法完成。
+2144	No room on this row to open a gap for the transition.	此行没有空间为转场留出间隙。
+2145	No room left on this row for that clip.	此行没有剩余空间放置该片段。
+2146	Trim Animation Clip	修剪动画片段
+2147	Drag an animation here	将动画拖到此处
+2148	Add a baked animation with +	用 + 添加已烘焙的动画
+2149	Edit transition into the next clip	编辑到下一片段的转场
+2150	Blend into the next clip	混合到下一片段
+2151	Show all tracks	显示所有轨道
+2152	Show only the selected object's track	仅显示所选对象的轨道
+2153	Render the timeline to video	将时间线渲染为视频
+2154	Add an animation timeline first	请先添加动画时间线
+2155	Looking through render camera	正通过渲染摄像机查看
+2156	Free viewport camera	自由视口摄像机
+2157	Uploading is unavailable in this editor.	此编辑器不支持上传。
+2158	Scene output upload or preview failed:	场景输出上传或预览失败：
+2159	Recording complete	录制完成
+2160	Capture complete	捕获完成
+2161	Upload & continue	上传并继续
+2162	Hide preview	隐藏预览
+2163	Enter View	进入视图
+2164	Exit View	退出视图
+2165	You may have unsaved changes.	可能有未保存的更改。
+2166	Cannot drop asset: editor engine not ready	无法放置素材：编辑器引擎未就绪
+2167	Failed to add object to scene:	向场景添加对象失败：
+2168	Error fetching credits	获取积分时出错
+2169	Fetched credits from server: 	已从服务器获取积分： 
+2170	Object.keys called on a non-object	对非对象调用了 Object.keys
+2171	`property` must be a string or a symbol`	`property` 必须是字符串或 symbol`
+2172	`loose`, if provided, must be a boolean	`loose` 提供时必须是布尔值
+2173	invalid intrinsic syntax, expected closing `%`	内部属性语法无效，应为结束符 `%`
+2174	invalid intrinsic syntax, expected opening `%`	内部属性语法无效，应为起始符 `%`
+2175	 exists, but is not available. Please file an issue!	 存在，但不可用。请提交 issue！
+2176	 does not exist!	 不存在！
+2177	intrinsic name must be a non-empty string	内部属性名必须是非空字符串
+2178	`%` may not be present anywhere but at the beginning and end of the intrinsic name	除内部属性名的开头和结尾外，`%` 不得出现在其他位置
+2179	base intrinsic for 	以下对象的 base 内部属性 
+2180	 exists, but the property is not available.	 存在，但该属性不可用。
+2181	`length` must be a positive 32-bit integer	`length` 必须是正的 32 位整数
+2182	get flags	获取标志
+2183	 more character	 更多字符
+2184	` is not present on `O`	` 不存在于 `O` 上
+2185	this environment lacks StopIteration	此环境缺少 StopIteration
+2186	`regex` must be a RegExp	`regex` 必须是 RegExp
+2187	Unknown Error: List Recent Jobs	未知错误：列出最近的任务
+2188	Could not fetch media file by token.	无法通过令牌获取媒体文件。
+2189	Could not rename media file.	无法重命名媒体文件。
+2190	HTML5 Audio pool exhausted, returning potentially locked audio object.	HTML5 Audio 池已耗尽，返回可能被锁定的音频对象。
+2191	An array of source files must be passed with any new Howl.	创建任何新的 Howl 时都必须传入源文件数组。
+2192	No audio support.	不支持音频。
+2193	Non-string found in selected audio sources - ignoring.	所选音频源中发现非字符串项 - 已忽略。
+2194	No codec support for selected audio sources.	所选音频源没有支持的编解码器。
+2195	Failed loading audio file with status: 	加载音频文件失败，状态： 
+2196	Decoding audio data failed.	解码音频数据失败。
+2197	Generation complete event received:	收到生成完成事件：
+2198	Image generation complete!	图像生成完成！
+2199	Video generation complete!	视频生成完成！
+2200	Background removal complete!	背景移除完成！
+2201	3D model generation complete!	3D 模型生成完成！
+2202	3D world generation complete!	3D 世界生成完成！
+2203	Generation enqueue failure event received:	收到生成入队失败事件：
+2204	Couldn't enqueue image generation!	无法将图像生成加入队列！
+2205	Couldn't enqueue video generation!	无法将视频生成加入队列！
+2206	Couldn't enqueue background removal!	无法将背景移除加入队列！
+2207	Couldn't enqueue 3D model generation!	无法将 3D 模型生成加入队列！
+2208	Couldn't enqueue 3D world generation!	无法将 3D 世界生成加入队列！
+2209	Couldn't enqueue generation!	无法将生成加入队列！
+2210	Generation enqueue success event received:	收到生成入队成功事件：
+2211	Image generation enqueued!	图像生成已加入队列！
+2212	Video generation enqueued!	视频生成已加入队列！
+2213	Background removal enqueued!	背景移除已加入队列！
+2214	3D model generation enqueued!	3D 模型生成已加入队列！
+2215	3D world generation enqueued!	3D 世界生成已加入队列！
+2216	Generation enqueued!	生成已加入队列！
+2217	Generation failed event received:	收到生成失败事件：
+2218	Image generation failed!	图像生成失败！
+2219	Video generation failed!	视频生成失败！
+2220	Background removal failed!	背景移除失败！
+2221	3D model generation failed!	3D 模型生成失败！
+2222	3D world generation failed!	3D 世界生成失败！
+2223	Generation failed!	生成失败！
+2224	Please set up 	请设置 
+2225	 on their website to use it with Artcraft.	 在其网站上，以便与 Artcraft 配合使用。
+2226	Video Generation is Resource Intensive	视频生成非常消耗资源
+2227	Subscribe for Credits to Generate	订阅获取积分以进行生成
+2228	Show provider billing modal event received from Tauri:	收到来自 Tauri 的显示服务商账单弹窗事件：
+2229	Show provider login modal event received from Tauri:	收到来自 Tauri 的显示服务商登录弹窗事件：
+2230	Enable notifications	启用通知
+2231	 in g ? 	 in g ? 
+2232	Choose Directory	选择目录
+2233	Use Default	使用默认值
+2234	Show Directory	显示目录
+2235	Version value out of range	版本值超出范围
+2236	Invalid value	无效值
+2237	Data too long	数据过长
+2238	Version number out of range	版本号超出范围
+2239	Degree out of range	角度超出范围
+2240	Byte out of range	字节超出范围
+2241	String contains non-numeric characters	字符串包含非数字字符
+2242	String contains unencodable characters in alphanumeric mode	字符串在字母数字模式下包含无法编码的字符
+2243	Native session verification did not return a user	原生会话验证未返回用户
+2244	Signed in successfully.	登录成功。
+2245	Login was declined on the website.	网站上的登录被拒绝。
+2246	Login failed. Start a new request.	登录失败。请重新发起请求。
+2247	This login request could not be completed. Start a new request.	此登录请求无法完成。请重新发起请求。
+2248	Website login	网站登录
+2249	 Back	 返回
+2250	Verify this code on the website. Expires in 	请在网站上验证此代码。剩余有效期 
+2251	Unable to open the browser. Scan the QR code instead.	无法打开浏览器。请改为扫描二维码。
+2252	Logged in as	已登录为
+2253	Passwords do not match.	两次输入的密码不一致。
+2254	Already have an account?	已有账号？
+2255	Don't have an account?	还没有账号？
+2256	Create your account	创建账号
+2257	Welcome back	欢迎回来
+2258	Sign up to start creating with ArtCraft	注册后即可开始使用 ArtCraft 创作
+2259	Log in to your account	登录你的账号
+2260	 ArtCraft. All rights reserved.	 ArtCraft。保留所有权利。
+2261	autoplay; fullscreen; picture-in-picture	autoplay; fullscreen; picture-in-picture
+2262	Error fetching Artcraft session	获取 Artcraft 会话时出错
+2263	Log Out	退出登录
+2264	Log In	登录
+2265	Error fetching Midjourney session	获取 Midjourney 会话时出错
+2266	Error clearing Midjourney credentials	清除 Midjourney 凭据时出错
+2267	Error opening Midjourney login	打开 Midjourney 登录时出错
+2268	Error fetching Grok session	获取 Grok 会话时出错
+2269	Error clearing Grok credentials	清除 Grok 凭据时出错
+2270	Error opening Grok login	打开 Grok 登录时出错
+2271	Experimental features unlocked	已解锁实验性功能
+2272	Updating provider priority on backend:	正在后端更新服务商优先级：
+2273	Provider priority updated successfully	服务商优先级更新成功
+2274	Failed to update provider priority:	更新服务商优先级失败：
+2275	Change plan	更改套餐
+2276	Upgrade plan	升级套餐
+2277	Subscription ends on 	订阅到期时间 
+2278	Next payment on 	下次扣款时间 
+2279	 purchased credits 	 已购买积分 
+2280	Experimental features enabled	实验性功能已启用
+2281	Unable to get data URL. 	无法获取 data URL。 
+2282	' + o + '	' + o + '
+2283	Can not cache the node. Width or height of the node equals 0. Caching is skipped.	无法缓存该节点。节点宽度或高度为 0。已跳过缓存。
+2284	 instead. Please check correct filters	 代替。请检查筛选器是否正确
+2285	Unable to apply filter. 	无法应用滤镜。 
+2286	Unexpected value 	意外的值 
+2287	' + i + '	' + i + '
+2288	Konva is awesome, right?	Konva 很棒，对吧？
+2289	Stage does not support clipping. Please use clip for Layers or Groups.	Stage 不支持裁剪。请对 Layer 或 Group 使用 clip。
+2290	You may only add layers to the stage.	只能向 stage 添加图层。
+2291	Can not find container in document with id 	在文档中找不到 id 为以下值的容器 
+2292	The stage has 	该 stage 有 
+2293	 layers. Recommended maximum number of layers is 3-5. Adding more layers into the stage may drop the performance. Rethink your tree structure, you can use Konva.Group.	 个图层。建议的最大图层数为 3-5。向 stage 添加更多图层可能会降低性能。请重新考虑你的树结构，可以使用 Konva.Group。
+2294	Stage has no container. A container is required.	Stage 没有容器。必须提供容器。
+2295	Unable to draw hit graph from cached scene canvas. 	无法从缓存的场景画布绘制命中图。 
+2296	You may only add groups and shapes to a layer.	只能向图层添加组和形状。
+2297	You may only add groups and shapes to groups.	只能向组添加组和形状。
+2298	Tween constructor have `node` that is not in a layer. Please add node into layer first.	Tween 构造函数的 `node` 不在图层中。请先将 node 添加到图层。
+2299	 : e + 	 : e + 
+2300	Transformer has unknown angle for cursor detection: 	Transformer 的光标检测角度未知： 
+2301	Konva.Transformer cannot be an a child of the node you are trying to attach	Konva.Transformer 不能作为你尝试附加的节点的子节点
+2302	mousedown touchstart	mousedown touchstart
+2303	Wrong position argument of selection resizer: 	选择缩放器的位置参数错误： 
+2304	Unknown anchor name: 	未知的锚点名称： 
+2305	Unknown emboss direction: 	未知的浮雕方向： 
+2306	File is not an image	文件不是图像
+2307	Failed to read file	读取文件失败
+2308	Error loading image from URL:	从 URL 加载图像时出错：
+2309	Error loading 3D model render:	加载 3D 模型渲染时出错：
+2310	Error loading image:	加载图像时出错：
+2311	Failed to convert image file to base64:	将图像文件转换为 base64 失败：
+2312	Failed to import scene:	导入场景失败：
+2313	Failed to load scene from file:	从文件加载场景失败：
+2314	Error preparing background removal:	准备背景移除时出错：
+2315	Error completing background removal:	完成背景移除时出错：
+2316	Failed to restore image in base image switch:	在基础图像切换中恢复图像失败：
+2317	Failed to load base image, discarding	加载基础图像失败，已丢弃
+2318	Removing history image:	正在移除历史图像：
+2319	Updated history image bundles:	已更新历史图像包：
+2320	setting middle mouse	设置鼠标中键
+2321	Stage reference is not available	Stage 引用不可用
+2322	Saturation 	饱和度 
+2323	Using older image source for history stack image	历史栈图像使用较旧的图像源
+2324	Failed to get 2D context	获取 2D 上下文失败
+2325	Generate pipeline worker error	生成流水线工作线程错误
+2326	Unexpected response type for composite	合成的响应类型异常
+2327	Unexpected response type for mask	蒙版的响应类型异常
+2328	Stage or left panel ref is not available	Stage 或左侧面板的引用不可用
+2329	Stage or left panel or base image ref is not available	Stage、左侧面板或基础图像的引用不可用
+2330	Stage reference not available for coordinate transformation	坐标转换所需的 Stage 引用不可用
+2331	No model URL available for 3D item	3D 项目没有可用的模型 URL
+2332	Failed to render 3D model:	渲染 3D 模型失败：
+2333	No image URL available for dropped item	拖放的项目没有可用的图像 URL
+2334	Edits layer not found	未找到编辑图层
+2335	Base image is not available	基础图像不可用
+2336	Base image bitmap not yet loaded	基础图像位图尚未加载
+2337	An item is selected.	已选中一个项目。
+2338	No item is selected.	未选中任何项目。
+2339	Error during tab change:	切换标签页时出错：
+2340	Downloaded 3D model	已下载 3D 模型
+2341	Could not save the selected files.	无法保存所选文件。
+2342	Could not load the original prompt.	无法加载原始提示词。
+2343	Shot 	镜头 
+2344	Unknown Error in Renaming Scene	重命名场景时发生未知错误
+2345	marquee 6.5s linear infinite	marquee 6.5s linear infinite
+2346	Cancelled by provider	已被服务商取消
+2347	3D Model	3D 模型
+2348	Remove all	全部移除
+2349	Couldn't refresh your balance.	无法刷新你的余额。
+2350	Balance up to date.	余额已是最新。
+2351	TopBar: Retrying credits fetch	TopBar：正在重试获取积分
+2352	TopBar: Polled credits	TopBar：已轮询积分
+2353	 Credits	 积分
+2354	Cost calculator	费用计算器
+2355	Unknown Error in Loading My Movies	加载我的影片时发生未知错误
+2356	Unknown Error in Loading My Audio Items	加载我的音频项目时发生未知错误
+2357	New movie is completed! Please check My Movies	新影片已完成！请查看“我的影片”
+2358	New audio is generated! Please check your audio library	新音频已生成！请查看你的音频素材库
+2359	What will you 	今天你想 
+2360	 today?	 什么？
+2361	Falling back to data URL for uploaded image	上传的图像回退到 data URL
+2362	Image uploaded successfully!	图像上传成功！
+2363	Upload failed. Please try again.	上传失败。请重试。
+2364	No node ID received from background removal event	背景移除事件未返回节点 ID
+2365	Unable to copy prompt	无法复制提示词
+2366	Video failed to load metadata	视频加载元数据失败
+2367	Video loading error:	视频加载错误：
+2368	Error extracting frame:	提取帧时出错：
+2369	CORS error: Cannot extract frames from this video. Try uploading the video file directly instead.	CORS 错误：无法从此视频提取帧。请改为直接上传视频文件。
+2370	Failed to extract any frames	未能提取任何帧
+2371	Frame saved to library!	帧已保存到素材库！
+2372	Error saving frame:	保存帧时出错：
+2373	Failed to convert to video	转换为视频失败
+2374	Failed to convert frame to video	将帧转换为视频失败
+2375	Error converting frame:	转换帧时出错：
+2376	Extract Frames	提取帧
+2377	Extraction Settings	提取设置
+2378	Extracted Frames	已提取的帧
+2379	Please select a video first	请先选择视频
+2380	Please select an image first	请先选择图像
+2381	Image Information	图像信息
+2382	An unexpected error occurred	发生了意外错误
+2383	Added to 3D scene	已添加到 3D 场景
+2384	3D editor isn't ready yet	3D 编辑器尚未就绪
+2385	Downloading GLB...	正在下载 GLB...
+2386	Downloaded GLB file	已下载 GLB 文件
+2387	Error processing external image:	处理外部图像时出错：
+2388	Error loading images:	加载图像时出错：
+2389	Showing Original	正在显示原图
+2390	Hold to Compare	按住对比
+2391	Error generating angle:	生成角度时出错：
+2392	Failed to generate angle	生成角度失败
+2393	Previous showcase	上一个展示
+2394	Next showcase	下一个展示
+2395	Try this	试试这个
+2396	Failed to upload source video. Use an MP4 file.	上传源视频失败。请使用 MP4 文件。
+2397	Failed to upload mask image.	上传蒙版图像失败。
+2398	Failed to upload reference image.	上传参考图像失败。
+2399	Close prompt	关闭提示词
+2400	Edit prompt	编辑提示词
+2401	Add an optional prompt	添加可选提示词
+2402	Add prompt	添加提示词
+2403	Background change backend coming soon. Your inputs are saved.	背景替换后端即将上线。你的输入已保存。
+2404	Failed to submit background change job.	提交背景替换任务失败。
+2405	Loaded showcase. Edit and Generate.	已加载展示示例。可编辑并生成。
+2406	Could not upload the recording or capture.	无法上传录制内容或截取内容。
+2407	Upload succeeded, but the preview could not be loaded. Retry to open it.	上传成功，但无法加载预览。请重试打开。
+2408	Scene recording	场景录制
+2409	Scene capture	场景截取
+2410	Upload Media Failed to send file	上传媒体：发送文件失败
+2411	Failed to load scene	加载场景失败
+2412	Untitled Scene	未命名场景
+2413	Cannot decode base64-encoded data URL	无法解码 base64 编码的 data URL
+2414	Undo not implemented for this command	此命令不支持撤销
+2415	Video track	视频轨道
+2416	Audio track	音频轨道
+2417	Graphic track	图形轨道
+2418	Effect track	效果轨道
+2419	Main Track	主轨道
+2420	element params	元素参数
+2421	Division by zero	除以零
+2422	Unexpected end of expression	表达式意外结束
+2423	Missing closing parenthesis	缺少右括号
+2424	'mode' required when 'parser' is a string	当 'parser' 为字符串时，必须提供 'mode'
+2425	Text element must have content	文本元素必须包含内容
+2426	New position may not be greater than current position	新位置不能大于当前位置
+2427	New position falls outside of history buffer	新位置超出历史缓冲区范围
+2428	Recover audio	恢复音频
+2429	Pen tool	钢笔工具
+2430	Failed to create 2D rendering context	创建 2D 渲染上下文失败
+2431	Cinematic Bars	电影黑边
+2432	Failed to create text measurement context	创建文本测量上下文失败
+2433	Image load failed	图像加载失败
+2434	sticker provider	贴纸来源
+2435	Sticker ID must be a non-empty string	贴纸 ID 必须是非空字符串
+2436	Compositor is not initialized	合成器未初始化
+2437	Iterator failed, will restart:	迭代器失败，将重新开始：
+2438	Failed to seek video:	视频定位失败：
+2439	No video track found	未找到视频轨道
+2440	Video codec not supported for decoding	不支持解码此视频编解码器
+2441	Failed to get target canvas context	获取目标画布上下文失败
+2442	Failed to export video	导出视频失败
+2443	Failed to decode audio:	解码音频失败：
+2444	Failed to decode audio asset:	解码音频素材失败：
+2445	Failed to decode asset audio:	解码素材音频失败：
+2446	Failed to fetch library audio:	获取素材库音频失败：
+2447	Copy snapshot failed:	复制快照失败：
+2448	Snapshot capture failed:	快照截取失败：
+2449	Failed to decode clip audio:	解码片段音频失败：
+2450	Failed to initialize audio sink:	初始化音频输出失败：
+2451	Cannot delete main scene	无法删除主场景
+2452	center 0	center 0
+2453	button, input, select, textarea	button, input, select, textarea
+2454	Clear input	清空输入
+2455	Hide password	隐藏密码
+2456	Show password	显示密码
+2457	Reset to default color	重置为默认颜色
+2458	delete bookmark	删除书签
+2459	Cannot delete scene:	无法删除场景：
+2460	No active scene.	没有活动场景。
+2461	Media asset not found:	未找到媒体素材：
+2462	Failed to register media asset:	注册媒体素材失败：
+2463	Failed to add media	添加媒体失败
+2464	Could not get canvas context	无法获取画布上下文
+2465	No video track found in the file	文件中未找到视频轨道
+2466	this video codec	此视频编解码器
+2467	Could not render image	无法渲染图像
+2468	Could not load image	无法加载图像
+2469	Error processing file:	处理文件出错：
+2470	Could not load media	无法加载媒体
+2471	Failed to rehydrate media asset:	重建媒体素材失败：
+2472	Drag and drop videos, photos, and audio files here	将视频、照片和音频文件拖放到此处
+2473	media asset	媒体素材
+2474	media assets	媒体素材
+2475	1 media asset has been uploaded	已上传 1 个媒体素材
+2476	No media assets were uploaded	未上传任何媒体素材
+2477	Selectable items	可选项目
+2478	Error processing files:	处理文件出错：
+2479	Gallery picker failed:	图库选择器失败：
+2480	Couldn't open the gallery	无法打开图库
+2481	Gallery import failed for	图库导入失败：
+2482	Error importing from gallery:	从图库导入出错：
+2483	Switch to list view	切换到列表视图
+2484	Switch to grid view	切换到网格视图
+2485	Sort by 	排序方式 
+2486	Failed to render effect preview	渲染效果预览失败
+2487	Pick a custom background color	选择自定义背景色
+2488	Drag to adjust value	拖动以调整数值
+2489	Canvas width	画布宽度
+2490	Canvas height	画布高度
+2491	Failed to load saved sounds:	加载已保存的音效失败：
+2492	Failed to save sound:	保存音效失败：
+2493	Failed to remove sound:	移除音效失败：
+2494	Failed to clear saved sounds:	清空已保存的音效失败：
+2495	Failed to resolve audio url:	解析音频 URL 失败：
+2496	Sound file not available	音效文件不可用
+2497	Failed to add sound to timeline:	添加音效到时间线失败：
+2498	Failed to fetch top sounds:	获取热门音效失败：
+2499	Only showing sounds licensed for commercial use	仅显示可商用的音效
+2500	Showing all sounds regardless of license	显示所有音效，不限许可
+2501	No sounds found	未找到音效
+2502	No sounds available	无可用音效
+2503	This will permanently remove all 	这将永久移除所有 
+2504	 saved sounds from your collection. This action cannot be undone.	 个已保存的音效。此操作无法撤销。
+2505	Remove from saved	从已保存中移除
+2506	Save sound	保存音效
+2507	Sticker categories	贴纸分类
+2508	No stickers available yet.	暂无可用贴纸。
+2509	Failed to add sticker:	添加贴纸失败：
+2510	Failed to add sticker to timeline	添加贴纸到时间线失败
+2511	 view coming soon...	 视图即将上线……
+2512	Cannot call during render.	渲染期间无法调用。
+2513	Unexpected bounds cache miss	意外的边界缓存未命中
+2514	Container size must be defined if a percentage item size is specified	如果指定了百分比项目尺寸，则必须定义容器尺寸
+2515	Times New Roman	Times New Roman
+2516	Courier New	Courier New
+2517	Select a font	选择字体
+2518	 elements selected.	 个元素已选中。
+2519	BG Color	背景色
+2520	BG Pad X	背景内边距 X
+2521	BG Pad Y	背景内边距 Y
+2522	BG Offset X	背景偏移 X
+2523	BG Offset Y	背景偏移 Y
+2524	Corner Radius	圆角半径
+2525	Collapse keyframes	折叠关键帧
+2526	Expand keyframes	展开关键帧
+2527	Timeline playhead	时间线播放头
+2528	Drag playhead	拖动播放头
+2529	Failed to switch scene:	切换场景失败：
+2530	Failed to delete scene	删除场景失败
+2531	Failed to delete scene:	删除场景失败：
+2532	Select scenes to delete	选择要删除的场景
+2533	Switch between scenes in your project	在项目的多个场景之间切换
+2534	Are you sure you want to delete 	确定要删除 
+2535	? This action cannot be undone.	？此操作无法撤销。
+2536	Edit graph	编辑曲线图
+2537	Open graph editor	打开曲线图编辑器
+2538	Remove bookmark	移除书签
+2539	Add bookmark	添加书签
+2540	No Scene	无场景
+2541	Failed to process file drop:	处理文件拖放失败：
+2542	Failed to process drop:	处理拖放失败：
+2543	Unmute track	取消静音轨道
+2544	Mute track	静音轨道
+2545	Show track	显示轨道
+2546	Hide track	隐藏轨道
+2547	Edit text	编辑文本
+2548	Preview canvas	预览画布
+2549	Failed to copy snapshot	复制快照失败
+2550	Failed to save snapshot	保存快照失败
+2551	Click to edit time	点击编辑时间
+2552	Preview render failed:	预览渲染失败：
+2553	Export sink failed:	导出输出失败：
+2554	Couldn't save exported video	无法保存导出的视频
+2555	Unknown error occurred	发生未知错误
+2556	Exporting project	正在导出项目
+2557	Export project	导出项目
+2558	Export saved	导出已保存
+2559	Export finished with errors	导出完成，但出现错误
+2560	Saving export	正在保存导出文件
+2561	Saving to disk	正在保存到磁盘
+2562	Saving to media library	正在保存到媒体库
+2563	Saved to disk	已保存到磁盘
+2564	Saved to media library	已保存到媒体库
+2565	Library upload failed	媒体库上传失败
+2566	Press any key combination...	请按下任意组合键……
+2567	Click to edit shortcut	点击编辑快捷键
+2568	Delete '	删除 '
+2569	This will permanently delete	这将永久删除
+2570	 and all associated files.	 及其所有关联文件。
+2571	Failed to prepare project exit:	准备退出项目失败：
+2572	Failed to delete project	删除项目失败
+2573	Project menu	项目菜单
+2574	Editor error boundary caught:	编辑器错误边界捕获到：
+2575	An unexpected error occurred.	发生了意外错误。
+2576	Have fun creating!	祝你创作愉快！
+2577	Editor Onboarding	编辑器新手指引
+2578	Failed to paste media:	粘贴媒体失败：
+2579	Export disk save failed:	导出到磁盘保存失败：
+2580	Export library upload failed:	导出到媒体库上传失败：
+2581	Untitled project	未命名项目
+2582	color swatch	色板
+2583	Delete section	删除分区
+2584	Hex color	十六进制颜色
+2585	Move to	移动到
+2586	Add swatches to board	将色板添加到画板
+2587	Add images with a media reference to use them in a generation	添加带媒体引用的图像，以便在生成中使用
+2588	Exit presentation	退出演示
+2589	Snapping on	吸附已开启
+2590	Snapping off	吸附已关闭
+2591	 : t.text || 	 : t.text || 
+2592	New board	新建画板
+2593	Retry save	重试保存
+2594	Moodboard image	情绪板图像
+2595	Flash user input error event received:	收到 Flash 用户输入错误事件：
+2596	Flash file download error event received:	收到 Flash 文件下载错误事件：
+2597	File download failed	文件下载失败
+2598	Media file deleted event received:	收到媒体文件已删除事件：
+2599	File deleted.	文件已删除。
+2600	GPU tier	GPU 档位
+2601	Edit Scene	编辑场景
+2602	Native gzip produced invalid output: 	原生 gzip 产生了无效输出：
+2603	Failed to gzip compress data	gzip 压缩数据失败
+2604	screaming frog	screaming frog
+2605	yahoo! slurp	yahoo! slurp
+2606	better uptime bot	better uptime bot
+2607	google favicon	google favicon
+2608	google web preview	google web preview
+2609	min cannot be greater than max.	min 不能大于 max。
+2610	 cannot be  greater than max: 	 不能大于 max：
+2611	 cannot be less than min: 	 不能小于 min：
+2612	 must be a number. using max or fallback. max: 	 必须是数字。将使用 max 或回退值。max：
+2613	 Watch	 Watch
+2614	 Internet	 Internet
+2615	Internet Explorer	Internet Explorer
+2616	 Mini	 Mini
+2617	Microsoft 	Microsoft 
+2618	 Phone	 Phone
+2619	Oculus Browser	Oculus Browser
+2620	Pale Moon	Pale Moon
+2621	Facebook 	Facebook 
+2622	' captured as exception	' 被捕获为异常
+2623	 with message: '	，消息为：'
+2624	Primitive value captured as exception: 	原始值被捕获为异常：
+2625	Non-Error promise rejection captured with value: 	捕获到非 Error 的 Promise 拒绝，值为：
+2626	 was requested but loading of external scripts is disabled.	 被请求，但外部脚本加载已被禁用。
+2627	Loading of external scripts is disabled	外部脚本加载已被禁用
+2628	document not found	未找到 document
+2629	not 128-bit length	不是 128 位长度
+2630	invalid field value	字段值无效
+2631	Invalid UUIDv7 was generated	生成了无效的 UUIDv7
+2632	Could not generate UUID after timestamp reset	时间戳重置后无法生成 UUID
+2633	no cryptographically strong RNG available	没有可用的加密强随机数生成器
+2634	Warning: cookie subdomain discovery mismatch	警告：cookie 子域发现不匹配
+2635	; secure	; secure
+2636	`document` not found. Cannot start.	未找到 `document`。无法启动。
+2637	Skipping decoding for malformed query param: 	跳过对格式错误的查询参数的解码：
+2638	Persistence loaded	持久化已加载
+2639	Unknown persistence type 	未知的持久化类型 
+2640	product tour shown	已显示产品导览
+2641	 is quota limited.	 受配额限制。
+2642	 events per second and 	 事件/秒，以及 
+2643	 events burst limit.	 事件突发上限。
+2644	Using preloaded remote config	使用预加载的远程配置
+2645	Remote config is disabled. Falling back to local config.	远程配置已禁用。将回退到本地配置。
+2646	Error loading remote config	加载远程配置出错
+2647	flush interval	刷新间隔
+2648	Enqueued failed request for retry in 	失败的请求已入队，将在以下时间后重试：
+2649	Not a valid UUID	不是有效的 UUID
+2650	Not a UUIDv7	不是 UUIDv7
+2651	new session ID generated	已生成新的会话 ID
+2652	Surveys module not available	问卷模块不可用
+2653	Bad HTTP status: 	HTTP 状态码异常：
+2654	Deferring extension initialization to improve startup performance	延迟扩展初始化以提升启动性能
+2655	Initializing extensions synchronously	同步初始化扩展
+2656	Starting in debug mode	以调试模式启动
+2657	This browser does not have Promise support, and can not use the segment integration	此浏览器不支持 Promise，无法使用 segment 集成
+2658	Discard IP data	丢弃 IP 数据
+2659	Error initializing extension:	初始化扩展出错：
+2660	document not ready yet, trying again in 500 milliseconds...	document 尚未就绪，将在 500 毫秒后重试……
+2661	No available transport method	没有可用的传输方式
+2662	 + Use + D.id + 	 + Use + D.id + 
+2663	Failed to persist survey seen state	无法持久化问卷已查看状态
+2664	This capture call is ignored due to client rate limiting.	由于客户端速率限制，此捕获调用已被忽略。
+2665	Attempting to create alias for existing People user - aborting.	尝试为已存在的 People 用户创建别名 - 已中止。
+2666	You've disabled debug mode.	你已禁用调试模式。
+2667	Config field '	配置字段 '
+2668	' instead. The old field will be removed in a future major version.	'。旧字段将在未来的主版本中移除。
+2669	event matched, removing item from activated items	事件已匹配，正在从激活项中移除该项
+2670	cancel event matched, cancelling items	cancel 事件已匹配，正在取消相关项
+2671	event name matched	事件名称已匹配
+2672	updating activated items	正在更新激活项
+2673	Disabled. Not loading surveys.	已禁用。不加载问卷。
+2674	Refusing to render web experiment since the viewer is a likely bot	查看者可能是机器人，拒绝渲染 Web 实验
+2675	setting flag key 	正在设置标志键 
+2676	 to web experiment 	 为 Web 实验 
+2677	previewing web experiments 	正在预览 Web 实验 
+2678	applying transform of variant 	正在应用变体转换 
+2679	 for experiment 	 用于实验 
+2680	Control variants leave the page unmodified.	对照变体不会修改页面。
+2681	Conversations not available yet.	对话功能尚不可用。
+2682	Feature flag cache is stale, triggering refresh...	功能标志缓存已过期，正在触发刷新……
+2683	Invalid evaluation context found:	发现无效的评估上下文：
+2684	Invalid flag key found:	发现无效的标志键：
+2685	Expected array of non-empty strings	应为非空字符串数组
+2686	All overrides cleared	已清除所有覆盖项
+2687	Flag overrides cleared	已清除标志覆盖
+2688	Payload overrides cleared	已清除载荷覆盖
+2689	Payload overrides set	已设置载荷覆盖
+2690	could not load recorder	无法加载录制器
+2691	 must be between 0 and 1. Ignoring invalid value:	 必须介于 0 和 1 之间。忽略无效值：
+2692	config refresh failed, recording will not start until page reload	配置刷新失败，页面重新加载前不会开始录制
+2693	persisted remote config for session recording is invalid and will be ignored	会话录制的持久化远程配置无效，将被忽略
+2694	Called on script loaded before session recording is available. This can be caused by adblockers.	在会话录制可用之前调用了脚本加载钩子。这可能由广告拦截器导致。
+2695	persisted remote config is stale, requesting fresh config before starting	持久化远程配置已过期，开始前正在请求最新配置
+2696	Failed to capture event	捕获事件失败
+2697	Failed to capture copy/cut event	捕获复制/剪切事件失败
+2698	Disabling Automatic Event Collection because this browser is not supported	此浏览器不受支持，正在禁用自动事件收集
+2699	History API monitoring enabled, starting...	History API 监控已启用，正在启动……
+2700	History API monitoring stopped	History API 监控已停止
+2701	Error capturing 	捕获出错 
+2702	Invalid metric received	收到无效的指标
+2703	web vitals callbacks not loaded - not starting	Web Vitals 回调未加载 - 不会启动
+2704	enabled, starting...	已启用，正在启动……
+2705	Could not determine current URL	无法确定当前 URL
+2706	failed to start	启动失败
+2707	Skipping exception capture because of client rate limiting.	由于客户端速率限制，跳过异常捕获。
+2708	Ignoring exception step because message must be a non-empty string	忽略异常步骤，因为 message 必须是非空字符串
+2709	Ignoring reserved exception step fields	忽略保留的异常步骤字段
+2710	Failed to add exception step. Ignoring breadcrumb.	添加异常步骤失败。忽略面包屑。
+2711	Exception dropped: matched a suppression rule	异常已丢弃：匹配到抑制规则
+2712	Skipping exception capture because a suppression rule matched	匹配到抑制规则，跳过异常捕获
+2713	Exception dropped: thrown by a browser extension	异常已丢弃：由浏览器扩展抛出
+2714	Skipping exception capture because it was thrown by an extension	该异常由扩展抛出，跳过异常捕获
+2715	Failed to capture exception event. Dropping this exception.	捕获异常事件失败。丢弃此异常。
+2716	Failed to process exception event. Ignoring this exception.	处理异常事件失败。忽略此异常。
+2717	Failed to read buffered exception steps. Capturing exception without steps.	读取缓存的异常步骤失败。将在不带步骤的情况下捕获异常。
+2718	Could not load product tours script	无法加载产品导览脚本
+2719	Product Tours API could not be loaded, status: 	无法加载 Product Tours API，状态：
+2720	Processing 	正在处理 
+2721	 events for site app with id 	 个事件，站点应用 ID 为 
+2722	Site app with id 	站点应用 ID 
+2723	Error while processing event 	处理事件时出错 
+2724	 for site app 	 用于站点应用 
+2725	Flags not loaded yet. Not loading surveys.	标志尚未加载。不加载问卷。
+2726	Already initializing surveys, skipping...	正在初始化问卷，跳过……
+2727	Not loading surveys in cookieless mode without consent.	在无 cookie 模式下且未获同意时，不加载问卷。
+2728	Could not load surveys script	无法加载问卷脚本
+2729	Error initializing surveys	初始化问卷出错
+2730	Surveys loaded successfully	问卷加载成功
+2731	Surveys API could not be loaded, status: 	无法加载 Surveys API，状态：
+2732	Error in survey callback	问卷回调出错
+2733	Survey 	问卷 
+2734	Survey element not found	未找到问卷元素
+2735	Surveys of type 	类型为 
+2736	 cannot be rendered in the app	 的问卷无法在应用中渲染
+2737	Survey is not eligible to be displayed: 	问卷不符合展示条件：
+2738	Could not load conversations script	无法加载对话脚本
+2739	Error initializing conversations	初始化对话出错
+2740	Conversations enabled but missing token in remote config.	对话已启用，但远程配置中缺少 token。
+2741	Conversations loaded successfully	对话加载成功
+2742	Error completing conversations initialization	完成对话初始化时出错
+2743	Cannot complete initialization: remote config is null	无法完成初始化：远程配置为 null
+2744	Conversations not loaded yet.	对话尚未加载。
+2745	Could not load logs script	无法加载日志脚本
+2746	 logs per 	 条日志 / 
+2747	Object	对象
+2748	Error	错误
+2749	Camera	相机
+2750	Group	编组
+2751	Previous	上一个
+2752	Hide	隐藏
+2753	Stage	舞台
+2754	Pause	暂停
+2755	Play	播放
+2756	Share	分享
+2757	Show	显示
+2758	Tag	标签
+2759	Layer	图层
+2760	High	高
+2761	Paste	粘贴
+2762	Confirm	确认
+2763	Success	成功
+2764	Free	免费
+2765	Pro	Pro
+2766	Low	低
+2767	Stop	停止
+2768	Credit	积分
+2769	Language	语言
+2770	Frame	帧
+2771	Import	导入
+2772	Loading	加载中
+2773	Mute	静音

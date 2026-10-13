@@ -1,0 +1,34 @@
+{
+  "name": "artcraft-hanhua",
+  "version": "0.1.0",
+  "description": "ArtCraft 套件简体中文本地化工具（Windows，Node.js 零第三方依赖）",
+  "type": "module",
+  "bin": {
+    "artcraft-hanhua": "bin/artcraft-hanhua.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "src",
+    "data",
+    "docs"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "detect": "node bin/artcraft-hanhua.mjs detect",
+    "doctor": "node bin/artcraft-hanhua.mjs doctor",
+    "hanhua:dry": "node bin/artcraft-hanhua.mjs hanhua --dry-run"
+  },
+  "keywords": [
+    "artcraft",
+    "hanhua",
+    "localization",
+    "chinese",
+    "windows",
+    "cli"
+  ],
+  "license": "MIT",
+  "private": false
+}

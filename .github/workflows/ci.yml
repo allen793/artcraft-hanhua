@@ -1,0 +1,127 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# Least privilege: CI only reads the repository. No secrets are used anywhere.
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: test (${{ matrix.os }}, node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # windows-latest is the supported platform; ubuntu-latest is included
+        # as an optional smoke check to catch platform-independent regressions
+        # in pure logic (config parsing, matching, hash handling).
+        os: [windows-latest, ubuntu-latest]
+        node: [18, 20, 22]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      # NOTE: there is deliberately NO `npm install` / `npm ci` step.
+      # This project has zero third-party runtime and dev dependencies, so a
+      # clone is enough to run everything. Do not add an install step; if a
+      # change appears to require one, that change is out of policy (see
+      # CONTRIBUTING.md).
+
+      - name: Report toolchain versions
+        shell: bash
+        run: |
+          node --version
+          npm --version || true
+
+      # `node --test` is the built-in Node.js test runner. It discovers test
+      # files under test/ (and other default locations). If the repository has
+      # no test files yet, this step reports that instead of failing the build;
+      # once tests/ exist, failures fail the job as usual.
+      - name: Run tests (node --test)
+        shell: bash
+        run: |
+          set -uo pipefail
+          set +e
+          node --test > test-output.txt 2>&1
+          status=$?
+          set -e
+          cat test-output.txt
+          # Distinguish "the runner found nothing to run" (tolerated while the
+          # suite is still being written) from a real test failure.
+          if [ "$status" -ne 0 ] && grep -qiE "could not find|no test files" test-output.txt; then
+            echo "::warning::node --test found no test files; the test gate is skipped."
+            exit 0
+          fi
+          exit "$status"
+
+      - name: Syntax check CLI entry point
+        shell: bash
+        run: |
+          # Parse-only check; needs no dependencies and no install step.
+          if [ -f bin/artcraft-hanhua.mjs ]; then
+            node --check bin/artcraft-hanhua.mjs
+          else
+            echo "::warning::bin/artcraft-hanhua.mjs not found; skipping syntax check."
+          fi
+
+  repo-guard:
+    name: repo guard (no binaries, no large files)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fail if binaries or archives are tracked
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Checked-in files only: the point is what the repository distributes.
+          tracked=$(git ls-files -z | tr '\0' '\n')
+
+          # Executables, libraries, installers, archives, and fonts are refused
+          # outright. Images are NOT listed here, so a contributor's own
+          # screenshot can live in docs/; screenshots or assets extracted from
+          # ArtCraft are refused by review policy (see CONTRIBUTING.md) and by
+          # the large-file limit below.
+          bad=$(printf '%s\n' "$tracked" \
+            | grep -Ei '\.(exe|dll|msi|msix|so|dylib|bin|dat|pak|zip|7z|rar|cab|tar|gz|tgz|ttf|otf|woff2?)$' \
+            || true)
+
+          if [ -n "$bad" ]; then
+            echo "::error::Tracked binary/archive/asset files are not allowed in this repository."
+            printf '%s\n' "$bad"
+            exit 1
+          fi
+
+          echo "OK: no binary or archive files are tracked."
+
+      - name: Fail if any tracked file exceeds 2 MiB
+        shell: bash
+        run: |
+          set -euo pipefail
+          limit=$((2 * 1024 * 1024))
+          failed=0
+          while IFS= read -r -d '' f; do
+            [ -f "$f" ] || continue
+            size=$(wc -c < "$f")
+            if [ "$size" -gt "$limit" ]; then
+              echo "::error file=$f::Tracked file is $size bytes (> 2 MiB). Large files do not belong here."
+              failed=1
+            fi
+          done < <(git ls-files -z)
+          exit "$failed"

@@ -1,0 +1,78 @@
+name: ✨ 功能请求 / Feature request
+description: 建议新增能力，或为另一个 ArtCraft 程序加入汉化支持
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢建议。请先阅读 [docs/SUPPORTED-APPS.md](https://github.com/allen793/artcraft-hanhua/blob/main/docs/SUPPORTED-APPS.md)：
+        如果目标程序**原生自带简体中文**、**语言白名单不含中文**或**没有语言设置**，那么它不属于"可汉化"范围。
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: 提交前确认
+      options:
+        - label: 我已搜索过现有 Issue 与 Discussions，确认没有相同建议
+          required: true
+        - label: 我已阅读支持矩阵，理解部分程序在上游层面无法汉化
+          required: true
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 需求描述
+      description: 你希望解决什么问题？请描述场景，而不只是"加一个功能"。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 期望的用法
+      description: 你希望命令、参数或输出是什么样子？给出具体的命令行示例。
+      render: shell
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案
+      description: 你考虑过的其他做法，或目前的手工绕行方式。可选。
+    validations:
+      required: false
+
+  - type: input
+    id: target-app
+    attributes:
+      label: 涉及的程序与版本
+      description: 如果是"新增支持"类请求，请填写程序名与版本；其他类型可留空。
+      placeholder: FilmCraft vX.Y.Z
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 实测证据
+      description: |
+        如果是新增支持请求，请提供你观察到的语言入口：配置文件路径、相关字段与当前值、程序内语言选项列表。
+        **不要附上程序二进制或原始资源文件，只贴文本路径与内容片段。**
+    validations:
+      required: false
+
+  - type: dropdown
+    id: willing-to-pr
+    attributes:
+      label: 是否愿意提交 PR？
+      options:
+        - "愿意，我可以提交 PR"
+        - "愿意，但需要指导"
+        - "不，仅提出建议"
+    validations:
+      required: true

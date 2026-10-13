@@ -1,0 +1,55 @@
+# ---- Node ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.eslintcache
+
+# ---- 本工具的运行时产物 / tool runtime artifacts ----
+# 汉化前的原件备份（由 hanhua 生成，绝不应提交）
+*.bak-before-hanhua
+*.bak
+# 主程序补丁生成的中间/可执行文件（绝不提交）
+artcraft-zh-full.exe
+*.patched.exe
+artcraft-hanhua-backup/
+
+# ---- 构建与打包产物 / build output ----
+dist/
+build/
+out/
+*.tgz
+*.zip
+*.7z
+
+# ---- 测试与覆盖率 / tests & coverage ----
+coverage/
+.nyc_output/
+test-output.txt
+*.test.log
+
+# ---- 本地日志与临时文件 / local logs & temp ----
+*.log
+tmp/
+temp/
+*.tmp
+
+# ---- 编辑器与 IDE / editors & IDEs ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- 操作系统 / OS ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- local monitoring artifacts (never publish) ----
+.monitor-state.json
+BUG反馈摘要.md
