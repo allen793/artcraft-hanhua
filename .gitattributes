@@ -1,0 +1,29 @@
+# Line-ending policy.
+#
+# The translation table and every text artifact in this repository are LF. A
+# Windows checkout that silently converts them to CRLF caused real confusion
+# once: two copies of the same table looked like they differed on 1460 lines.
+# Keep the policy explicit so that cannot happen again.
+
+*.mjs   text eol=lf
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.tsv   text eol=lf
+*.txt   text eol=lf
+*.toml  text eol=lf
+
+# Windows-only helpers stay CRLF so that Notepad and cmd.exe render them.
+*.ps1   text eol=crlf
+*.cmd   text eol=crlf
+*.bat   text eol=crlf
+
+# Never let git treat these as text.
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.webp  binary
+*.gif   binary
+*.ico   binary
