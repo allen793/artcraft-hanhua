@@ -142,8 +142,8 @@ export const REFERENCE_FACTS = {
   cjkChars: 21906,
   /** 原 JS 的 sha256→base64（CSP 里那一条） */
   jsCspHashBefore: 'sha256-4ArYMF5GuVlFkSa3qpippIUjOLhKpONvXOvLUPukPMU=',
-  /** 汉化后 JS 的 sha256→base64（v3） */
-  jsCspHashAfter: 'sha256-gMY4MXtq1pCfOx1EHGJwC4hMBi5rkPW7AVd8YKJnpUw=',
+  /** 汉化后 JS 的 sha256→base64（v3 译表，2803 条） */
+  jsCspHashAfter: 'sha256-KehCoiXg6uIvKTZZUumZSooRcigqnQYJdR0vkfWjIKY=',
 };
 
 /** CSP 明文串的固定长度：`sha256-`(7) + 44 字符 base64 = 51 */
@@ -670,14 +670,16 @@ export function buildReplacementPlan(entries) {
  *
  * 为什么不能图省事写成「按首字符打表、一次扫描」：
  *
- * 1. 所有规则的 `from` 都以 `"` 开头（它们是带引号字面量），所以「按首字符分桶」
- *    等于**没有分桶**，每个引号位置都要试 2773 条规则。
+ * 1. 规则的 `from` 都以引号开头（它们是带引号字面量），所以「按首字符分桶」
+ *    等于**没有分桶**，每个引号位置都要试全部规则（v3 是 2803 条 → 5538 个字面量）。
  * 2. 更致命的是**规则顺序**：`data/translations.tsv` 里有 4 条英文**跨引号匹配**
  *    （例：`" but also contains the following legacy lifecycles:"`，开头那个 `"`
  *    是前一个字面量的结尾），还有长度不同但**重叠**的规则（例：`" + a + "`
  *    与上面那条共用引号）。参考实现按长度从长到短逐条 replace，长的先落地；
  *    任何「从左到右、命中即吃」的扫描都会让短的先吃掉长的开头，实测差 4 条落地、
- *    JS 多 11 字节（9,056,459 vs 参考的 9,056,448）。
+ *    JS 多 11 字节。
+ * 3. 只做双引号会漏掉单引号包裹的界面文案（实测残留里有 66 条单引号候选），
+ *    v3 构建报告 `literals_total = 5606 = 2803 × 2` 就是「两种分隔符各一遍」的实证。
  *
  * 所以这里就用**与参考实现同样的算法**：按长度从长到短逐条规则、对每条规则做
  * 「全局不重叠替换」（`String.prototype.split/join` 的语义，与 Python

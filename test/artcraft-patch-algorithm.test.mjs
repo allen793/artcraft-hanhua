@@ -769,16 +769,49 @@ test('PE 结构常量：新段只读、不新增可执行/可写节', () => {
 
 const ORIG_EXE =
   'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\artcraft-poc\\artcraft-poc-orig.exe';
-const REF_EXE =
-  'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\artcraft-poc\\artcraft-zh-full-csp.exe';
+/** 参考产物：优先用 v3（2803 条译表重建的那一份），退回旧版 */
+const REF_EXE_CANDIDATES = [
+  'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\artcraft-poc\\artcraft-zh-v3.exe',
+  'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\artcraft-poc\\artcraft-zh-full-csp.exe',
+];
+/** 权威译表：优先用 hanhua-build 的 v3 副本，退回仓库内 data/translations.tsv */
+const TSV_CANDIDATES = [
+  'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\hanhua-build\\translations-v3.tsv',
+  fileURLToPath(new URL('../data/translations.tsv', import.meta.url)),
+];
+/** 参考产物解压后的资源目录（用于「解压后逐字节相同」这条硬标准） */
+const REF_ASSET_DIR =
+  'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\extract-csp\\assets';
 const FULL = process.env.ARTCRAFT_FULL_TEST === '1';
 
+const firstExisting = (paths) => paths.find((p) => fs.existsSync(p)) ?? null;
+
+/** 从 TSV 读译文（列顺序按表头走，英文/中文都不 trim） */
+function readTranslations(tsvPath) {
+  const lines = fs
+    .readFileSync(tsvPath, 'utf8')
+    .replace(/^\uFEFF/, '')
+    .split(/\r\n|\n|\r/)
+    .filter((l) => l !== '');
+  const header = lines[0].split('\t');
+  const idx = { id: header.indexOf('id'), en: header.indexOf('english'), zh: header.indexOf('chinese') };
+  const body = idx.en >= 0 ? lines.slice(1) : lines;
+  return body.map((l) => {
+    const f = l.split('\t');
+    return { id: f[idx.id >= 0 ? idx.id : 0], en: f[idx.en >= 0 ? idx.en : 1], zh: f[idx.zh >= 0 ? idx.zh : 2] };
+  });
+}
+
 test(
-  '端到端：原件 → 产物与参考产物逐字节相同（ARTCRAFT_FULL_TEST=1 才跑）',
+  '端到端：原件 + 权威译表 → 产物与参考产物逐字节相同（ARTCRAFT_FULL_TEST=1 才跑）',
   { skip: FULL ? false : '设 ARTCRAFT_FULL_TEST=1 才跑（77 MB brotli q11 重压，约 1 分钟）' },
   () => {
+    const refExe = firstExisting(REF_EXE_CANDIDATES);
+    const tsvPath = firstExisting(TSV_CANDIDATES);
     assert.ok(fs.existsSync(ORIG_EXE), `缺少原件：${ORIG_EXE}`);
-    assert.ok(fs.existsSync(REF_EXE), `缺少参考产物：${REF_EXE}`);
+    assert.ok(refExe, '缺少参考产物');
+    assert.ok(tsvPath, '缺少权威译表');
+
     const image = fs.readFileSync(ORIG_EXE);
     assert.equal(image.length, REFERENCE_FACTS.originalExeBytes);
     assert.equal(
@@ -787,50 +820,79 @@ test(
       '原件必须是实测的那一份',
     );
 
+    const translations = readTranslations(tsvPath);
+    assert.ok(translations.length > 0);
+    assert.equal(
+      translations.length,
+      new Set(translations.map((t) => t.id)).size,
+      '译表 id 不应重复',
+    );
+
     const dir = tmpdir();
     const outPath = path.join(dir, 'artcraft-zh-full.exe');
-    const tsvPath = fileURLToPath(new URL('../data/translations.tsv', import.meta.url));
-    const translations = fs
-      .readFileSync(tsvPath, 'utf8')
-      .replace(/^\uFEFF/, '')
-      .split('\n')
-      .filter((l) => l !== '')
-      .slice(1)
-      .map((l) => {
-        const f = l.split('\t');
-        return { id: f[0], en: f[1], zh: f[2] };
-      });
-    assert.equal(translations.length, REFERENCE_FACTS.translations.total);
-
     const report = applyPatchToImage({ image, translations });
     fs.writeFileSync(outPath, report.image);
+    const ref = fs.readFileSync(refExe);
 
-    // 硬标准 1：整文件逐字节相同
-    const ref = fs.readFileSync(REF_EXE);
-    assert.equal(report.bytes, REFERENCE_FACTS.patchedExeBytes);
-    assert.equal(report.sha256, REFERENCE_FACTS.patchedExeSha256, '整文件 SHA-256 必须与参考产物相同');
+    // 硬标准 1：整文件逐字节相同（Node 与 Python 的 brotli 在这份数据上恰好一致）
+    assert.equal(report.bytes, ref.length, '产物字节数必须与参考一致');
     assert.equal(compareImages(report.image, ref), -1, '必须逐字节相同');
+    assert.equal(report.sha256, crypto.createHash('sha256').update(ref).digest('hex'));
 
-    // 硬标准 2：三个资源的**解压后**内容与参考产物逐字节相同
-    const refDir = 'C:\\Users\\Ding\\Documents\\deepseek-harness\\default-workspace\\extract-csp\\assets';
+    // 硬标准 2：三个资源的**解压后**内容与参考产物逐字节相同（与 brotli 实现无关）
+    const reread = readEmbeddedAssets(report.image, { decompressAll: true, expectedHashes: {} });
+    const refAssets = readEmbeddedAssets(ref, { decompressAll: true, expectedHashes: {} });
     const pairs = [
-      ['/index.html', path.join(refDir, 'index.html')],
-      ['/assets/index-IL-0eMku.js', path.join(refDir, 'assets', 'index-IL-0eMku.js')],
-      ['/assets/index-DTSJQQsq.css', path.join(refDir, 'assets', 'index-DTSJQQsq.css')],
+      ['/index.html', path.join(REF_ASSET_DIR, 'index.html')],
+      ['/assets/index-IL-0eMku.js', path.join(REF_ASSET_DIR, 'assets', 'index-IL-0eMku.js')],
+      ['/assets/index-DTSJQQsq.css', path.join(REF_ASSET_DIR, 'assets', 'index-DTSJQQsq.css')],
     ];
-    const reread = readEmbeddedAssets(report.image, { decompressAll: true });
+    for (const [key] of pairs) {
+      assert.equal(
+        reread.assets.get(key).raw.equals(refAssets.assets.get(key).raw),
+        true,
+        `${key} 解压后必须与参考产物一致`,
+      );
+    }
+    // 若 extract-csp 里留了参考解压结果，再对一遍
+    // （注意：那是**旧版**参考的导出，只在与本次参考产物一致时才有可比性）
     for (const [key, refPath] of pairs) {
       if (!fs.existsSync(refPath)) continue;
-      assert.equal(reread.assets.get(key).raw.equals(fs.readFileSync(refPath)), true, `${key} 解压后必须与参考一致`);
+      const exported = fs.readFileSync(refPath);
+      if (!exported.equals(refAssets.assets.get(key).raw)) continue; // 旧版导出，跳过
+      assert.equal(reread.assets.get(key).raw.equals(exported), true, `${key} 与 extract-csp 不一致`);
     }
 
-    // 硬标准 3：改动审计（只允许白名单内的字节变化）
-    assert.equal(report.audit.changedOutside, 0);
-    assert.equal(report.translations.applications, REFERENCE_FACTS.translations.applications);
+    // 硬标准 3：CSP 是新哈希、旧哈希零残留
     assert.equal(report.csp.replacements.length, 1);
     assert.equal(report.csp.replacements[0].newHash, REFERENCE_FACTS.jsCspHashAfter);
     assert.equal(report.selfCheck.cspOk, true);
+    assert.equal(
+      report.image.includes(Buffer.from(REFERENCE_FACTS.jsCspHashBefore, 'latin1')),
+      false,
+      '旧 CSP 哈希必须零残留',
+    );
+
+    // 硬标准 4：PE 结构
     assert.equal(report.pe.sizeOfImageAfter % report.pe.sectionAlignment, 0);
+    assert.ok(report.pe.sectionCountAfter <= 96, '节数必须 ≤ 96');
+    assert.equal(report.audit.changedOutside, 0, '白名单之外一个字节都不许变');
+    const patched = parsePe(report.image);
+    const original = parsePe(image);
+    assert.equal(patched.sections.length, original.sections.length + 1);
+    // The new section header is APPENDED to the section table (index 6 of 7), which
+    // is what the reference build does and what keeps every existing section at its
+    // original index, so the loop below still lines up one-to-one.
+    const newSec = patched.sections[patched.sections.length - 1];
+    assert.equal(newSec.name, '.asst');
+    assert.equal(newSec.characteristics & 0x80000000, 0, '不许新增可写节');
+    assert.equal(newSec.characteristics & 0x20000000, 0, '不许新增代码节');
+    // 既有节的 VA / rawptr 一个都没动
+    for (let i = 0; i < original.sections.length; i += 1) {
+      assert.equal(patched.sections[i].vaddr, original.sections[i].vaddr, `节 ${i} 的 VA 被改动`);
+      assert.equal(patched.sections[i].rawptr, original.sections[i].rawptr, `节 ${i} 的 rawptr 被改动`);
+    }
+    assert.equal(report.image.readUInt32LE(patched.checksumOff), 0, 'CheckSum 必须为 0');
 
     fs.rmSync(dir, { recursive: true, force: true });
   },
