@@ -53,3 +53,7 @@ $RECYCLE.BIN/
 # ---- local monitoring artifacts (never publish) ----
 .monitor-state.json
 BUG反馈摘要.md
+
+# ---- scratch files from local experiments ----
+tmp-*
+tmp_*

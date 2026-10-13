@@ -15,16 +15,16 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # The tool operates on a Windows installation: it reads the Windows registry,
+  # resolves %APPDATA%, and rewrites Windows configuration files. The test suite
+  # therefore exercises Windows semantics and runs on windows-latest only.
+  # Platform-independent checks (syntax, translation data) run in `static` below.
   test:
-    name: test (${{ matrix.os }}, node ${{ matrix.node }})
-    runs-on: ${{ matrix.os }}
+    name: test (windows-latest, node ${{ matrix.node }})
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
-        # windows-latest is the supported platform; ubuntu-latest is included
-        # as an optional smoke check to catch platform-independent regressions
-        # in pure logic (config parsing, matching, hash handling).
-        os: [windows-latest, ubuntu-latest]
         node: [18, 20, 22]
     steps:
       - name: Checkout
@@ -42,41 +42,80 @@ jobs:
       # CONTRIBUTING.md).
 
       - name: Report toolchain versions
-        shell: bash
         run: |
           node --version
-          npm --version || true
+          npm --version
 
-      # `node --test` is the built-in Node.js test runner. It discovers test
-      # files under test/ (and other default locations). If the repository has
-      # no test files yet, this step reports that instead of failing the build;
-      # once tests/ exist, failures fail the job as usual.
       - name: Run tests (node --test)
-        shell: bash
+        shell: pwsh
         run: |
-          set -uo pipefail
-          set +e
-          node --test > test-output.txt 2>&1
-          status=$?
-          set -e
-          cat test-output.txt
-          # Distinguish "the runner found nothing to run" (tolerated while the
-          # suite is still being written) from a real test failure.
-          if [ "$status" -ne 0 ] && grep -qiE "could not find|no test files" test-output.txt; then
-            echo "::warning::node --test found no test files; the test gate is skipped."
+          $ErrorActionPreference = 'Continue'
+          node --test 2>&1 | Tee-Object -FilePath test-output.txt
+          $status = $LASTEXITCODE
+          if ($status -ne 0 -and (Select-String -Path test-output.txt -Pattern 'could not find|no test files' -Quiet)) {
+            Write-Host '::warning::node --test found no test files; the test gate is skipped.'
             exit 0
-          fi
-          exit "$status"
+          }
+          exit $status
 
       - name: Syntax check CLI entry point
+        shell: pwsh
+        run: |
+          if (Test-Path bin/artcraft-hanhua.mjs) {
+            node --check bin/artcraft-hanhua.mjs
+          } else {
+            Write-Host '::warning::bin/artcraft-hanhua.mjs not found; skipping syntax check.'
+          }
+
+  # Platform-independent gate: runs anywhere, catches syntax errors and a broken
+  # or truncated translation table even if the Windows matrix is unavailable.
+  static:
+    name: static checks (ubuntu-latest)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Syntax-check every source file
         shell: bash
         run: |
-          # Parse-only check; needs no dependencies and no install step.
-          if [ -f bin/artcraft-hanhua.mjs ]; then
-            node --check bin/artcraft-hanhua.mjs
-          else
-            echo "::warning::bin/artcraft-hanhua.mjs not found; skipping syntax check."
+          set -euo pipefail
+          find . -name node_modules -prune -o -name '*.mjs' -print | while read -r f; do
+            node --check "$f"
+          done
+          echo "OK: every .mjs file parses."
+
+      - name: Validate data/translations.tsv
+        shell: bash
+        run: |
+          set -euo pipefail
+          f=data/translations.tsv
+          [ -f "$f" ] || { echo "::error::$f is missing"; exit 1; }
+
+          # No BOM: the runtime parsers must see a plain UTF-8 file.
+          if [ "$(head -c 3 "$f" | od -An -tx1 | tr -d ' \n')" = "efbbbf" ]; then
+            echo "::error::$f starts with a UTF-8 BOM; it must be BOM-less."
+            exit 1
           fi
+
+          header=$(head -n 1 "$f")
+          [ "$header" = "$(printf 'id\tenglish\tchinese')" ] || {
+            echo "::error::unexpected header: $header"; exit 1; }
+
+          rows=$(( $(wc -l < "$f") - 1 ))
+          if [ "$rows" -ne 2773 ]; then
+            echo "::error::expected 2773 translation rows, found $rows"; exit 1
+          fi
+
+          # Every data row must have exactly two tab separators and a non-empty translation.
+          awk -F'\t' 'NR>1 { if (NF != 3) { print "::error::row " NR " has " NF " fields"; bad=1 } if ($3 == "") { print "::error::row " NR " has an empty translation"; bad=1 } } END { exit bad }' "$f"
+
+          echo "OK: 2773 translation rows, 3 columns, no BOM."
 
   repo-guard:
     name: repo guard (no binaries, no large files)
