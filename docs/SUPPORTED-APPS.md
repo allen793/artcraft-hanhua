@@ -45,6 +45,39 @@ This page lists, program by program, the measured localization status, technical
 
 统计：可汉化 5 个（含 1 个实验性、1 个有显示缺陷）｜原生中文 6 个（其中 2 个有缺字）｜无法汉化 3 个。
 
+### 不支持清单（明确写清"哪里不支持"）
+
+上表是"每个程序能不能汉化"，下面这张表是"**支持范围内的版本边界**"。
+把边界只写在代码里，等于让用户自己踩。数据源：`src/artcraft-patch.mjs` 的 `SUPPORTED_MAIN_VERSIONS`。
+
+| 范围 | 支持情况 | 说明 |
+| --- | --- | --- |
+| **主程序补丁：ArtCraft 主程序 v0.41.0** | ✅ **已实测** | `SUPPORTED_MAIN_VERSIONS = ['0.41.0']`。这是唯一被实测确认过的构建 |
+| **主程序补丁：其它任何版本** | ❌ **未适配** | phf 表的位置与条目集合会随构建变化。工具会**明确拒绝**（`hanhua` 把主程序标为跳过并打印原因），**不会盲改**——盲改可能让程序打不开 |
+| **主程序补丁：非 PE 输入 / 读不到版本** | ❌ 拒绝 | 会给出明确报错，不会尝试写入 |
+| **Language 配置类改写（Launcher / DesignCraft / LightCraft / EffectCraft）** | ✅ 按上表 | 与主程序版本无关，但**同样会被上游更新覆盖**，更新后需重跑 `hanhua` |
+
+### 不支持 / 无法汉化的三类情形（按原因分）
+
+| 情形 | 程序 | 原因 | 我们做不做 |
+| --- | --- | --- | --- |
+| **上游没有中文，且没有语言入口** | CADCraft | 语言设置只接受 `auto / en / uk`，写入 `zh` 一类值会被忽略 | 不做。这只能由上游加中文，或走"改程序本体"的高风险路线 |
+| **上游没有中文，且没有语言设置** | DeckCraft、SoundCraft | 程序内没有任何语言设置，也没有可改写的语言配置文件 | 不做，同上 |
+| **本身是中文，但缺字（方框）** | PdfCraft（大量缺字）、FilmCraft（少量缺字） | 上游捆绑的字体缺相应字形导致的 CJK 渲染缺陷；**不是**汉化配置问题 | 不做。本工具**不做二进制字体替换**（在 DesignCraft 上已实测排除"安装中文字体"这一途径） |
+
+补充说明：
+
+- **"仅语言配置"支持的是这 4 个**：ArtCraft Launcher（`app.ron`）、DesignCraft（`ui.json`）、
+  LightCraft（`ui.json`）、EffectCraft（`prefs.json`）。它们不改宿主二进制，风险等级低于主程序补丁。
+- **原生中文（无需改动）的是 6 个**：WordCraft、PhotoCraft、VectorCraft、GridCraft、PdfCraft、FilmCraft。
+  工具只报告，**不写这些程序的文件**。
+- **升级后必须重新汉化**：ArtCraft 更新会用官方文件覆盖被改写的内容（配置文件回英文、主程序换新 exe）。
+  这**不是汉化失效**，是资产被替换；重跑 `hanhua` 即可。**上游新版发布后、本页与
+  `SUPPORTED_MAIN_VERSIONS` 更新之前，请勿套用主程序补丁。**
+- **关于自动更新器**：实测（针对 **v0.41.0 这一个构建**）主程序**没有内置自动更新器**，
+  因此更新来自手动重装/运行官方安装包；汉化不会被后台静默覆盖。此结论只对 v0.41.0 成立，上游未来版本未知。
+- 误报 / SmartScreen / 更新相关的排查步骤见 [docs/FAQ.md](FAQ.md)。
+
 ### 逐项说明
 
 #### 1. ArtCraft 主程序 v0.41.0 — ⚠️ 可汉化（实验性）
@@ -151,6 +184,33 @@ Legend: ✅ localizable ｜ 🟦 ships Simplified Chinese natively ｜ ⚠️ lo
 | 14 | SoundCraft | Craft App | ❌ Not localizable | The program has no language setting at all |
 
 Totals: localizable 5 (1 experimental, 1 with a display defect) ｜ natively Chinese 6 (2 with missing glyphs) ｜ not localizable 3.
+
+### Not-supported list (what exactly is out of scope)
+
+The table above answers "can this program be localized at all?". The tables below state the **version boundary inside the supported range** — a boundary that exists purely in code is a trap for users. Source of truth: `SUPPORTED_MAIN_VERSIONS` in `src/artcraft-patch.mjs`.
+
+| Scope | Support | Notes |
+| --- | --- | --- |
+| **Main-app patch: ArtCraft main app v0.41.0** | ✅ **Measured** | `SUPPORTED_MAIN_VERSIONS = ['0.41.0']` — the only build actually verified |
+| **Main-app patch: any other version** | ❌ **Not adapted** | The phf table's location and entry set change with the build. The tool **refuses explicitly** (`hanhua` marks the main app as skipped with a reason) and **never blind-patches** — blind-patching can leave the program unlaunchable |
+| **Main-app patch: non-PE input / unreadable version** | ❌ Refused | Reports a clear error instead of attempting a write |
+| **Language-config rewrites (Launcher / DesignCraft / LightCraft / EffectCraft)** | ✅ Per the table above | Independent of the main-app version, but **also overwritten by upstream updates** — re-run `hanhua` afterwards |
+
+### The three kinds of "cannot be localized"
+
+| Case | Programs | Cause | What we do |
+| --- | --- | --- | --- |
+| **No Chinese upstream, no language entry point** | CADCraft | The language setting accepts only `auto / en / uk`; a `zh` value is ignored | Nothing. Only upstream can add Chinese, or it needs the high-risk "modify the program itself" route |
+| **No Chinese upstream, no language setting at all** | DeckCraft, SoundCraft | No in-app language setting and no writable language config file | Nothing, same as above |
+| **Already Chinese, but with missing glyphs (tofu boxes)** | PdfCraft (many), FilmCraft (few) | An upstream **bundled font** lacks the glyphs — a CJK rendering defect, **not** a localization-configuration problem | Nothing. This tool does **no binary font replacement** (on DesignCraft, installing a Chinese system font was tested and ruled out) |
+
+Additional notes:
+
+- **"Language config only" covers these 4**: ArtCraft Launcher (`app.ron`), DesignCraft (`ui.json`), LightCraft (`ui.json`), EffectCraft (`prefs.json`). They do not modify the host binary, so their risk tier is lower than the main-app patch.
+- **Natively Chinese (no change needed): 6**: WordCraft, PhotoCraft, VectorCraft, GridCraft, PdfCraft, FilmCraft. The tool reports them and **never writes to them**.
+- **Re-localize after every update**: an ArtCraft update replaces what was rewritten (config files revert to English, the main executable is replaced). That is **not a broken localization** but a replaced asset; just run `hanhua` again. **Until this page and `SUPPORTED_MAIN_VERSIONS` are updated for a new upstream release, do not apply the main-app patch.**
+- **About auto-updaters**: measured on **this v0.41.0 build only**, the main app has **no built-in updater**, so updates come from a manual reinstall / vendor installer run, and your localization is not silently overwritten in the background. This holds for v0.41.0 only; future versions are unknown.
+- For false positives / SmartScreen / update troubleshooting, see [docs/FAQ.md](FAQ.md).
 
 ### Per-Program Notes
 

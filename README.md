@@ -12,6 +12,22 @@
 > - `ArtCraft` 及相关名称、标识是其各自权利人的商标，本项目仅作事实性指代，不使用其标识作为本项目品牌。
 > - 使用本工具即表示你确认自己已**合法拥有**对应的 ArtCraft 安装；请支持正版软件。
 > - 完整法律边界与下架承诺见 [docs/DISCLAIMER.md](docs/DISCLAIMER.md)。
+>
+> <details>
+> <summary>⚠️ 使用条款（ToS）提示：本工具会改写宿主程序文件</summary>
+>
+> 本项目**不是** ArtCraft 的官方组件，也**没有**获得任何授权。它会改写你本机 ArtCraft 安装目录中的
+> **语言配置文件**，并在你明确同意的情况下**替换主程序 exe 内嵌的前端资源**。
+>
+> 这类改动**可能**与 ArtCraft 的最终用户许可协议（EULA）或使用条款相冲突。**本项目不声称这种使用是被允许的，
+> 也不声称已获得授权**——这是一个事实性提示，是否使用请你自行判断，**风险自负**。
+>
+> 我们不提供、不替代、不绕过任何授权或激活机制；工具不联网、不上传任何数据。
+> 使用前请先读 [docs/DISCLAIMER.md](docs/DISCLAIMER.md) 与 [docs/FAQ.md](docs/FAQ.md)。
+> </details>
+>
+> **项目生命周期**：若上游官方为 ArtCraft 提供简体中文界面，本项目将转为**归档/维护模式**（见下方
+> [项目生命周期](#项目生命周期)）。
 
 一个零第三方依赖的 Node.js 命令行工具：自动识别本机已安装的 ArtCraft 创作套件，为其中可汉化的部分一键切换到简体中文界面，并支持一键回滚到原始状态。
 
@@ -28,6 +44,7 @@
 - [安装与快速开始](#安装与快速开始)
 - [工作原理](#工作原理)
 - [常见问题](#常见问题)
+- [项目生命周期](#项目生命周期)
 - [法律与免责](#法律与免责)
 - [贡献](#贡献)
 - [许可证](#许可证)
@@ -162,17 +179,52 @@ node bin/artcraft-hanhua.mjs detect --json
 
 工具只改写语言配置与主程序的前端资源，不改动你的工程文件、素材与用户数据。但仍建议在汉化前保留一份可恢复的副本，并确认 `revert` 可用。
 
+### 杀毒软件报毒 / Windows 提示"已保护你的电脑"，是病毒吗？
+
+大概率是**误报或信誉警告**，但请按下面的口径自行核对，不要只信我们：
+
+- **本项目不发布任何 exe。** 仓库里只有 Node.js 工具源码与译表；你的 `artcraft.exe` 来自官方安装包，
+  `artcraft-zh-full.exe` 是**在你自己机器上**生成的（所以没有一份"官方产物哈希"可以预先公布）。
+- **为什么会被拦**：打过补丁的 exe 是**新生成的、与官方字节不同的、且没有数字签名的文件**。
+  SmartScreen 看的是"**有没有信誉**"而不是"有没有病毒"，没有信誉的文件一律提示；
+  Defender 的云启发式也可能对"被修改过的 PE"给出误报。**签名失效是预期行为**（如有签名）；
+  实测官方 exe 本身未签名。
+- **怎么自查**：读源码、跑 CI 里同一套检查（`node --test`）、用 `--dry-run` 预览、`revert` 回滚，
+  以及核对 `hanhua` 报告里的 `selfCheck.cspOk` / `audit.changedOutside`。CI 只做检查，**不产出任何二进制**。
+- **被误报怎么办**：确认可信后，右键文件 → 属性 → 勾选**解除锁定（Unblock）**清除"来自 Internet"标记；
+  并向微软提交误报（WDSI）。**不建议**做全局/无差别加白，也不要为跑这个工具关闭实时保护
+  ——微软官方原文是 "**Every exclusion lowers your level of protection.**"。
+- **更新后中文变回英文**：这是官方包**覆盖**了改动，不是坏了。重新跑一次 `hanhua` 即可；
+  异常时先 `revert` 再 `hanhua`。注意主程序补丁**只实测支持 v0.41.0**，上游发新版后需等适配。
+
+完整原因、官方链接与分步处置（含企业 WDAC/AppLocker 的注意事项）见 **[docs/FAQ.md](docs/FAQ.md)**。
+
 ### 支持 macOS / Linux 吗？
 
 目前不支持，仅 Windows。
+
+## 项目生命周期
+
+本项目的存在**以"上游没有官方简体中文"为前提**。因此提前把退出路径写清楚，而不是等事情发生再解释：
+
+1. **若上游官方为 ArtCraft 提供简体中文界面** → 本项目转为**归档/维护模式**：
+   停止追加新译文，仅保留译表与回滚能力的归档，并在 README 与本页顶部明确说明。
+   届时**推荐使用官方中文**，本项目不再追求"提前用上"的价值。
+2. **若上游引入 Authenticode 签名、构建期资源哈希自检等完整性机制，导致补丁不可行** →
+   本项目**明确公告"不支持"**，而不是硬碰或教用户绕过校验。
+3. **若权利人提出异议** → 按 [docs/DISCLAIMER.md](docs/DISCLAIMER.md) 的承诺配合下架相关内容。
+4. **上游版本漂移**期间：主程序补丁只对实测过的版本负责（当前 `SUPPORTED_MAIN_VERSIONS = ['0.41.0']`），
+   新版本一律**拒绝而不是盲改**；适配进度以 [docs/SUPPORTED-APPS.md](docs/SUPPORTED-APPS.md) 为准。
 
 ## 法律与免责
 
 - 本项目**仅供个人学习、研究与自用汉化**，**不得用于商业再分发**，也不得将本工具或衍生内容与 ArtCraft 安装包捆绑分发。
 - 请**支持正版**：本工具不提供、不替代、不绕过任何授权机制。
-- `ArtCraft` 及相关名称、标识为**其各自权利人的商标**，本项目仅作事实性指代。
+- `ArtCraft` 及相关名称、标识为**其各自权利人的商标**，本项目仅作事实性指代，**不使用其标识作为本项目品牌/徽标/头像**。
+- 本项目会改写宿主程序文件，**这可能与 ArtCraft 的最终用户许可协议（EULA）或使用条款相冲突**；
+  本项目**不声称这种使用被允许**，也不声称已获授权，风险自负（详见顶部 ToS 提示）。
 - 本项目与 ArtCraft 团队**无关**，未获其授权、认可或赞助；若权利人提出异议，本项目将配合下架相关内容。
-- 使用本工具产生的一切后果由使用者自行承担；请在使用前阅读 [docs/DISCLAIMER.md](docs/DISCLAIMER.md)。
+- 使用本工具产生的一切后果由使用者自行承担；请在使用前阅读 [docs/DISCLAIMER.md](docs/DISCLAIMER.md) 与 [docs/FAQ.md](docs/FAQ.md)。
 
 ## 贡献
 
@@ -182,6 +234,7 @@ node bin/artcraft-hanhua.mjs detect --json
 - 行为准则：[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - 安全策略：[SECURITY.md](SECURITY.md)
 - 支持矩阵与实测证据：[docs/SUPPORTED-APPS.md](docs/SUPPORTED-APPS.md)
+- 杀软误报 / SmartScreen / 更新排查：[docs/FAQ.md](docs/FAQ.md)
 
 **仓库不接受任何第三方二进制或资源**（`*.exe`、`*.dll`、`*.msi`、`*.zip` 等），CI 会对此做守卫检查。
 
@@ -205,6 +258,24 @@ node bin/artcraft-hanhua.mjs detect --json
 > - `ArtCraft` and related names and marks are trademarks of their respective owners and are used here only for factual reference. No ArtCraft branding is used as this project's own identity.
 > - By using this tool you confirm that you **legitimately own** the corresponding ArtCraft installation. Please support the official software.
 > - See [docs/DISCLAIMER.md](docs/DISCLAIMER.md) for the full legal boundary and takedown commitment.
+>
+> <details>
+> <summary>⚠️ Terms of Service (ToS) notice: this tool rewrites files of the host application</summary>
+>
+> This project is **not** an official ArtCraft component and has **no** authorization of any kind. It rewrites
+> **language configuration files** inside your local ArtCraft installation and, when you explicitly approve it,
+> **replaces frontend resources embedded in the main executable**.
+>
+> Such changes **may** conflict with ArtCraft's end-user license agreement (EULA) or terms of service. **This project
+> does not claim that such use is permitted, nor that any authorization exists** — this is a factual notice. Judge for
+> yourself whether to use it; **you assume the risk**.
+>
+> We do not provide, replace, or circumvent any licensing or activation mechanism. The tool uses no network and
+> uploads no data. Read [docs/DISCLAIMER.md](docs/DISCLAIMER.md) and [docs/FAQ.md](docs/FAQ.md) before use.
+> </details>
+>
+> **Project lifecycle**: if upstream ships a Simplified Chinese UI for ArtCraft, this project moves to
+> **archive/maintenance mode** (see [Project Lifecycle](#project-lifecycle) below).
 
 A zero-dependency Node.js CLI that detects the ArtCraft creative suite installed on your machine, switches the localizable parts to Simplified Chinese, and can roll everything back with one command.
 
@@ -219,6 +290,7 @@ A zero-dependency Node.js CLI that detects the ArtCraft creative suite installed
 - [Install & Quick Start](#install--quick-start)
 - [How It Works](#how-it-works)
 - [FAQ](#faq)
+- [Project Lifecycle](#project-lifecycle)
 - [Legal & Disclaimer](#legal--disclaimer)
 - [Contributing](#contributing)
 - [License](#license)
@@ -351,17 +423,39 @@ No. The boxes in DesignCraft, PdfCraft, and FilmCraft come from an **upstream em
 
 The tool only rewrites language configuration and the main application's frontend resources. It does not touch your project files, assets, or user data. Keeping a recoverable copy before localizing is still recommended.
 
+### Is my antivirus flagging it, or is Windows saying "Windows protected your PC"?
+
+Most likely a **false positive or a reputation warning** — but verify it yourself rather than taking our word for it:
+
+- **This project ships no executable.** The repository holds Node.js tool source and a translation table only. Your `artcraft.exe` comes from the vendor installer, and `artcraft-zh-full.exe` is generated **on your own machine** — so there is no fixed "official artifact hash" to publish in advance.
+- **Why it gets flagged**: a patched executable is a **newly created file whose bytes differ from the vendor build and that carries no digital signature**. SmartScreen asks "does this have **reputation**?", not "does it contain malware?", and anything without reputation gets a prompt. Defender's cloud heuristics may also false-positive on a **modified PE**. **A broken signature is expected** if the file was ever signed; the vendor executable was measured as unsigned.
+- **How to verify**: read the source, run the same checks CI runs (`node --test`), preview with `--dry-run`, roll back with `revert`, and read the patcher report's `selfCheck.cspOk` / `audit.changedOutside`. CI only checks — it **produces no binary**.
+- **If you are false-positived**: once you trust the file, right-click → Properties → **Unblock** to clear the mark of the web, and submit the false positive to Microsoft (WDSI). We do **not** recommend blanket exclusions or disabling real-time protection to run this tool — Microsoft's own words are "**Every exclusion lowers your level of protection.**".
+- **Chinese reverts to English after an update**: the vendor package **overwrote** your changes; it is not broken. Run `hanhua` again, or `revert` then `hanhua` if anything looks odd. Note the main-app patch is measured for **v0.41.0 only**, so a new upstream release needs re-adaptation.
+
+Full causes, official links and step-by-step handling (including enterprise WDAC/AppLocker notes) are in **[docs/FAQ.md](docs/FAQ.md)**.
+
 ### Is macOS / Linux supported?
 
 Not at this time. Windows only.
+
+## Project Lifecycle
+
+This project exists **on the premise that upstream ships no official Simplified Chinese**. So we state the exit paths up front instead of explaining them after the fact:
+
+1. **If upstream ships a Simplified Chinese UI for ArtCraft** → this project moves to **archive/maintenance mode**: no new translations, keeping only the archived translation table and the rollback capability, with a clear notice at the top of the README. We would then **recommend the official Chinese UI**; the "get it early" value proposition ends.
+2. **If upstream introduces Authenticode signing, build-time resource hash self-checks, or similar integrity mechanisms that make the patch infeasible** → this project will **publicly declare it unsupported** rather than forcing it or teaching users to bypass verification.
+3. **If a rights holder objects** → the project cooperates in removing the relevant content, per [docs/DISCLAIMER.md](docs/DISCLAIMER.md).
+4. **During upstream version drift**: the main-app patch is responsible only for measured versions (currently `SUPPORTED_MAIN_VERSIONS = ['0.41.0']`); other versions are **refused, not blind-patched**. Adaptation status lives in [docs/SUPPORTED-APPS.md](docs/SUPPORTED-APPS.md).
 
 ## Legal & Disclaimer
 
 - This project is for **personal study, research, and self-use localization only**. It **must not be used for commercial redistribution**, and must not be bundled with an ArtCraft installer or with derived content.
 - Please **support the official software**. This tool does not provide, replace, or circumvent any licensing mechanism.
-- `ArtCraft` and related names and marks are **trademarks of their respective owners** and are referenced factually only.
+- `ArtCraft` and related names and marks are **trademarks of their respective owners** and are referenced factually only; **no vendor branding is used as this project's own identity**.
+- This tool rewrites files of the host application, which **may conflict with ArtCraft's end-user license agreement (EULA) or terms of service**. This project **does not claim such use is permitted** and claims no authorization; you assume the risk (see the ToS notice at the top).
 - This project is **not affiliated with** the ArtCraft team and has no authorization, endorsement, or sponsorship from it. If a rights holder objects, the project will cooperate in removing the relevant content.
-- You are responsible for any consequences of using this tool; read [docs/DISCLAIMER.md](docs/DISCLAIMER.md) before use.
+- You are responsible for any consequences of using this tool; read [docs/DISCLAIMER.md](docs/DISCLAIMER.md) and [docs/FAQ.md](docs/FAQ.md) before use.
 
 ## Contributing
 
@@ -371,6 +465,7 @@ Issues and pull requests are welcome:
 - Code of Conduct: [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)
 - Security policy: [SECURITY.md](SECURITY.md)
 - Support matrix and measured evidence: [docs/SUPPORTED-APPS.md](docs/SUPPORTED-APPS.md)
+- Antivirus false positives / SmartScreen / update troubleshooting: [docs/FAQ.md](docs/FAQ.md)
 
 **No third-party binaries or resources are accepted** (`*.exe`, `*.dll`, `*.msi`, `*.zip`, and similar). CI enforces this with a repository guard.
 

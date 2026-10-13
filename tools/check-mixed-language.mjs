@@ -7,9 +7,12 @@
 // Chinese column that is not on the allow-list, so the gap is visible in CI
 // instead of being discovered by a user clicking through menus.
 //
-//   node tools/check-mixed-language.mjs [data/translations.tsv] [--allow tools/allowlist.json] [--out report.tsv] [--fix]
+//   node tools/check-mixed-language.mjs [data/translations.tsv] \
+//     [--allow tools/allowlist.json] [--baseline tools/mixed-language-baseline.txt] [--out report.tsv]
 //
-// Exit code 2 when a non-allow-listed Latin run is found, 0 when clean.
+// Exit code 2 when a NEW Latin run (not allow-listed and not in the baseline) is
+// found, 0 otherwise. There is deliberately no --fix: whether a token should be
+// translated, allow-listed or baselined is a judgement call, not a rewrite.
 
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { dirname, join } from 'node:path';
